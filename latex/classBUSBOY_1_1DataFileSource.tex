@@ -1,0 +1,93 @@
+\hypertarget{classBUSBOY_1_1DataFileSource}{
+\section{BUSBOY::DataFileSource Class Reference}
+\label{classBUSBOY_1_1DataFileSource}\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+}
+
+
+{\ttfamily \#include $<$DataFileSource.h$>$}Inheritance diagram for BUSBOY::DataFileSource::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.60229cm]{classBUSBOY_1_1DataFileSource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual char $\ast$ \hyperlink{classBUSBOY_1_1DataFileSource_ada5ea0b760f3cf5a865197d3fb9e4fcd}{getFileBytes} () const =0
+\begin{DoxyCompactList}\small\item\em NOTE: logical const, implementations may make changes behind the interface to lookup the data. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classBUSBOY_1_1DataFileSource_a79ad2660b524ee38093b7cc72d2924f5}{getFileSize} () const =0
+\begin{DoxyCompactList}\small\item\em NOTE: logical const, implementations may make changes behind the interface to lookup the data. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classBUSBOY_1_1DataFileSource_a7466bffda1100fb6f330382b4e491dd6}{read} (char $\ast$buf, size\_\-t num)
+\begin{DoxyCompactList}\small\item\em Read up to the next num bytes into buf, returns the number of bytes read. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classBUSBOY_1_1DataFileSource_ab50fe5821ccaa51a26b65debe8fd1c84}{skip} (size\_\-t num)
+\begin{DoxyCompactList}\small\item\em Skip up to the next num bytes, returns the number of bytes skipped. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classBUSBOY_1_1DataFileSource_a9f78f31eddcf41fd393e99ee00278d09}{release} ()=0
+\item 
+virtual bool \hyperlink{classBUSBOY_1_1DataFileSource_afd39ef6968c00cc9202c01d68bc87709}{isReleased} () const =0
+\item 
+bool \hyperlink{classBUSBOY_1_1DataFileSource_a1b9e815923b2d12c493aba58c7aacef7}{operator!=} (const \hyperlink{classBUSBOY_1_1DataFileSource}{DataFileSource} \&src) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1DataFileSource_ada5ea0b760f3cf5a865197d3fb9e4fcd}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!getFileBytes@{getFileBytes}}
+\index{getFileBytes@{getFileBytes}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{getFileBytes}]{\setlength{\rightskip}{0pt plus 5cm}virtual char$\ast$ BUSBOY::DataFileSource::getFileBytes () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DataFileSource_ada5ea0b760f3cf5a865197d3fb9e4fcd}
+
+
+NOTE: logical const, implementations may make changes behind the interface to lookup the data. 
+
+Implemented in \hyperlink{classBUSBOY_1_1LocalDataFileSource_a15f28fad4b6a526d1a0ab341e133bbaa}{BUSBOY::LocalDataFileSource}, and \hyperlink{classBUSBOY_1_1SimpleDataFileSource_a6811ed0b59217747b60a7deffbf6f991}{BUSBOY::SimpleDataFileSource}.\hypertarget{classBUSBOY_1_1DataFileSource_a79ad2660b524ee38093b7cc72d2924f5}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!getFileSize@{getFileSize}}
+\index{getFileSize@{getFileSize}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{getFileSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\_\-t BUSBOY::DataFileSource::getFileSize () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DataFileSource_a79ad2660b524ee38093b7cc72d2924f5}
+
+
+NOTE: logical const, implementations may make changes behind the interface to lookup the data. 
+
+Implemented in \hyperlink{classBUSBOY_1_1LocalDataFileSource_a2c0ff175265c5460a699910027d3a837}{BUSBOY::LocalDataFileSource}, and \hyperlink{classBUSBOY_1_1SimpleDataFileSource_a3a88ad0f428efbe004f864d67ed642f1}{BUSBOY::SimpleDataFileSource}.\hypertarget{classBUSBOY_1_1DataFileSource_afd39ef6968c00cc9202c01d68bc87709}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!isReleased@{isReleased}}
+\index{isReleased@{isReleased}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{isReleased}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool BUSBOY::DataFileSource::isReleased () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DataFileSource_afd39ef6968c00cc9202c01d68bc87709}
+
+
+Implemented in \hyperlink{classBUSBOY_1_1LocalDataFileSource_aa179b315828ee666797dfb91254ab1e1}{BUSBOY::LocalDataFileSource}, and \hyperlink{classBUSBOY_1_1SimpleDataFileSource_acd353a3343831533682d6f1dd6122573}{BUSBOY::SimpleDataFileSource}.\hypertarget{classBUSBOY_1_1DataFileSource_a1b9e815923b2d12c493aba58c7aacef7}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::DataFileSource::operator!= (const {\bf DataFileSource} \& {\em src}) const}}
+\label{classBUSBOY_1_1DataFileSource_a1b9e815923b2d12c493aba58c7aacef7}
+\hypertarget{classBUSBOY_1_1DataFileSource_a7466bffda1100fb6f330382b4e491dd6}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!read@{read}}
+\index{read@{read}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::DataFileSource::read (char $\ast$ {\em buf}, \/  size\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DataFileSource_a7466bffda1100fb6f330382b4e491dd6}
+
+
+Read up to the next num bytes into buf, returns the number of bytes read. 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1LocalDataFileSource_af5b845f0dca80268e2d2d58fa101a38b}{BUSBOY::LocalDataFileSource}, and \hyperlink{classBUSBOY_1_1SimpleDataFileSource_ab3d357e13ac2707123f42e32184549d9}{BUSBOY::SimpleDataFileSource}.\hypertarget{classBUSBOY_1_1DataFileSource_a9f78f31eddcf41fd393e99ee00278d09}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!release@{release}}
+\index{release@{release}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}virtual void BUSBOY::DataFileSource::release ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DataFileSource_a9f78f31eddcf41fd393e99ee00278d09}
+
+
+Implemented in \hyperlink{classBUSBOY_1_1LocalDataFileSource_a6c452d0aa712dac330e68e4de6b77ce9}{BUSBOY::LocalDataFileSource}, and \hyperlink{classBUSBOY_1_1SimpleDataFileSource_a941e4ec1d63751ff8c5cb4b6b8c3b2cf}{BUSBOY::SimpleDataFileSource}.\hypertarget{classBUSBOY_1_1DataFileSource_ab50fe5821ccaa51a26b65debe8fd1c84}{
+\index{BUSBOY::DataFileSource@{BUSBOY::DataFileSource}!skip@{skip}}
+\index{skip@{skip}!BUSBOY::DataFileSource@{BUSBOY::DataFileSource}}
+\subsubsection[{skip}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::DataFileSource::skip (size\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DataFileSource_ab50fe5821ccaa51a26b65debe8fd1c84}
+
+
+Skip up to the next num bytes, returns the number of bytes skipped. 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1LocalDataFileSource_afe40ac6d9ab78d27b52be6ba234849d4}{BUSBOY::LocalDataFileSource}, and \hyperlink{classBUSBOY_1_1SimpleDataFileSource_ad0cd565fa57bdac5f9d1c971590dbe2b}{BUSBOY::SimpleDataFileSource}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/dataset/\hyperlink{DataFileSource_8h}{DataFileSource.h}\item 
+src/cpp/impl/dataset/\hyperlink{DataFileSource_8cpp}{DataFileSource.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\hypertarget{CExternalContextAPI_8h}{
+\section{src/cpp/api/external/capi/CExternalContextAPI.h File Reference}
+\label{CExternalContextAPI_8h}\index{src/cpp/api/external/capi/CExternalContextAPI.h@{src/cpp/api/external/capi/CExternalContextAPI.h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCExternalContextMessageStruct}{CExternalContextMessageStruct}
+\item 
+struct \hyperlink{structCExternalContextCallbacksStruct}{CExternalContextCallbacksStruct}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structCExternalContextStruct}{CExternalContextStruct} $\ast$ \hyperlink{CExternalContextAPI_8h_a2c9b14efe956d417c2c547402676de12}{CExternalContextPtr}
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structCExternalContextMessageStruct}{CExternalContextMessageStruct} \hyperlink{CExternalContextAPI_8h_a718f7cf8efa2a163d5deb2b9cf5d1f9d}{CExternalContextMessage}
+\item 
+typedef void($\ast$ \hyperlink{CExternalContextAPI_8h_a5b4bfc6e4777e8f4cdcea9ee2d942d9c}{CExternalLogFunctionPtr} )(const char $\ast$level, const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Function type for callback to receive logging. \item\end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{CExternalContextAPI_8h_a271021a1310d0456562874a93a28bc0d}{CExternalProgressFunctionPtr} )(float percentDone, const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Function type for callback to receive progress reporting. \item\end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{CExternalContextAPI_8h_ae160e7283960834ffd5312f6f796a64d}{CExternalMessageFunctionPtr} )(const \hyperlink{structCExternalContextMessageStruct}{CExternalContextMessage} \&message)
+\begin{DoxyCompactList}\small\item\em Function type for callback to receive messages to topics. \item\end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{CExternalContextAPI_8h_a8f61d0476b2df22d6356eefb523c46b4}{CExternalFailureFunctionPtr} )(const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Function type for callback to report failure. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structCExternalContextCallbacksStruct}{CExternalContextCallbacksStruct} \hyperlink{CExternalContextAPI_8h_a558dfe20b7975ea6eff3c2c1399af091}{CExternalContextCallbacks}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCExternalContextStruct}{CExternalContextPtr} \hyperlink{CExternalContextAPI_8h_a4e675a50ac06d12ed30693925d83f62b}{CExternalContext\_\-newContext} (const \hyperlink{structCExternalContextCallbacksStruct}{CExternalContextCallbacks} \&contextCallbacks)
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{CExternalContextAPI_8h_a558dfe20b7975ea6eff3c2c1399af091}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalContextCallbacks@{CExternalContextCallbacks}}
+\index{CExternalContextCallbacks@{CExternalContextCallbacks}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalContextCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalContextCallbacksStruct} {\bf CExternalContextCallbacks}}}
+\label{CExternalContextAPI_8h_a558dfe20b7975ea6eff3c2c1399af091}
+\hypertarget{CExternalContextAPI_8h_a718f7cf8efa2a163d5deb2b9cf5d1f9d}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalContextMessage@{CExternalContextMessage}}
+\index{CExternalContextMessage@{CExternalContextMessage}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalContextMessage}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalContextMessageStruct} {\bf CExternalContextMessage}}}
+\label{CExternalContextAPI_8h_a718f7cf8efa2a163d5deb2b9cf5d1f9d}
+\hypertarget{CExternalContextAPI_8h_a2c9b14efe956d417c2c547402676de12}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalContextPtr@{CExternalContextPtr}}
+\index{CExternalContextPtr@{CExternalContextPtr}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalContextPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalContextStruct}$\ast$ {\bf CExternalContextPtr}}}
+\label{CExternalContextAPI_8h_a2c9b14efe956d417c2c547402676de12}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalContextAPI_8h_a8f61d0476b2df22d6356eefb523c46b4}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalFailureFunctionPtr@{CExternalFailureFunctionPtr}}
+\index{CExternalFailureFunctionPtr@{CExternalFailureFunctionPtr}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalFailureFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf CExternalFailureFunctionPtr})(const char $\ast$message)}}
+\label{CExternalContextAPI_8h_a8f61d0476b2df22d6356eefb523c46b4}
+
+
+Function type for callback to report failure. \hypertarget{CExternalContextAPI_8h_a5b4bfc6e4777e8f4cdcea9ee2d942d9c}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalLogFunctionPtr@{CExternalLogFunctionPtr}}
+\index{CExternalLogFunctionPtr@{CExternalLogFunctionPtr}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalLogFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf CExternalLogFunctionPtr})(const char $\ast$level, const char $\ast$message)}}
+\label{CExternalContextAPI_8h_a5b4bfc6e4777e8f4cdcea9ee2d942d9c}
+
+
+Function type for callback to receive logging. 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]One of INFO, ERROR, DEBUG, WARN \end{DoxyParams}
+\hypertarget{CExternalContextAPI_8h_ae160e7283960834ffd5312f6f796a64d}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalMessageFunctionPtr@{CExternalMessageFunctionPtr}}
+\index{CExternalMessageFunctionPtr@{CExternalMessageFunctionPtr}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalMessageFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf CExternalMessageFunctionPtr})(const {\bf CExternalContextMessage} \&message)}}
+\label{CExternalContextAPI_8h_ae160e7283960834ffd5312f6f796a64d}
+
+
+Function type for callback to receive messages to topics. \hypertarget{CExternalContextAPI_8h_a271021a1310d0456562874a93a28bc0d}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalProgressFunctionPtr@{CExternalProgressFunctionPtr}}
+\index{CExternalProgressFunctionPtr@{CExternalProgressFunctionPtr}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalProgressFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf CExternalProgressFunctionPtr})(float percentDone, const char $\ast$message)}}
+\label{CExternalContextAPI_8h_a271021a1310d0456562874a93a28bc0d}
+
+
+Function type for callback to receive progress reporting. 
+
+\subsection{Function Documentation}
+\hypertarget{CExternalContextAPI_8h_a4e675a50ac06d12ed30693925d83f62b}{
+\index{CExternalContextAPI.h@{CExternalContextAPI.h}!CExternalContext\_\-newContext@{CExternalContext\_\-newContext}}
+\index{CExternalContext\_\-newContext@{CExternalContext\_\-newContext}!CExternalContextAPI.h@{CExternalContextAPI.h}}
+\subsubsection[{CExternalContext\_\-newContext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalContextPtr} CExternalContext\_\-newContext (const {\bf CExternalContextCallbacks} \& {\em contextCallbacks})}}
+\label{CExternalContextAPI_8h_a4e675a50ac06d12ed30693925d83f62b}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

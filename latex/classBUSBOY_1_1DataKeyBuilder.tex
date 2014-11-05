@@ -1,0 +1,95 @@
+\hypertarget{classBUSBOY_1_1DataKeyBuilder}{
+\section{BUSBOY::DataKeyBuilder Class Reference}
+\label{classBUSBOY_1_1DataKeyBuilder}\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+}
+
+
+Use this class to build up a key step-\/by-\/step.  
+
+
+{\ttfamily \#include $<$DataKeyBuilder.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyBuilder_a9a682e24401e974b9685b24bec544743}{DataKeyBuilder} ()
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyBuilder_a130457a8984380314e2866d6c65f2e33}{DataKeyBuilder} (const \hyperlink{classBUSBOY_1_1DataKeyBuilder}{DataKeyBuilder} \&builder)
+\begin{DoxyCompactList}\small\item\em Copy from an existing builder. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1DataKeyBuilder_a7f3b8d21410ed748f817972282905c68}{addElement} (const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element)
+\begin{DoxyCompactList}\small\item\em Add a single element. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1DataKeyBuilder_aaaa7e47e047fd2620e76879aa594c639}{addElements} (const std::set$<$ \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} $>$ \&elements)
+\begin{DoxyCompactList}\small\item\em Add multiple elements. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1DataKeyBuilder_a853b4ba99c8f62865601e7bd25f94597}{addAllElements} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key)
+\begin{DoxyCompactList}\small\item\em Add all the elements in the key. \item\end{DoxyCompactList}\item 
+\hyperlink{classBUSBOY_1_1DataKey}{DataKey} \hyperlink{classBUSBOY_1_1DataKeyBuilder_ab1f70cd319860cca1bc8ec29726fdf2d}{toKey} () const 
+\begin{DoxyCompactList}\small\item\em Create a key from the elements that have been added. \item\end{DoxyCompactList}\item 
+\hyperlink{classBUSBOY_1_1DataKeyBuilder_aac6b7ac4f8e5d2ac37440d0dddbbdc6a}{$\sim$DataKeyBuilder} ()
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyBuilder}{DataKeyBuilder} \& \hyperlink{classBUSBOY_1_1DataKeyBuilder_a70b9d0de3fbfb9140c79b53335e9bcde}{operator=} (const \hyperlink{classBUSBOY_1_1DataKeyBuilder}{DataKeyBuilder} \&builder)
+\begin{DoxyCompactList}\small\item\em Copy from an existing builder. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use this class to build up a key step-\/by-\/step. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1DataKeyBuilder_a9a682e24401e974b9685b24bec544743}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!DataKeyBuilder@{DataKeyBuilder}}
+\index{DataKeyBuilder@{DataKeyBuilder}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{DataKeyBuilder}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyBuilder::DataKeyBuilder ()}}
+\label{classBUSBOY_1_1DataKeyBuilder_a9a682e24401e974b9685b24bec544743}
+\hypertarget{classBUSBOY_1_1DataKeyBuilder_a130457a8984380314e2866d6c65f2e33}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!DataKeyBuilder@{DataKeyBuilder}}
+\index{DataKeyBuilder@{DataKeyBuilder}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{DataKeyBuilder}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyBuilder::DataKeyBuilder (const {\bf DataKeyBuilder} \& {\em builder})}}
+\label{classBUSBOY_1_1DataKeyBuilder_a130457a8984380314e2866d6c65f2e33}
+
+
+Copy from an existing builder. New builder starts with the same set of elements as its source. \hypertarget{classBUSBOY_1_1DataKeyBuilder_aac6b7ac4f8e5d2ac37440d0dddbbdc6a}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!$\sim$DataKeyBuilder@{$\sim$DataKeyBuilder}}
+\index{$\sim$DataKeyBuilder@{$\sim$DataKeyBuilder}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{$\sim$DataKeyBuilder}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyBuilder::$\sim$DataKeyBuilder ()}}
+\label{classBUSBOY_1_1DataKeyBuilder_aac6b7ac4f8e5d2ac37440d0dddbbdc6a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1DataKeyBuilder_a853b4ba99c8f62865601e7bd25f94597}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!addAllElements@{addAllElements}}
+\index{addAllElements@{addAllElements}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{addAllElements}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::DataKeyBuilder::addAllElements (const {\bf DataKey} \& {\em key})}}
+\label{classBUSBOY_1_1DataKeyBuilder_a853b4ba99c8f62865601e7bd25f94597}
+
+
+Add all the elements in the key. \hypertarget{classBUSBOY_1_1DataKeyBuilder_a7f3b8d21410ed748f817972282905c68}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!addElement@{addElement}}
+\index{addElement@{addElement}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{addElement}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::DataKeyBuilder::addElement (const {\bf DataKeyElement} \& {\em element})}}
+\label{classBUSBOY_1_1DataKeyBuilder_a7f3b8d21410ed748f817972282905c68}
+
+
+Add a single element. \hypertarget{classBUSBOY_1_1DataKeyBuilder_aaaa7e47e047fd2620e76879aa594c639}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!addElements@{addElements}}
+\index{addElements@{addElements}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{addElements}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::DataKeyBuilder::addElements (const std::set$<$ {\bf DataKeyElement} $>$ \& {\em elements})}}
+\label{classBUSBOY_1_1DataKeyBuilder_aaaa7e47e047fd2620e76879aa594c639}
+
+
+Add multiple elements. \hypertarget{classBUSBOY_1_1DataKeyBuilder_a70b9d0de3fbfb9140c79b53335e9bcde}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!operator=@{operator=}}
+\index{operator=@{operator=}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKeyBuilder} \& BUSBOY::DataKeyBuilder::operator= (const {\bf DataKeyBuilder} \& {\em builder})}}
+\label{classBUSBOY_1_1DataKeyBuilder_a70b9d0de3fbfb9140c79b53335e9bcde}
+
+
+Copy from an existing builder. This builder starts with the same set of elements as its source. Any elements previously added to this builder are removed \hypertarget{classBUSBOY_1_1DataKeyBuilder_ab1f70cd319860cca1bc8ec29726fdf2d}{
+\index{BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}!toKey@{toKey}}
+\index{toKey@{toKey}!BUSBOY::DataKeyBuilder@{BUSBOY::DataKeyBuilder}}
+\subsubsection[{toKey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKey} BUSBOY::DataKeyBuilder::toKey () const}}
+\label{classBUSBOY_1_1DataKeyBuilder_ab1f70cd319860cca1bc8ec29726fdf2d}
+
+
+Create a key from the elements that have been added. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/keys/\hyperlink{DataKeyBuilder_8h}{DataKeyBuilder.h}\item 
+src/cpp/impl/keys/\hyperlink{DataKeyBuilder_8cpp}{DataKeyBuilder.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{classBUSBOY_1_1MetadataList}{
+\section{BUSBOY::MetadataList Class Reference}
+\label{classBUSBOY_1_1MetadataList}\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+}
+
+
+A sequential list of arbitrary metadata elements.  
+
+
+{\ttfamily \#include $<$MetadataList.h$>$}Inheritance diagram for BUSBOY::MetadataList::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classBUSBOY_1_1MetadataList}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1MetadataList_a1a7f49097e6bfe6e876f88473d424b97}{MetadataList} ()
+\item 
+void \hyperlink{classBUSBOY_1_1MetadataList_aa2cc62a6e005b48aa41fbb7e69118de3}{addElement} (const \hyperlink{classBUSBOY_1_1CloneableMetadataElement}{CloneableMetadataElement} \&element)
+\begin{DoxyCompactList}\small\item\em Add an element. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1MetadataList_a3e98fddefa5918a97bbf88545354d5a3}{addElement} (\hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Add an element. \item\end{DoxyCompactList}\item 
+\hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} $\ast$ \hyperlink{classBUSBOY_1_1MetadataList_a1a16e30b617ed2e83e8669e301c9294f}{getElement} (size\_\-t index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to this object's internal copy of the element. \item\end{DoxyCompactList}\item 
+size\_\-t \hyperlink{classBUSBOY_1_1MetadataList_a406622e64ad69a0be0d217dc98841d8a}{getSize} () const 
+\item 
+\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{MetadataElement::Type} \hyperlink{classBUSBOY_1_1MetadataList_a3181a951dff0539250ce1465a2b6cf3a}{getMetadataElementType} () const 
+\item 
+bool \hyperlink{classBUSBOY_1_1MetadataList_a7dbea89ac583ce3f8900474f22aba2de}{operator==} (const \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList} \&list) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1MetadataList_a60686cfb013109fed391c0972b9077eb}{operator==} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1MetadataList_a224d6c162a01e42b6262335a9ef139dd}{operator!=} (const \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList} \&list) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1MetadataList_a1cc8b9cc195397c871a183a2496dc493}{operator!=} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element) const 
+\item 
+\hyperlink{classBUSBOY_1_1MetadataList_a4f78901c10de5fc72a7887bf95293e07}{$\sim$MetadataList} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList} $\ast$ \hyperlink{classBUSBOY_1_1MetadataList_a629f4e7790528085ed62bf66e0bd82a3}{castToList} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} $\ast$element)
+\item 
+static \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList} $\ast$ \hyperlink{classBUSBOY_1_1MetadataList_a071867b51cdd1db3b6f9a60aacfe91b7}{castToList} (\hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} $\ast$element)
+\item 
+static const \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList} \& \hyperlink{classBUSBOY_1_1MetadataList_abee1c415db2ff88c6e8ec03753c75b03}{castToList} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element)
+\item 
+static \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList} \& \hyperlink{classBUSBOY_1_1MetadataList_a1b3f9d17f8ce5d35351bbe60e5369555}{castToList} (\hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sequential list of arbitrary metadata elements. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1MetadataList_a1a7f49097e6bfe6e876f88473d424b97}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!MetadataList@{MetadataList}}
+\index{MetadataList@{MetadataList}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{MetadataList}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::MetadataList::MetadataList ()}}
+\label{classBUSBOY_1_1MetadataList_a1a7f49097e6bfe6e876f88473d424b97}
+\hypertarget{classBUSBOY_1_1MetadataList_a4f78901c10de5fc72a7887bf95293e07}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!$\sim$MetadataList@{$\sim$MetadataList}}
+\index{$\sim$MetadataList@{$\sim$MetadataList}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{$\sim$MetadataList}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::MetadataList::$\sim$MetadataList ()}}
+\label{classBUSBOY_1_1MetadataList_a4f78901c10de5fc72a7887bf95293e07}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1MetadataList_a3e98fddefa5918a97bbf88545354d5a3}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!addElement@{addElement}}
+\index{addElement@{addElement}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{addElement}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::MetadataList::addElement ({\bf MetadataElement} $\ast$ {\em element})}}
+\label{classBUSBOY_1_1MetadataList_a3e98fddefa5918a97bbf88545354d5a3}
+
+
+Add an element. The element must be allocated on the heap with new. This class takes ownership of the element and is responsible for deleting it. \hypertarget{classBUSBOY_1_1MetadataList_aa2cc62a6e005b48aa41fbb7e69118de3}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!addElement@{addElement}}
+\index{addElement@{addElement}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{addElement}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::MetadataList::addElement (const {\bf CloneableMetadataElement} \& {\em element})}}
+\label{classBUSBOY_1_1MetadataList_aa2cc62a6e005b48aa41fbb7e69118de3}
+
+
+Add an element. This class makes its own copy of the element. The element may be disposed of after the call returns \hypertarget{classBUSBOY_1_1MetadataList_a1b3f9d17f8ce5d35351bbe60e5369555}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!castToList@{castToList}}
+\index{castToList@{castToList}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{castToList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetadataList} \& BUSBOY::MetadataList::castToList ({\bf MetadataElement} \& {\em element})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_a1b3f9d17f8ce5d35351bbe60e5369555}
+\hypertarget{classBUSBOY_1_1MetadataList_abee1c415db2ff88c6e8ec03753c75b03}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!castToList@{castToList}}
+\index{castToList@{castToList}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{castToList}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MetadataList} \& BUSBOY::MetadataList::castToList (const {\bf MetadataElement} \& {\em element})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_abee1c415db2ff88c6e8ec03753c75b03}
+\hypertarget{classBUSBOY_1_1MetadataList_a071867b51cdd1db3b6f9a60aacfe91b7}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!castToList@{castToList}}
+\index{castToList@{castToList}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{castToList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetadataList} $\ast$ BUSBOY::MetadataList::castToList ({\bf MetadataElement} $\ast$ {\em element})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_a071867b51cdd1db3b6f9a60aacfe91b7}
+\hypertarget{classBUSBOY_1_1MetadataList_a629f4e7790528085ed62bf66e0bd82a3}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!castToList@{castToList}}
+\index{castToList@{castToList}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{castToList}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MetadataList} $\ast$ BUSBOY::MetadataList::castToList (const {\bf MetadataElement} $\ast$ {\em element})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_a629f4e7790528085ed62bf66e0bd82a3}
+\hypertarget{classBUSBOY_1_1MetadataList_a1a16e30b617ed2e83e8669e301c9294f}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!getElement@{getElement}}
+\index{getElement@{getElement}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{getElement}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetadataElement} $\ast$ BUSBOY::MetadataList::getElement (size\_\-t {\em index}) const}}
+\label{classBUSBOY_1_1MetadataList_a1a16e30b617ed2e83e8669e301c9294f}
+
+
+Returns a pointer to this object's internal copy of the element. \hypertarget{classBUSBOY_1_1MetadataList_a3181a951dff0539250ce1465a2b6cf3a}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!getMetadataElementType@{getMetadataElementType}}
+\index{getMetadataElementType@{getMetadataElementType}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{getMetadataElementType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetadataElement::Type} BUSBOY::MetadataList::getMetadataElementType () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_a3181a951dff0539250ce1465a2b6cf3a}
+
+
+Implements \hyperlink{classBUSBOY_1_1MetadataElement_a048a64f1d70affc5bfdd78a9958c5fb9}{BUSBOY::MetadataElement}.\hypertarget{classBUSBOY_1_1MetadataList_a406622e64ad69a0be0d217dc98841d8a}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!getSize@{getSize}}
+\index{getSize@{getSize}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::MetadataList::getSize () const}}
+\label{classBUSBOY_1_1MetadataList_a406622e64ad69a0be0d217dc98841d8a}
+\hypertarget{classBUSBOY_1_1MetadataList_a1cc8b9cc195397c871a183a2496dc493}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::MetadataList::operator!= (const {\bf MetadataElement} \& {\em element}) const}}
+\label{classBUSBOY_1_1MetadataList_a1cc8b9cc195397c871a183a2496dc493}
+\hypertarget{classBUSBOY_1_1MetadataList_a224d6c162a01e42b6262335a9ef139dd}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::MetadataList::operator!= (const {\bf MetadataList} \& {\em list}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_a224d6c162a01e42b6262335a9ef139dd}
+
+
+Implements \hyperlink{classBUSBOY_1_1MetadataElement_a9895dfd3f251e26e8d818871405ce4c7}{BUSBOY::MetadataElement}.\hypertarget{classBUSBOY_1_1MetadataList_a60686cfb013109fed391c0972b9077eb}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::MetadataList::operator== (const {\bf MetadataElement} \& {\em element}) const}}
+\label{classBUSBOY_1_1MetadataList_a60686cfb013109fed391c0972b9077eb}
+\hypertarget{classBUSBOY_1_1MetadataList_a7dbea89ac583ce3f8900474f22aba2de}{
+\index{BUSBOY::MetadataList@{BUSBOY::MetadataList}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY::MetadataList@{BUSBOY::MetadataList}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::MetadataList::operator== (const {\bf MetadataList} \& {\em list}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataList_a7dbea89ac583ce3f8900474f22aba2de}
+
+
+Implements \hyperlink{classBUSBOY_1_1MetadataElement_ac56f20521c49259ff043c2d69bc4c08e}{BUSBOY::MetadataElement}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/metadata/\hyperlink{MetadataList_8h}{MetadataList.h}\item 
+src/cpp/impl/metadata/\hyperlink{MetadataList_8cpp}{MetadataList.cpp}\end{DoxyCompactItemize}

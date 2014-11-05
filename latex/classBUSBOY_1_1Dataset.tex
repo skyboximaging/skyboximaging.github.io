@@ -1,0 +1,227 @@
+\hypertarget{classBUSBOY_1_1Dataset}{
+\section{BUSBOY::Dataset Class Reference}
+\label{classBUSBOY_1_1Dataset}\index{BUSBOY::Dataset@{BUSBOY::Dataset}}
+}
+
+
+A \hyperlink{classBUSBOY_1_1Dataset}{Dataset} is a bundle of conceptually related files and metadata.  
+
+
+{\ttfamily \#include $<$Dataset.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1Dataset_aa524e8c1b07c915f28b4ae9c66c5265c}{Dataset} ()
+\item 
+\hyperlink{classBUSBOY_1_1DataFile}{DataFile} $\ast$ \hyperlink{classBUSBOY_1_1Dataset_ab30fc5affe15129e9bc79f1f612aedf9}{getDataFile} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\item 
+\hyperlink{classBUSBOY_1_1RandomAccessFile}{RandomAccessFile} $\ast$ \hyperlink{classBUSBOY_1_1Dataset_aae5ce5b61453bd714ac6361e682d2d33}{getDataFileForRandomAccess} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\begin{DoxyCompactList}\small\item\em Same as getDataFile, but a copy of the file has been staged on local disk to allow random access. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1Dataset_af6eac442d6a9fdb58c3914086968a4be}{addDataFile} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key, \hyperlink{classBUSBOY_1_1DataFile}{DataFile} $\ast$file)
+\begin{DoxyCompactList}\small\item\em Associates a key to a file. \item\end{DoxyCompactList}\item 
+\hyperlink{classBUSBOY_1_1WritableRandomAccessFile}{WritableRandomAccessFile} $\ast$ \hyperlink{classBUSBOY_1_1Dataset_af197d624275b6978aed7c687a897722a}{addDataFileForRandomAccess} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key, \hyperlink{classBUSBOY_1_1DataFile}{DataFile} $\ast$file)
+\begin{DoxyCompactList}\small\item\em Same as addDataFile with no content in the file. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classBUSBOY_1_1Dataset_a64cd95914f1c015beb705360e2dcd8ea}{hasDataFile} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\item 
+std::set$<$ \hyperlink{classBUSBOY_1_1DataKey}{DataKey} $>$ \hyperlink{classBUSBOY_1_1Dataset_a7d8ab5643693203998c8f7dafe66a7b1}{getAllFileKeys} () const 
+\item 
+\hyperlink{classBUSBOY_1_1MetadataMap}{MetadataMap} $\ast$ \hyperlink{classBUSBOY_1_1Dataset_a5f3077140eb5028fbfe0c4a606b31e5e}{getMetadata} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\item 
+void \hyperlink{classBUSBOY_1_1Dataset_a793a73fb6cb9090b76d8a9da487a2841}{addMetadata} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key, \hyperlink{classBUSBOY_1_1MetadataMap}{MetadataMap} $\ast$meta)
+\begin{DoxyCompactList}\small\item\em Associates a key to a metadata map. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classBUSBOY_1_1Dataset_a06a24c865a3d0cb9e347436a054e42ae}{hasMetadata} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\item 
+std::set$<$ \hyperlink{classBUSBOY_1_1DataKey}{DataKey} $>$ \hyperlink{classBUSBOY_1_1Dataset_adc5ff7f63813f89976a67944697dc580}{getAllMetadataKeys} () const 
+\item 
+void \hyperlink{classBUSBOY_1_1Dataset_a51764b4447cad2364b5ea16415e08b67}{release} ()
+\item 
+void \hyperlink{classBUSBOY_1_1Dataset_aa9b353a7b61f332bad63adc36bf5a9cb}{setContext} (\hyperlink{classBUSBOY_1_1DatasetContext}{DatasetContext} $\ast$context)
+\begin{DoxyCompactList}\small\item\em For use by the framework. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1Dataset_a48d6e5a8ea34c64459a3165903021497}{setGlobalKeyspace} (const \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace} \&keyspace)
+\begin{DoxyCompactList}\small\item\em For use by the framework. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classBUSBOY_1_1Dataset_a913b658402f4b86a06067447efaafbf5}{getDataFileName} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\begin{DoxyCompactList}\small\item\em Tries to get the name of the data file. \item\end{DoxyCompactList}\item 
+const \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace} \& \hyperlink{classBUSBOY_1_1Dataset_a6dfa90bee900df4e797ae4e383b21d15}{getKeyspace} () const 
+\begin{DoxyCompactList}\small\item\em Returns the keyspace containing all the elements found in this dataset. \item\end{DoxyCompactList}\item 
+const \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace} \& \hyperlink{classBUSBOY_1_1Dataset_a5ad9a39da9d07b2713cdb15fdd9790e0}{getFilesKeyspace} () const 
+\begin{DoxyCompactList}\small\item\em Returns the keyspace containing all the elements found in file keys of this dataset. \item\end{DoxyCompactList}\item 
+const \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace} \& \hyperlink{classBUSBOY_1_1Dataset_a4e05ba67c721535013ee6bd0c3565585}{getMetadataKeyspace} () const 
+\begin{DoxyCompactList}\small\item\em Returns the keyspace containing all the elements found in metadata keys of this dataset. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1Dataset_a11aa6d3dbb6e95107d6625aaeac99035}{generateKeyspaces} ()
+\begin{DoxyCompactList}\small\item\em This will overwrite any keyspaces already in this object. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classBUSBOY_1_1Dataset_a7dfe0e5162bfeaf7b0ae2dcf5d842dc5}{isQueryOnly} ()
+\item 
+bool \hyperlink{classBUSBOY_1_1Dataset_a18b50dbc0c385a74b2792573f7285266}{operator==} (const \hyperlink{classBUSBOY_1_1Dataset}{Dataset} \&dataset) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1Dataset_af23f44e8c556cce885362632e449e9a7}{operator!=} (const \hyperlink{classBUSBOY_1_1Dataset}{Dataset} \&dataset) const 
+\item 
+\hyperlink{classBUSBOY_1_1Dataset_a0fe9b3b0bf6d816dadbe9295e55df8e9}{$\sim$Dataset} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classBUSBOY_1_1Dataset_a91fcb7b7efa36f081b74f8aa44b82197}{copySourceToSink} (std::shared\_\-ptr$<$ \hyperlink{classBUSBOY_1_1DataFileSource}{DataFileSource} $>$ src, \hyperlink{classBUSBOY_1_1DataFileSink}{DataFileSink} $\ast$sink)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classBUSBOY_1_1Dataset}{Dataset} is a bundle of conceptually related files and metadata. It consists of two maps:
+\begin{DoxyItemize}
+\item \hyperlink{classBUSBOY_1_1DataKey}{DataKey} to \hyperlink{classBUSBOY_1_1DataFile}{DataFile}
+\item \hyperlink{classBUSBOY_1_1DataKey}{DataKey} to \hyperlink{classBUSBOY_1_1MetadataMap}{MetadataMap}
+\end{DoxyItemize}Each key may have at most one file, and at most one metadata map. The metadata map is the root of a metadata structure of arbitrary complexity. To associate multiple metadata elements to a key, just add them to the map. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1Dataset_aa524e8c1b07c915f28b4ae9c66c5265c}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!Dataset@{Dataset}}
+\index{Dataset@{Dataset}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{Dataset}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::Dataset::Dataset ()}}
+\label{classBUSBOY_1_1Dataset_aa524e8c1b07c915f28b4ae9c66c5265c}
+\hypertarget{classBUSBOY_1_1Dataset_a0fe9b3b0bf6d816dadbe9295e55df8e9}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!$\sim$Dataset@{$\sim$Dataset}}
+\index{$\sim$Dataset@{$\sim$Dataset}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{$\sim$Dataset}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::Dataset::$\sim$Dataset ()}}
+\label{classBUSBOY_1_1Dataset_a0fe9b3b0bf6d816dadbe9295e55df8e9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1Dataset_af6eac442d6a9fdb58c3914086968a4be}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!addDataFile@{addDataFile}}
+\index{addDataFile@{addDataFile}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{addDataFile}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::Dataset::addDataFile (const {\bf DataKey} \& {\em key}, \/  {\bf DataFile} $\ast$ {\em file})}}
+\label{classBUSBOY_1_1Dataset_af6eac442d6a9fdb58c3914086968a4be}
+
+
+Associates a key to a file. The file must be allocated on the heap with new. This class takes ownership of the file object. The file object should not be associated to any other key. An exception will be thrown if this key already has a file. If the file has content, this dataset will attempt to write the file to storage. If the write succeeds, the dataset will call \hyperlink{classBUSBOY_1_1Dataset_a51764b4447cad2364b5ea16415e08b67}{release()} on the file. \hypertarget{classBUSBOY_1_1Dataset_af197d624275b6978aed7c687a897722a}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!addDataFileForRandomAccess@{addDataFileForRandomAccess}}
+\index{addDataFileForRandomAccess@{addDataFileForRandomAccess}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{addDataFileForRandomAccess}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WritableRandomAccessFile} $\ast$ BUSBOY::Dataset::addDataFileForRandomAccess (const {\bf DataKey} \& {\em key}, \/  {\bf DataFile} $\ast$ {\em file})}}
+\label{classBUSBOY_1_1Dataset_af197d624275b6978aed7c687a897722a}
+
+
+Same as addDataFile with no content in the file. Instead of doing chunked writing, the returned \hyperlink{classBUSBOY_1_1WritableRandomAccessFile}{WritableRandomAccessFile} can be used to do the write with more flexibility. The cost is that the file must be staged on local disk, and then copied after the write is completed. \hypertarget{classBUSBOY_1_1Dataset_a793a73fb6cb9090b76d8a9da487a2841}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!addMetadata@{addMetadata}}
+\index{addMetadata@{addMetadata}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{addMetadata}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::Dataset::addMetadata (const {\bf DataKey} \& {\em key}, \/  {\bf MetadataMap} $\ast$ {\em meta})}}
+\label{classBUSBOY_1_1Dataset_a793a73fb6cb9090b76d8a9da487a2841}
+
+
+Associates a key to a metadata map. The map must be allocated on the heap with new. This class takes ownership of the metadata object. The map object should not be associated to any other key. An exception will be thrown if this key already has metadata. \hypertarget{classBUSBOY_1_1Dataset_a91fcb7b7efa36f081b74f8aa44b82197}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!copySourceToSink@{copySourceToSink}}
+\index{copySourceToSink@{copySourceToSink}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{copySourceToSink}]{\setlength{\rightskip}{0pt plus 5cm}static void BUSBOY::Dataset::copySourceToSink (std::shared\_\-ptr$<$ {\bf DataFileSource} $>$ {\em src}, \/  {\bf DataFileSink} $\ast$ {\em sink})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1Dataset_a91fcb7b7efa36f081b74f8aa44b82197}
+\hypertarget{classBUSBOY_1_1Dataset_a11aa6d3dbb6e95107d6625aaeac99035}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!generateKeyspaces@{generateKeyspaces}}
+\index{generateKeyspaces@{generateKeyspaces}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{generateKeyspaces}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::Dataset::generateKeyspaces ()}}
+\label{classBUSBOY_1_1Dataset_a11aa6d3dbb6e95107d6625aaeac99035}
+
+
+This will overwrite any keyspaces already in this object. \hypertarget{classBUSBOY_1_1Dataset_a7d8ab5643693203998c8f7dafe66a7b1}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getAllFileKeys@{getAllFileKeys}}
+\index{getAllFileKeys@{getAllFileKeys}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getAllFileKeys}]{\setlength{\rightskip}{0pt plus 5cm}std::set$<$ {\bf DataKey} $>$ BUSBOY::Dataset::getAllFileKeys () const}}
+\label{classBUSBOY_1_1Dataset_a7d8ab5643693203998c8f7dafe66a7b1}
+\hypertarget{classBUSBOY_1_1Dataset_adc5ff7f63813f89976a67944697dc580}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getAllMetadataKeys@{getAllMetadataKeys}}
+\index{getAllMetadataKeys@{getAllMetadataKeys}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getAllMetadataKeys}]{\setlength{\rightskip}{0pt plus 5cm}std::set$<$ {\bf DataKey} $>$ BUSBOY::Dataset::getAllMetadataKeys () const}}
+\label{classBUSBOY_1_1Dataset_adc5ff7f63813f89976a67944697dc580}
+\hypertarget{classBUSBOY_1_1Dataset_ab30fc5affe15129e9bc79f1f612aedf9}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getDataFile@{getDataFile}}
+\index{getDataFile@{getDataFile}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getDataFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataFile} $\ast$ BUSBOY::Dataset::getDataFile (const {\bf DataKey} \& {\em key}) const}}
+\label{classBUSBOY_1_1Dataset_ab30fc5affe15129e9bc79f1f612aedf9}
+\hypertarget{classBUSBOY_1_1Dataset_aae5ce5b61453bd714ac6361e682d2d33}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getDataFileForRandomAccess@{getDataFileForRandomAccess}}
+\index{getDataFileForRandomAccess@{getDataFileForRandomAccess}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getDataFileForRandomAccess}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RandomAccessFile} $\ast$ BUSBOY::Dataset::getDataFileForRandomAccess (const {\bf DataKey} \& {\em key}) const}}
+\label{classBUSBOY_1_1Dataset_aae5ce5b61453bd714ac6361e682d2d33}
+
+
+Same as getDataFile, but a copy of the file has been staged on local disk to allow random access. \hypertarget{classBUSBOY_1_1Dataset_a913b658402f4b86a06067447efaafbf5}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getDataFileName@{getDataFileName}}
+\index{getDataFileName@{getDataFileName}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getDataFileName}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::Dataset::getDataFileName (const {\bf DataKey} \& {\em key}) const}}
+\label{classBUSBOY_1_1Dataset_a913b658402f4b86a06067447efaafbf5}
+
+
+Tries to get the name of the data file. \begin{DoxyReturn}{Returns}
+empty string if the name is not available 
+\end{DoxyReturn}
+\hypertarget{classBUSBOY_1_1Dataset_a5ad9a39da9d07b2713cdb15fdd9790e0}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getFilesKeyspace@{getFilesKeyspace}}
+\index{getFilesKeyspace@{getFilesKeyspace}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getFilesKeyspace}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Keyspace} \& BUSBOY::Dataset::getFilesKeyspace () const}}
+\label{classBUSBOY_1_1Dataset_a5ad9a39da9d07b2713cdb15fdd9790e0}
+
+
+Returns the keyspace containing all the elements found in file keys of this dataset. Return value is a reference valid for the lifetime of this object. \hypertarget{classBUSBOY_1_1Dataset_a6dfa90bee900df4e797ae4e383b21d15}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getKeyspace@{getKeyspace}}
+\index{getKeyspace@{getKeyspace}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getKeyspace}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Keyspace} \& BUSBOY::Dataset::getKeyspace () const}}
+\label{classBUSBOY_1_1Dataset_a6dfa90bee900df4e797ae4e383b21d15}
+
+
+Returns the keyspace containing all the elements found in this dataset. Return value is a reference valid for the lifetime of this object. \hypertarget{classBUSBOY_1_1Dataset_a5f3077140eb5028fbfe0c4a606b31e5e}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getMetadata@{getMetadata}}
+\index{getMetadata@{getMetadata}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getMetadata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetadataMap} $\ast$ BUSBOY::Dataset::getMetadata (const {\bf DataKey} \& {\em key}) const}}
+\label{classBUSBOY_1_1Dataset_a5f3077140eb5028fbfe0c4a606b31e5e}
+\hypertarget{classBUSBOY_1_1Dataset_a4e05ba67c721535013ee6bd0c3565585}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!getMetadataKeyspace@{getMetadataKeyspace}}
+\index{getMetadataKeyspace@{getMetadataKeyspace}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{getMetadataKeyspace}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Keyspace} \& BUSBOY::Dataset::getMetadataKeyspace () const}}
+\label{classBUSBOY_1_1Dataset_a4e05ba67c721535013ee6bd0c3565585}
+
+
+Returns the keyspace containing all the elements found in metadata keys of this dataset. Return value is a reference valid for the lifetime of this object. \hypertarget{classBUSBOY_1_1Dataset_a64cd95914f1c015beb705360e2dcd8ea}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!hasDataFile@{hasDataFile}}
+\index{hasDataFile@{hasDataFile}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{hasDataFile}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::Dataset::hasDataFile (const {\bf DataKey} \& {\em key}) const}}
+\label{classBUSBOY_1_1Dataset_a64cd95914f1c015beb705360e2dcd8ea}
+\hypertarget{classBUSBOY_1_1Dataset_a06a24c865a3d0cb9e347436a054e42ae}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!hasMetadata@{hasMetadata}}
+\index{hasMetadata@{hasMetadata}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{hasMetadata}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::Dataset::hasMetadata (const {\bf DataKey} \& {\em key}) const}}
+\label{classBUSBOY_1_1Dataset_a06a24c865a3d0cb9e347436a054e42ae}
+\hypertarget{classBUSBOY_1_1Dataset_a7dfe0e5162bfeaf7b0ae2dcf5d842dc5}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!isQueryOnly@{isQueryOnly}}
+\index{isQueryOnly@{isQueryOnly}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{isQueryOnly}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::Dataset::isQueryOnly ()}}
+\label{classBUSBOY_1_1Dataset_a7dfe0e5162bfeaf7b0ae2dcf5d842dc5}
+\hypertarget{classBUSBOY_1_1Dataset_af23f44e8c556cce885362632e449e9a7}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::Dataset::operator!= (const {\bf Dataset} \& {\em dataset}) const}}
+\label{classBUSBOY_1_1Dataset_af23f44e8c556cce885362632e449e9a7}
+\hypertarget{classBUSBOY_1_1Dataset_a18b50dbc0c385a74b2792573f7285266}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::Dataset::operator== (const {\bf Dataset} \& {\em dataset}) const}}
+\label{classBUSBOY_1_1Dataset_a18b50dbc0c385a74b2792573f7285266}
+\hypertarget{classBUSBOY_1_1Dataset_a51764b4447cad2364b5ea16415e08b67}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!release@{release}}
+\index{release@{release}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::Dataset::release ()}}
+\label{classBUSBOY_1_1Dataset_a51764b4447cad2364b5ea16415e08b67}
+\hypertarget{classBUSBOY_1_1Dataset_aa9b353a7b61f332bad63adc36bf5a9cb}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!setContext@{setContext}}
+\index{setContext@{setContext}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{setContext}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::Dataset::setContext ({\bf DatasetContext} $\ast$ {\em context})}}
+\label{classBUSBOY_1_1Dataset_aa9b353a7b61f332bad63adc36bf5a9cb}
+
+
+For use by the framework. \hypertarget{classBUSBOY_1_1Dataset_a48d6e5a8ea34c64459a3165903021497}{
+\index{BUSBOY::Dataset@{BUSBOY::Dataset}!setGlobalKeyspace@{setGlobalKeyspace}}
+\index{setGlobalKeyspace@{setGlobalKeyspace}!BUSBOY::Dataset@{BUSBOY::Dataset}}
+\subsubsection[{setGlobalKeyspace}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::Dataset::setGlobalKeyspace (const {\bf Keyspace} \& {\em keyspace})}}
+\label{classBUSBOY_1_1Dataset_a48d6e5a8ea34c64459a3165903021497}
+
+
+For use by the framework. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/dataset/\hyperlink{Dataset_8h}{Dataset.h}\item 
+src/cpp/impl/dataset/\hyperlink{Dataset_8cpp}{Dataset.cpp}\end{DoxyCompactItemize}

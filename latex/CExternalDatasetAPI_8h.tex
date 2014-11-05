@@ -1,0 +1,157 @@
+\hypertarget{CExternalDatasetAPI_8h}{
+\section{src/cpp/api/external/capi/CExternalDatasetAPI.h File Reference}
+\label{CExternalDatasetAPI_8h}\index{src/cpp/api/external/capi/CExternalDatasetAPI.h@{src/cpp/api/external/capi/CExternalDatasetAPI.h}}
+}
+{\ttfamily \#include $<$stddef.h$>$}\par
+{\ttfamily \#include \char`\"{}CExternalDataFileAPI.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}CExternalRandomAccessFileAPI.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCExternalDatasetCallbacksStruct}{CExternalDatasetCallbacksStruct}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structCExternalDatasetStruct}{CExternalDatasetStruct} $\ast$ \hyperlink{CExternalDatasetAPI_8h_adf4986697cae326f8607655b85b6bea4}{CExternalDatasetPtr}
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{structCExternalDataFileStruct}{CExternalDataFilePtr}($\ast$ \hyperlink{CExternalDatasetAPI_8h_a250a18d32e0c29e4f2f08ab908d32775}{CExternalFindFunctionPtr} )(const char $\ast$serializedKey)
+\begin{DoxyCompactList}\small\item\em Function type for callback to find a file by key. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalDatasetAPI_8h_a53860bc67bbe6dca6cd05d2a4b80b016}{CExternalAddFunctionPtr} )(\hyperlink{structCExternalDataFileStruct}{CExternalDataFilePtr} file)
+\begin{DoxyCompactList}\small\item\em Function type for callback to add a file. \item\end{DoxyCompactList}\item 
+typedef const char $\ast$($\ast$ \hyperlink{CExternalDatasetAPI_8h_aaf98421d8691ec968a5b20cfcbf102c4}{CExternalFileNameFunctionPtr} )(const char $\ast$serializedKey)
+\begin{DoxyCompactList}\small\item\em Function type for callback to get an output file name. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalDatasetAPI_8h_aba89a534569a57108871cdffeed3850d}{CExternalQueryOnlyFunctionPtr} )()
+\begin{DoxyCompactList}\small\item\em Function type for callback to ask if a dataset is query-\/only. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{structCExternalRandomAccessFileSourceStruct}{CExternalRandomAccessFileSourcePtr}($\ast$ \hyperlink{CExternalDatasetAPI_8h_afb9abfd5c7b47529af07724f1497a212}{CExternalRandomAccessSourceFunctionPtr} )(const char $\ast$serializedKey)
+\begin{DoxyCompactList}\small\item\em Function type for callback to provide read-\/only random access to a file Returns null if no such file. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{structCExternalRandomAccessFileSinkStruct}{CExternalRandomAccessFileSinkPtr}($\ast$ \hyperlink{CExternalDatasetAPI_8h_a2ae9fe654d2144567260853e62de03ee}{CExternalRandomAccessSinkFunctionPtr} )(const char $\ast$serializedKey)
+\begin{DoxyCompactList}\small\item\em Function type for callback to provide writable random access to a file Returns null if no such file. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structCExternalDatasetCallbacksStruct}{CExternalDatasetCallbacksStruct} \hyperlink{CExternalDatasetAPI_8h_abf67bb6ff3861712bf762317a02f77eb}{CExternalDatasetCallbacks}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} \hyperlink{CExternalDatasetAPI_8h_a4a2732df7af765a3a9055923e0401911}{CExternalDataset\_\-newDataset} (const char $\ast$name, const \hyperlink{structCExternalDatasetCallbacksStruct}{CExternalDatasetCallbacks} \&callbacks)
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{CExternalDatasetAPI_8h_a5c93749926d9a3285c7cc22903c1d1da}{CExternalDataset\_\-getName} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+const char $\ast$ \hyperlink{CExternalDatasetAPI_8h_a388d3f92fb2af4a82a0809a8eb9073ee}{CExternalDataset\_\-getSerializedDataset} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+void \hyperlink{CExternalDatasetAPI_8h_adbd5ebe05dd4e88060dc9363927333cd}{CExternalDataset\_\-setSerializedDataset} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle, const char $\ast$serializedDataset)
+\item 
+void \hyperlink{CExternalDatasetAPI_8h_a0fa0f9c7e30ef721b9f83da58b395500}{CExternalDataset\_\-addDataFile} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle, \hyperlink{structCExternalDataFileStruct}{CExternalDataFilePtr} fileHandle)
+\item 
+\hyperlink{structCExternalDataFileStruct}{CExternalDataFilePtr} \hyperlink{CExternalDatasetAPI_8h_a16ce80fb304c1fdf504655b7f9ada0ce}{CExternalDataset\_\-getDataFile} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle, int index)
+\item 
+size\_\-t \hyperlink{CExternalDatasetAPI_8h_aec86431b4ca10992865204a0dcd2685d}{CExternalDataset\_\-getFileCount} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{CExternalDatasetAPI_8h_a53860bc67bbe6dca6cd05d2a4b80b016}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalAddFunctionPtr@{CExternalAddFunctionPtr}}
+\index{CExternalAddFunctionPtr@{CExternalAddFunctionPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalAddFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf CExternalAddFunctionPtr})({\bf CExternalDataFilePtr} file)}}
+\label{CExternalDatasetAPI_8h_a53860bc67bbe6dca6cd05d2a4b80b016}
+
+
+Function type for callback to add a file. If the file has a source, data will be written from the source. Otherwise, a sink will be added to the file. File will be added to dataset. Returns false if the add failed \hypertarget{CExternalDatasetAPI_8h_abf67bb6ff3861712bf762317a02f77eb}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDatasetCallbacks@{CExternalDatasetCallbacks}}
+\index{CExternalDatasetCallbacks@{CExternalDatasetCallbacks}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDatasetCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalDatasetCallbacksStruct} {\bf CExternalDatasetCallbacks}}}
+\label{CExternalDatasetAPI_8h_abf67bb6ff3861712bf762317a02f77eb}
+\hypertarget{CExternalDatasetAPI_8h_adf4986697cae326f8607655b85b6bea4}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDatasetPtr@{CExternalDatasetPtr}}
+\index{CExternalDatasetPtr@{CExternalDatasetPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDatasetPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalDatasetStruct}$\ast$ {\bf CExternalDatasetPtr}}}
+\label{CExternalDatasetAPI_8h_adf4986697cae326f8607655b85b6bea4}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalDatasetAPI_8h_aaf98421d8691ec968a5b20cfcbf102c4}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalFileNameFunctionPtr@{CExternalFileNameFunctionPtr}}
+\index{CExternalFileNameFunctionPtr@{CExternalFileNameFunctionPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalFileNameFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$($\ast$ {\bf CExternalFileNameFunctionPtr})(const char $\ast$serializedKey)}}
+\label{CExternalDatasetAPI_8h_aaf98421d8691ec968a5b20cfcbf102c4}
+
+
+Function type for callback to get an output file name. \hypertarget{CExternalDatasetAPI_8h_a250a18d32e0c29e4f2f08ab908d32775}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalFindFunctionPtr@{CExternalFindFunctionPtr}}
+\index{CExternalFindFunctionPtr@{CExternalFindFunctionPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalFindFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf CExternalDataFilePtr}($\ast$ {\bf CExternalFindFunctionPtr})(const char $\ast$serializedKey)}}
+\label{CExternalDatasetAPI_8h_a250a18d32e0c29e4f2f08ab908d32775}
+
+
+Function type for callback to find a file by key. File will be added to dataset if found. Returns null if no such file \hypertarget{CExternalDatasetAPI_8h_aba89a534569a57108871cdffeed3850d}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalQueryOnlyFunctionPtr@{CExternalQueryOnlyFunctionPtr}}
+\index{CExternalQueryOnlyFunctionPtr@{CExternalQueryOnlyFunctionPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalQueryOnlyFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf CExternalQueryOnlyFunctionPtr})()}}
+\label{CExternalDatasetAPI_8h_aba89a534569a57108871cdffeed3850d}
+
+
+Function type for callback to ask if a dataset is query-\/only. \hypertarget{CExternalDatasetAPI_8h_a2ae9fe654d2144567260853e62de03ee}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalRandomAccessSinkFunctionPtr@{CExternalRandomAccessSinkFunctionPtr}}
+\index{CExternalRandomAccessSinkFunctionPtr@{CExternalRandomAccessSinkFunctionPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalRandomAccessSinkFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf CExternalRandomAccessFileSinkPtr}($\ast$ {\bf CExternalRandomAccessSinkFunctionPtr})(const char $\ast$serializedKey)}}
+\label{CExternalDatasetAPI_8h_a2ae9fe654d2144567260853e62de03ee}
+
+
+Function type for callback to provide writable random access to a file Returns null if no such file. \hypertarget{CExternalDatasetAPI_8h_afb9abfd5c7b47529af07724f1497a212}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalRandomAccessSourceFunctionPtr@{CExternalRandomAccessSourceFunctionPtr}}
+\index{CExternalRandomAccessSourceFunctionPtr@{CExternalRandomAccessSourceFunctionPtr}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalRandomAccessSourceFunctionPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf CExternalRandomAccessFileSourcePtr}($\ast$ {\bf CExternalRandomAccessSourceFunctionPtr})(const char $\ast$serializedKey)}}
+\label{CExternalDatasetAPI_8h_afb9abfd5c7b47529af07724f1497a212}
+
+
+Function type for callback to provide read-\/only random access to a file Returns null if no such file. 
+
+\subsection{Function Documentation}
+\hypertarget{CExternalDatasetAPI_8h_a0fa0f9c7e30ef721b9f83da58b395500}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-addDataFile@{CExternalDataset\_\-addDataFile}}
+\index{CExternalDataset\_\-addDataFile@{CExternalDataset\_\-addDataFile}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-addDataFile}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalDataset\_\-addDataFile ({\bf CExternalDatasetPtr} {\em datasetHandle}, \/  {\bf CExternalDataFilePtr} {\em fileHandle})}}
+\label{CExternalDatasetAPI_8h_a0fa0f9c7e30ef721b9f83da58b395500}
+\hypertarget{CExternalDatasetAPI_8h_a16ce80fb304c1fdf504655b7f9ada0ce}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-getDataFile@{CExternalDataset\_\-getDataFile}}
+\index{CExternalDataset\_\-getDataFile@{CExternalDataset\_\-getDataFile}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-getDataFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDataFilePtr} CExternalDataset\_\-getDataFile ({\bf CExternalDatasetPtr} {\em datasetHandle}, \/  int {\em index})}}
+\label{CExternalDatasetAPI_8h_a16ce80fb304c1fdf504655b7f9ada0ce}
+\hypertarget{CExternalDatasetAPI_8h_aec86431b4ca10992865204a0dcd2685d}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-getFileCount@{CExternalDataset\_\-getFileCount}}
+\index{CExternalDataset\_\-getFileCount@{CExternalDataset\_\-getFileCount}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-getFileCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t CExternalDataset\_\-getFileCount ({\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalDatasetAPI_8h_aec86431b4ca10992865204a0dcd2685d}
+\hypertarget{CExternalDatasetAPI_8h_a5c93749926d9a3285c7cc22903c1d1da}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-getName@{CExternalDataset\_\-getName}}
+\index{CExternalDataset\_\-getName@{CExternalDataset\_\-getName}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalDataset\_\-getName ({\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalDatasetAPI_8h_a5c93749926d9a3285c7cc22903c1d1da}
+\hypertarget{CExternalDatasetAPI_8h_a388d3f92fb2af4a82a0809a8eb9073ee}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-getSerializedDataset@{CExternalDataset\_\-getSerializedDataset}}
+\index{CExternalDataset\_\-getSerializedDataset@{CExternalDataset\_\-getSerializedDataset}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-getSerializedDataset}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalDataset\_\-getSerializedDataset ({\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalDatasetAPI_8h_a388d3f92fb2af4a82a0809a8eb9073ee}
+\hypertarget{CExternalDatasetAPI_8h_a4a2732df7af765a3a9055923e0401911}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-newDataset@{CExternalDataset\_\-newDataset}}
+\index{CExternalDataset\_\-newDataset@{CExternalDataset\_\-newDataset}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-newDataset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDatasetPtr} CExternalDataset\_\-newDataset (const char $\ast$ {\em name}, \/  const {\bf CExternalDatasetCallbacks} \& {\em callbacks})}}
+\label{CExternalDatasetAPI_8h_a4a2732df7af765a3a9055923e0401911}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalDatasetAPI_8h_adbd5ebe05dd4e88060dc9363927333cd}{
+\index{CExternalDatasetAPI.h@{CExternalDatasetAPI.h}!CExternalDataset\_\-setSerializedDataset@{CExternalDataset\_\-setSerializedDataset}}
+\index{CExternalDataset\_\-setSerializedDataset@{CExternalDataset\_\-setSerializedDataset}!CExternalDatasetAPI.h@{CExternalDatasetAPI.h}}
+\subsubsection[{CExternalDataset\_\-setSerializedDataset}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalDataset\_\-setSerializedDataset ({\bf CExternalDatasetPtr} {\em datasetHandle}, \/  const char $\ast$ {\em serializedDataset})}}
+\label{CExternalDatasetAPI_8h_adbd5ebe05dd4e88060dc9363927333cd}

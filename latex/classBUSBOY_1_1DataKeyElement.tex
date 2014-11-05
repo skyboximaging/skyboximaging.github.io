@@ -1,0 +1,114 @@
+\hypertarget{classBUSBOY_1_1DataKeyElement}{
+\section{BUSBOY::DataKeyElement Class Reference}
+\label{classBUSBOY_1_1DataKeyElement}\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+}
+
+
+Represents one element of a data key, such as a specific frame.  
+
+
+{\ttfamily \#include $<$DataKeyElement.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyElement_a07b9a18632a9f33d2c263c3af3319070}{DataKeyElement} ()
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyElement_a977005ecb31cb4f751fc77b80b64e17a}{DataKeyElement} (const std::string \&id, const \hyperlink{classBUSBOY_1_1DataKeyDimension}{DataKeyDimension} \&dim)
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyElement_a344e097aa9c537d86c2b000cb23bcffa}{DataKeyElement} (const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element)
+\item 
+std::string \hyperlink{classBUSBOY_1_1DataKeyElement_afd0c6e49ab20d504ee8ee280abe51364}{getIdentifier} () const 
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyDimension}{DataKeyDimension} \hyperlink{classBUSBOY_1_1DataKeyElement_a381d5ddc6610072f1cf9464d88b838ee}{getDimension} () const 
+\item 
+std::string \hyperlink{classBUSBOY_1_1DataKeyElement_a31f455462157d55473217d99a42bfdc5}{str} () const 
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyElement_af290e8a4dc942b2b490802cd4f712a46}{$\sim$DataKeyElement} ()
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \& \hyperlink{classBUSBOY_1_1DataKeyElement_af409262d775de97c84082eb03ce7fd3e}{operator=} (const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element)
+\item 
+bool \hyperlink{classBUSBOY_1_1DataKeyElement_a8c83f858dbda1cb7f3fe0cc5c5008719}{operator$<$} (const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1DataKeyElement_ab08e95251e5abcf1eb179f162b8431a1}{operator==} (const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1DataKeyElement_a00d80857330b83c58d6e0476fb3e646e}{operator!=} (const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std::vector$<$ std::string $>$ \hyperlink{classBUSBOY_1_1DataKeyElement_a5a00e57f4572dfe83c98aca908a3106b}{toElementIds} (const std::vector$<$ \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} $>$ \&elements)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents one element of a data key, such as a specific frame. Instances are immutable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a07b9a18632a9f33d2c263c3af3319070}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!DataKeyElement@{DataKeyElement}}
+\index{DataKeyElement@{DataKeyElement}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{DataKeyElement}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyElement::DataKeyElement ()}}
+\label{classBUSBOY_1_1DataKeyElement_a07b9a18632a9f33d2c263c3af3319070}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a977005ecb31cb4f751fc77b80b64e17a}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!DataKeyElement@{DataKeyElement}}
+\index{DataKeyElement@{DataKeyElement}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{DataKeyElement}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyElement::DataKeyElement (const std::string \& {\em id}, \/  const {\bf DataKeyDimension} \& {\em dim})}}
+\label{classBUSBOY_1_1DataKeyElement_a977005ecb31cb4f751fc77b80b64e17a}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a344e097aa9c537d86c2b000cb23bcffa}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!DataKeyElement@{DataKeyElement}}
+\index{DataKeyElement@{DataKeyElement}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{DataKeyElement}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyElement::DataKeyElement (const {\bf DataKeyElement} \& {\em element})}}
+\label{classBUSBOY_1_1DataKeyElement_a344e097aa9c537d86c2b000cb23bcffa}
+\hypertarget{classBUSBOY_1_1DataKeyElement_af290e8a4dc942b2b490802cd4f712a46}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!$\sim$DataKeyElement@{$\sim$DataKeyElement}}
+\index{$\sim$DataKeyElement@{$\sim$DataKeyElement}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{$\sim$DataKeyElement}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DataKeyElement::$\sim$DataKeyElement ()}}
+\label{classBUSBOY_1_1DataKeyElement_af290e8a4dc942b2b490802cd4f712a46}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a381d5ddc6610072f1cf9464d88b838ee}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!getDimension@{getDimension}}
+\index{getDimension@{getDimension}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{getDimension}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKeyDimension} BUSBOY::DataKeyElement::getDimension () const}}
+\label{classBUSBOY_1_1DataKeyElement_a381d5ddc6610072f1cf9464d88b838ee}
+\hypertarget{classBUSBOY_1_1DataKeyElement_afd0c6e49ab20d504ee8ee280abe51364}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!getIdentifier@{getIdentifier}}
+\index{getIdentifier@{getIdentifier}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{getIdentifier}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::DataKeyElement::getIdentifier () const}}
+\label{classBUSBOY_1_1DataKeyElement_afd0c6e49ab20d504ee8ee280abe51364}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a00d80857330b83c58d6e0476fb3e646e}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::DataKeyElement::operator!= (const {\bf DataKeyElement} \& {\em element}) const}}
+\label{classBUSBOY_1_1DataKeyElement_a00d80857330b83c58d6e0476fb3e646e}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a8c83f858dbda1cb7f3fe0cc5c5008719}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::DataKeyElement::operator$<$ (const {\bf DataKeyElement} \& {\em element}) const}}
+\label{classBUSBOY_1_1DataKeyElement_a8c83f858dbda1cb7f3fe0cc5c5008719}
+\hypertarget{classBUSBOY_1_1DataKeyElement_af409262d775de97c84082eb03ce7fd3e}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!operator=@{operator=}}
+\index{operator=@{operator=}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKeyElement} \& BUSBOY::DataKeyElement::operator= (const {\bf DataKeyElement} \& {\em element})}}
+\label{classBUSBOY_1_1DataKeyElement_af409262d775de97c84082eb03ce7fd3e}
+\hypertarget{classBUSBOY_1_1DataKeyElement_ab08e95251e5abcf1eb179f162b8431a1}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::DataKeyElement::operator== (const {\bf DataKeyElement} \& {\em element}) const}}
+\label{classBUSBOY_1_1DataKeyElement_ab08e95251e5abcf1eb179f162b8431a1}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a31f455462157d55473217d99a42bfdc5}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!str@{str}}
+\index{str@{str}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{str}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::DataKeyElement::str () const}}
+\label{classBUSBOY_1_1DataKeyElement_a31f455462157d55473217d99a42bfdc5}
+\hypertarget{classBUSBOY_1_1DataKeyElement_a5a00e57f4572dfe83c98aca908a3106b}{
+\index{BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}!toElementIds@{toElementIds}}
+\index{toElementIds@{toElementIds}!BUSBOY::DataKeyElement@{BUSBOY::DataKeyElement}}
+\subsubsection[{toElementIds}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ std::string $>$ BUSBOY::DataKeyElement::toElementIds (const std::vector$<$ {\bf DataKeyElement} $>$ \& {\em elements})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1DataKeyElement_a5a00e57f4572dfe83c98aca908a3106b}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/keys/\hyperlink{DataKeyElement_8h}{DataKeyElement.h}\item 
+src/cpp/impl/keys/\hyperlink{DataKeyElement_8cpp}{DataKeyElement.cpp}\end{DoxyCompactItemize}

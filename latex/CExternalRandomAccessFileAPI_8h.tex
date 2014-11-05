@@ -1,0 +1,163 @@
+\hypertarget{CExternalRandomAccessFileAPI_8h}{
+\section{src/cpp/api/external/capi/CExternalRandomAccessFileAPI.h File Reference}
+\label{CExternalRandomAccessFileAPI_8h}\index{src/cpp/api/external/capi/CExternalRandomAccessFileAPI.h@{src/cpp/api/external/capi/CExternalRandomAccessFileAPI.h}}
+}
+{\ttfamily \#include $<$stddef.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCExternalRandomAccessFileCallbacksStruct}{CExternalRandomAccessFileCallbacksStruct}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structCExternalRandomAccessFileSourceStruct}{CExternalRandomAccessFileSourceStruct} $\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_ac6124b1990251e7683ef223e7ba89859}{CExternalRandomAccessFileSourcePtr}
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structCExternalRandomAccessFileSinkStruct}{CExternalRandomAccessFileSinkStruct} $\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_a74e44417928a1b3c7fe6b618027b382a}{CExternalRandomAccessFileSinkPtr}
+\item 
+typedef bool($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_aba79ae60c4ff5e8b9e923040f1cd613a}{BusboyRandomAccessFileReadPtr} )(char $\ast$buf, size\_\-t num, size\_\-t $\ast$read)
+\begin{DoxyCompactList}\small\item\em Function type for callback to read the next chunk of a file. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_aa72f560af87f9b6267949e25aef0448f}{BusboyRandomAccessFileWritePtr} )(char $\ast$buf, size\_\-t num)
+\begin{DoxyCompactList}\small\item\em Function type for callback to write the next chunk of a file. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_ab24a3bee396e3f581b9b28a0f6727c6e}{BusboyRandomAccessFileGetLocationPtr} )(size\_\-t $\ast$loc)
+\begin{DoxyCompactList}\small\item\em Function type for callback to get current file pointer location Returns true if success. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_a71a1636fe9f87be2c70c9e2196b050b9}{BusboyRandomAccessFileSetLocationPtr} )(size\_\-t loc)
+\begin{DoxyCompactList}\small\item\em Function type for callback to set current file pointer location Returns true if success. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_a612c4f978d6bf211e9367dbafcdb4be1}{BusboyRandomAccessFileGetSizePtr} )(size\_\-t $\ast$size)
+\begin{DoxyCompactList}\small\item\em Function type for callback to get file size Returns true if success. \item\end{DoxyCompactList}\item 
+typedef bool($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_aba69f2afc8de7914d91b9161b5d36cf3}{BusboyRandomAccessFileSetSizePtr} )(size\_\-t size)
+\begin{DoxyCompactList}\small\item\em Function type for callback to set file size Returns true if success. \item\end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{CExternalRandomAccessFileAPI_8h_acb35a26471e514e27b6e9c059ee8cc9f}{BusboyRandomAccessFileClosePtr} )()
+\begin{DoxyCompactList}\small\item\em Function type for callback to close file. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structCExternalRandomAccessFileCallbacksStruct}{CExternalRandomAccessFileCallbacksStruct} \hyperlink{CExternalRandomAccessFileAPI_8h_a5db9e990ef40ac61435978a7e54d8ae2}{CExternalRandomAccessFileCallbacks}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCExternalRandomAccessFileSourceStruct}{CExternalRandomAccessFileSourcePtr} \hyperlink{CExternalRandomAccessFileAPI_8h_ac4c77c9bc18b1603059a17f8c8ca77ba}{CExternalRandomAccessFile\_\-newRandomAccessFileSource} (const \hyperlink{structCExternalRandomAccessFileCallbacksStruct}{CExternalRandomAccessFileCallbacks} \&fileCallbacks)
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+\hyperlink{structCExternalRandomAccessFileSinkStruct}{CExternalRandomAccessFileSinkPtr} \hyperlink{CExternalRandomAccessFileAPI_8h_ad17855d2a93a6f406a3a4b33281fa350}{CExternalRandomAccessFile\_\-newRandomAccessFileSink} (const \hyperlink{structCExternalRandomAccessFileCallbacksStruct}{CExternalRandomAccessFileCallbacks} \&fileCallbacks)
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{CExternalRandomAccessFileAPI_8h_acb35a26471e514e27b6e9c059ee8cc9f}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileClosePtr@{BusboyRandomAccessFileClosePtr}}
+\index{BusboyRandomAccessFileClosePtr@{BusboyRandomAccessFileClosePtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileClosePtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf BusboyRandomAccessFileClosePtr})()}}
+\label{CExternalRandomAccessFileAPI_8h_acb35a26471e514e27b6e9c059ee8cc9f}
+
+
+Function type for callback to close file. \hypertarget{CExternalRandomAccessFileAPI_8h_ab24a3bee396e3f581b9b28a0f6727c6e}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileGetLocationPtr@{BusboyRandomAccessFileGetLocationPtr}}
+\index{BusboyRandomAccessFileGetLocationPtr@{BusboyRandomAccessFileGetLocationPtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileGetLocationPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf BusboyRandomAccessFileGetLocationPtr})(size\_\-t $\ast$loc)}}
+\label{CExternalRandomAccessFileAPI_8h_ab24a3bee396e3f581b9b28a0f6727c6e}
+
+
+Function type for callback to get current file pointer location Returns true if success. 
+\begin{DoxyParams}{Parameters}
+\item[{\em loc}]pointer to write file pointer location \end{DoxyParams}
+\hypertarget{CExternalRandomAccessFileAPI_8h_a612c4f978d6bf211e9367dbafcdb4be1}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileGetSizePtr@{BusboyRandomAccessFileGetSizePtr}}
+\index{BusboyRandomAccessFileGetSizePtr@{BusboyRandomAccessFileGetSizePtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileGetSizePtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf BusboyRandomAccessFileGetSizePtr})(size\_\-t $\ast$size)}}
+\label{CExternalRandomAccessFileAPI_8h_a612c4f978d6bf211e9367dbafcdb4be1}
+
+
+Function type for callback to get file size Returns true if success. 
+\begin{DoxyParams}{Parameters}
+\item[{\em size}]pointer to write file size \end{DoxyParams}
+\hypertarget{CExternalRandomAccessFileAPI_8h_aba79ae60c4ff5e8b9e923040f1cd613a}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileReadPtr@{BusboyRandomAccessFileReadPtr}}
+\index{BusboyRandomAccessFileReadPtr@{BusboyRandomAccessFileReadPtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileReadPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf BusboyRandomAccessFileReadPtr})(char $\ast$buf, size\_\-t num, size\_\-t $\ast$read)}}
+\label{CExternalRandomAccessFileAPI_8h_aba79ae60c4ff5e8b9e923040f1cd613a}
+
+
+Function type for callback to read the next chunk of a file. Returns true if success 
+\begin{DoxyParams}{Parameters}
+\item[{\em buf}]array to read data into \item[{\em num}]maximum number of bytes to read \item[{\em read}]pointer to write number of bytes actually read \end{DoxyParams}
+\hypertarget{CExternalRandomAccessFileAPI_8h_a71a1636fe9f87be2c70c9e2196b050b9}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileSetLocationPtr@{BusboyRandomAccessFileSetLocationPtr}}
+\index{BusboyRandomAccessFileSetLocationPtr@{BusboyRandomAccessFileSetLocationPtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileSetLocationPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf BusboyRandomAccessFileSetLocationPtr})(size\_\-t loc)}}
+\label{CExternalRandomAccessFileAPI_8h_a71a1636fe9f87be2c70c9e2196b050b9}
+
+
+Function type for callback to set current file pointer location Returns true if success. 
+\begin{DoxyParams}{Parameters}
+\item[{\em loc}]file pointer location \end{DoxyParams}
+\hypertarget{CExternalRandomAccessFileAPI_8h_aba69f2afc8de7914d91b9161b5d36cf3}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileSetSizePtr@{BusboyRandomAccessFileSetSizePtr}}
+\index{BusboyRandomAccessFileSetSizePtr@{BusboyRandomAccessFileSetSizePtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileSetSizePtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf BusboyRandomAccessFileSetSizePtr})(size\_\-t size)}}
+\label{CExternalRandomAccessFileAPI_8h_aba69f2afc8de7914d91b9161b5d36cf3}
+
+
+Function type for callback to set file size Returns true if success. 
+\begin{DoxyParams}{Parameters}
+\item[{\em size}]file size \end{DoxyParams}
+\hypertarget{CExternalRandomAccessFileAPI_8h_aa72f560af87f9b6267949e25aef0448f}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!BusboyRandomAccessFileWritePtr@{BusboyRandomAccessFileWritePtr}}
+\index{BusboyRandomAccessFileWritePtr@{BusboyRandomAccessFileWritePtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{BusboyRandomAccessFileWritePtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf BusboyRandomAccessFileWritePtr})(char $\ast$buf, size\_\-t num)}}
+\label{CExternalRandomAccessFileAPI_8h_aa72f560af87f9b6267949e25aef0448f}
+
+
+Function type for callback to write the next chunk of a file. Returns number of bytes actually written. Returns true if success 
+\begin{DoxyParams}{Parameters}
+\item[{\em buf}]array to write data from \item[{\em number}]of bytes to write \end{DoxyParams}
+\hypertarget{CExternalRandomAccessFileAPI_8h_a5db9e990ef40ac61435978a7e54d8ae2}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!CExternalRandomAccessFileCallbacks@{CExternalRandomAccessFileCallbacks}}
+\index{CExternalRandomAccessFileCallbacks@{CExternalRandomAccessFileCallbacks}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{CExternalRandomAccessFileCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalRandomAccessFileCallbacksStruct} {\bf CExternalRandomAccessFileCallbacks}}}
+\label{CExternalRandomAccessFileAPI_8h_a5db9e990ef40ac61435978a7e54d8ae2}
+\hypertarget{CExternalRandomAccessFileAPI_8h_a74e44417928a1b3c7fe6b618027b382a}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!CExternalRandomAccessFileSinkPtr@{CExternalRandomAccessFileSinkPtr}}
+\index{CExternalRandomAccessFileSinkPtr@{CExternalRandomAccessFileSinkPtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{CExternalRandomAccessFileSinkPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalRandomAccessFileSinkStruct}$\ast$ {\bf CExternalRandomAccessFileSinkPtr}}}
+\label{CExternalRandomAccessFileAPI_8h_a74e44417928a1b3c7fe6b618027b382a}
+\hypertarget{CExternalRandomAccessFileAPI_8h_ac6124b1990251e7683ef223e7ba89859}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!CExternalRandomAccessFileSourcePtr@{CExternalRandomAccessFileSourcePtr}}
+\index{CExternalRandomAccessFileSourcePtr@{CExternalRandomAccessFileSourcePtr}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{CExternalRandomAccessFileSourcePtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalRandomAccessFileSourceStruct}$\ast$ {\bf CExternalRandomAccessFileSourcePtr}}}
+\label{CExternalRandomAccessFileAPI_8h_ac6124b1990251e7683ef223e7ba89859}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+\subsection{Function Documentation}
+\hypertarget{CExternalRandomAccessFileAPI_8h_ad17855d2a93a6f406a3a4b33281fa350}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!CExternalRandomAccessFile\_\-newRandomAccessFileSink@{CExternalRandomAccessFile\_\-newRandomAccessFileSink}}
+\index{CExternalRandomAccessFile\_\-newRandomAccessFileSink@{CExternalRandomAccessFile\_\-newRandomAccessFileSink}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{CExternalRandomAccessFile\_\-newRandomAccessFileSink}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalRandomAccessFileSinkPtr} CExternalRandomAccessFile\_\-newRandomAccessFileSink (const {\bf CExternalRandomAccessFileCallbacks} \& {\em callbacks})}}
+\label{CExternalRandomAccessFileAPI_8h_ad17855d2a93a6f406a3a4b33281fa350}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalRandomAccessFileAPI_8h_ac4c77c9bc18b1603059a17f8c8ca77ba}{
+\index{CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}!CExternalRandomAccessFile\_\-newRandomAccessFileSource@{CExternalRandomAccessFile\_\-newRandomAccessFileSource}}
+\index{CExternalRandomAccessFile\_\-newRandomAccessFileSource@{CExternalRandomAccessFile\_\-newRandomAccessFileSource}!CExternalRandomAccessFileAPI.h@{CExternalRandomAccessFileAPI.h}}
+\subsubsection[{CExternalRandomAccessFile\_\-newRandomAccessFileSource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalRandomAccessFileSourcePtr} CExternalRandomAccessFile\_\-newRandomAccessFileSource (const {\bf CExternalRandomAccessFileCallbacks} \& {\em callbacks})}}
+\label{CExternalRandomAccessFileAPI_8h_ac4c77c9bc18b1603059a17f8c8ca77ba}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

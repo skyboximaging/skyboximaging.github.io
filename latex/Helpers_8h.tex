@@ -1,0 +1,72 @@
+\hypertarget{Helpers_8h}{
+\section{src/cpp/api/util/Helpers.h File Reference}
+\label{Helpers_8h}\index{src/cpp/api/util/Helpers.h@{src/cpp/api/util/Helpers.h}}
+}
+{\ttfamily \#include $<$sstream$>$}\par
+{\ttfamily \#include \char`\"{}StackUtil.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Helpers_8h_a6e4a31eec1cc30c942996bd7a3d1457b}{BUSBOY\_\-FORMAT\_\-STRING}(targetString, message)~\{ std::ostringstream \_\-ss; \_\-ss $<$$<$ message; targetString = \_\-ss.str(); \}
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{Helpers_8h_ad380d7af580af8309b13b8f4fae2c8e4}{BUSBOY\_\-RETURN\_\-STRING}(message)~\{ std::ostringstream \_\-ss; \_\-ss $<$$<$ message; return \_\-ss.str(); \}
+\begin{DoxyCompactList}\small\item\em Allows returning a formatted string in one line. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{Helpers_8h_a28cf53c42fef97331c0af72631388a3d}{BUSBOY\_\-THROW}(name, message)
+\begin{DoxyCompactList}\small\item\em Allows throwing an exception and formatting its message in one line. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{Helpers_8h_af1b138df22126831bb90c419db76deec}{BUSBOY\_\-DEBUG}(message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{Helpers_8h_af1b138df22126831bb90c419db76deec}{
+\index{Helpers.h@{Helpers.h}!BUSBOY\_\-DEBUG@{BUSBOY\_\-DEBUG}}
+\index{BUSBOY\_\-DEBUG@{BUSBOY\_\-DEBUG}!Helpers.h@{Helpers.h}}
+\subsubsection[{BUSBOY\_\-DEBUG}]{\setlength{\rightskip}{0pt plus 5cm}\#define BUSBOY\_\-DEBUG(message)}}
+\label{Helpers_8h_af1b138df22126831bb90c419db76deec}
+{\bfseries Value:}
+\begin{DoxyCode}
+{ \
+        std::cout << message << " at " << \
+        StackUtil::formatLocation(__FILE__, __FUNCTION__, __LINE__) << std::endl;
+       \
+}
+\end{DoxyCode}
+\hypertarget{Helpers_8h_a6e4a31eec1cc30c942996bd7a3d1457b}{
+\index{Helpers.h@{Helpers.h}!BUSBOY\_\-FORMAT\_\-STRING@{BUSBOY\_\-FORMAT\_\-STRING}}
+\index{BUSBOY\_\-FORMAT\_\-STRING@{BUSBOY\_\-FORMAT\_\-STRING}!Helpers.h@{Helpers.h}}
+\subsubsection[{BUSBOY\_\-FORMAT\_\-STRING}]{\setlength{\rightskip}{0pt plus 5cm}\#define BUSBOY\_\-FORMAT\_\-STRING(targetString, \/  message)~\{ std::ostringstream \_\-ss; \_\-ss $<$$<$ message; targetString = \_\-ss.str(); \}}}
+\label{Helpers_8h_a6e4a31eec1cc30c942996bd7a3d1457b}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Allows creating a formatted string in one line \hypertarget{Helpers_8h_ad380d7af580af8309b13b8f4fae2c8e4}{
+\index{Helpers.h@{Helpers.h}!BUSBOY\_\-RETURN\_\-STRING@{BUSBOY\_\-RETURN\_\-STRING}}
+\index{BUSBOY\_\-RETURN\_\-STRING@{BUSBOY\_\-RETURN\_\-STRING}!Helpers.h@{Helpers.h}}
+\subsubsection[{BUSBOY\_\-RETURN\_\-STRING}]{\setlength{\rightskip}{0pt plus 5cm}\#define BUSBOY\_\-RETURN\_\-STRING(message)~\{ std::ostringstream \_\-ss; \_\-ss $<$$<$ message; return \_\-ss.str(); \}}}
+\label{Helpers_8h_ad380d7af580af8309b13b8f4fae2c8e4}
+
+
+Allows returning a formatted string in one line. \hypertarget{Helpers_8h_a28cf53c42fef97331c0af72631388a3d}{
+\index{Helpers.h@{Helpers.h}!BUSBOY\_\-THROW@{BUSBOY\_\-THROW}}
+\index{BUSBOY\_\-THROW@{BUSBOY\_\-THROW}!Helpers.h@{Helpers.h}}
+\subsubsection[{BUSBOY\_\-THROW}]{\setlength{\rightskip}{0pt plus 5cm}\#define BUSBOY\_\-THROW(name, \/  message)}}
+\label{Helpers_8h_a28cf53c42fef97331c0af72631388a3d}
+{\bfseries Value:}
+\begin{DoxyCode}
+{ \
+        std::ostringstream _ss; \
+        _ss << message << std::endl << \
+        StackUtil::formatLocation(__FILE__, __FUNCTION__, __LINE__) << std::endl 
+      \
+        << StackUtil::generateBackTrace(); \
+        throw name(_ss.str()); \
+}
+\end{DoxyCode}
+
+
+Allows throwing an exception and formatting its message in one line. This macro also captures the location in the code and a stack trace, which are added to the exception message. 

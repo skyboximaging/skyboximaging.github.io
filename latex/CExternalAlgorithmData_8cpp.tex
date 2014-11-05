@@ -1,0 +1,103 @@
+\hypertarget{CExternalAlgorithmData_8cpp}{
+\section{src/cpp/impl/external/CExternalAlgorithmData.cpp File Reference}
+\label{CExternalAlgorithmData_8cpp}\index{src/cpp/impl/external/CExternalAlgorithmData.cpp@{src/cpp/impl/external/CExternalAlgorithmData.cpp}}
+}
+{\ttfamily \#include \char`\"{}external/external\_\-api.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} \hyperlink{CExternalAlgorithmData_8cpp_aa5492f4e97d9adb635113d23a1760f6a}{CExternalAlgorithmData\_\-newAlgorithmData} ()
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+void \hyperlink{CExternalAlgorithmData_8cpp_a41b687180dfdcd133464c9c96d0fabcf}{CExternalAlgorithmData\_\-setSerializedKeyspace} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle, const char $\ast$keyspace)
+\item 
+const char $\ast$ \hyperlink{CExternalAlgorithmData_8cpp_a7a728ca36bb08592175d82f5e25c9e69}{CExternalAlgorithmData\_\-getSerializedKeyspace} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle)
+\item 
+void \hyperlink{CExternalAlgorithmData_8cpp_a2b84fb5f81d3d197ba0fbe2e55f0302f}{CExternalAlgorithmData\_\-setSerializedConfig} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle, const char $\ast$config)
+\item 
+const char $\ast$ \hyperlink{CExternalAlgorithmData_8cpp_a819b2e0db3da536559301803479e423d}{CExternalAlgorithmData\_\-getSerializedConfig} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle)
+\item 
+void \hyperlink{CExternalAlgorithmData_8cpp_a3ca623fd31b1a6de6016b31edfd32e41}{CExternalAlgorithmData\_\-addInputDataset} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle, \hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} \hyperlink{CExternalAlgorithmData_8cpp_ac1edcace793da741ce0f25ae4259f8e4}{CExternalAlgorithmData\_\-getInputDataset} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle, int index)
+\item 
+size\_\-t \hyperlink{CExternalAlgorithmData_8cpp_ab7f01db47de7e06729ba793122a1e611}{CExternalAlgorithmData\_\-getInputDatasetCount} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle)
+\item 
+void \hyperlink{CExternalAlgorithmData_8cpp_a1c1a245f71cd4d1b50c36da97830b0da}{CExternalAlgorithmData\_\-addOutputDataset} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle, \hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} \hyperlink{CExternalAlgorithmData_8cpp_aa302e42bd8cf4f1c42f6f00107eb64f1}{CExternalAlgorithmData\_\-getOutputDataset} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle, int index)
+\item 
+size\_\-t \hyperlink{CExternalAlgorithmData_8cpp_a2c2d1363bafdf5b7ab0b7f50d90ec644}{CExternalAlgorithmData\_\-getOutputDatasetCount} (\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} algoDataHandle)
+\item 
+\hyperlink{structCExternalAlgorithmDataStruct}{CExternalAlgorithmDataPtr} \hyperlink{CExternalAlgorithmData_8cpp_a713c7b613c1b30d3e1fa38d4dd537d37}{wrapExternalAlgorithmData} (\hyperlink{classBUSBOY_1_1ExternalAlgorithmData}{BUSBOY::ExternalAlgorithmData} $\ast$algoData)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{CExternalAlgorithmData_8cpp_a3ca623fd31b1a6de6016b31edfd32e41}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-addInputDataset@{CExternalAlgorithmData\_\-addInputDataset}}
+\index{CExternalAlgorithmData\_\-addInputDataset@{CExternalAlgorithmData\_\-addInputDataset}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-addInputDataset}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalAlgorithmData\_\-addInputDataset ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle}, \/  {\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalAlgorithmData_8cpp_a3ca623fd31b1a6de6016b31edfd32e41}
+\hypertarget{CExternalAlgorithmData_8cpp_a1c1a245f71cd4d1b50c36da97830b0da}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-addOutputDataset@{CExternalAlgorithmData\_\-addOutputDataset}}
+\index{CExternalAlgorithmData\_\-addOutputDataset@{CExternalAlgorithmData\_\-addOutputDataset}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-addOutputDataset}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalAlgorithmData\_\-addOutputDataset ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle}, \/  {\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalAlgorithmData_8cpp_a1c1a245f71cd4d1b50c36da97830b0da}
+\hypertarget{CExternalAlgorithmData_8cpp_ac1edcace793da741ce0f25ae4259f8e4}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-getInputDataset@{CExternalAlgorithmData\_\-getInputDataset}}
+\index{CExternalAlgorithmData\_\-getInputDataset@{CExternalAlgorithmData\_\-getInputDataset}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-getInputDataset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDatasetPtr} CExternalAlgorithmData\_\-getInputDataset ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle}, \/  int {\em index})}}
+\label{CExternalAlgorithmData_8cpp_ac1edcace793da741ce0f25ae4259f8e4}
+\hypertarget{CExternalAlgorithmData_8cpp_ab7f01db47de7e06729ba793122a1e611}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-getInputDatasetCount@{CExternalAlgorithmData\_\-getInputDatasetCount}}
+\index{CExternalAlgorithmData\_\-getInputDatasetCount@{CExternalAlgorithmData\_\-getInputDatasetCount}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-getInputDatasetCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t CExternalAlgorithmData\_\-getInputDatasetCount ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle})}}
+\label{CExternalAlgorithmData_8cpp_ab7f01db47de7e06729ba793122a1e611}
+\hypertarget{CExternalAlgorithmData_8cpp_aa302e42bd8cf4f1c42f6f00107eb64f1}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-getOutputDataset@{CExternalAlgorithmData\_\-getOutputDataset}}
+\index{CExternalAlgorithmData\_\-getOutputDataset@{CExternalAlgorithmData\_\-getOutputDataset}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-getOutputDataset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDatasetPtr} CExternalAlgorithmData\_\-getOutputDataset ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle}, \/  int {\em index})}}
+\label{CExternalAlgorithmData_8cpp_aa302e42bd8cf4f1c42f6f00107eb64f1}
+\hypertarget{CExternalAlgorithmData_8cpp_a2c2d1363bafdf5b7ab0b7f50d90ec644}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-getOutputDatasetCount@{CExternalAlgorithmData\_\-getOutputDatasetCount}}
+\index{CExternalAlgorithmData\_\-getOutputDatasetCount@{CExternalAlgorithmData\_\-getOutputDatasetCount}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-getOutputDatasetCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t CExternalAlgorithmData\_\-getOutputDatasetCount ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle})}}
+\label{CExternalAlgorithmData_8cpp_a2c2d1363bafdf5b7ab0b7f50d90ec644}
+\hypertarget{CExternalAlgorithmData_8cpp_a819b2e0db3da536559301803479e423d}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-getSerializedConfig@{CExternalAlgorithmData\_\-getSerializedConfig}}
+\index{CExternalAlgorithmData\_\-getSerializedConfig@{CExternalAlgorithmData\_\-getSerializedConfig}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-getSerializedConfig}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalAlgorithmData\_\-getSerializedConfig ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle})}}
+\label{CExternalAlgorithmData_8cpp_a819b2e0db3da536559301803479e423d}
+\hypertarget{CExternalAlgorithmData_8cpp_a7a728ca36bb08592175d82f5e25c9e69}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-getSerializedKeyspace@{CExternalAlgorithmData\_\-getSerializedKeyspace}}
+\index{CExternalAlgorithmData\_\-getSerializedKeyspace@{CExternalAlgorithmData\_\-getSerializedKeyspace}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-getSerializedKeyspace}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalAlgorithmData\_\-getSerializedKeyspace ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle})}}
+\label{CExternalAlgorithmData_8cpp_a7a728ca36bb08592175d82f5e25c9e69}
+\hypertarget{CExternalAlgorithmData_8cpp_aa5492f4e97d9adb635113d23a1760f6a}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-newAlgorithmData@{CExternalAlgorithmData\_\-newAlgorithmData}}
+\index{CExternalAlgorithmData\_\-newAlgorithmData@{CExternalAlgorithmData\_\-newAlgorithmData}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-newAlgorithmData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalAlgorithmDataPtr} CExternalAlgorithmData\_\-newAlgorithmData ()}}
+\label{CExternalAlgorithmData_8cpp_aa5492f4e97d9adb635113d23a1760f6a}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalAlgorithmData_8cpp_a2b84fb5f81d3d197ba0fbe2e55f0302f}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-setSerializedConfig@{CExternalAlgorithmData\_\-setSerializedConfig}}
+\index{CExternalAlgorithmData\_\-setSerializedConfig@{CExternalAlgorithmData\_\-setSerializedConfig}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-setSerializedConfig}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalAlgorithmData\_\-setSerializedConfig ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle}, \/  const char $\ast$ {\em config})}}
+\label{CExternalAlgorithmData_8cpp_a2b84fb5f81d3d197ba0fbe2e55f0302f}
+\hypertarget{CExternalAlgorithmData_8cpp_a41b687180dfdcd133464c9c96d0fabcf}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!CExternalAlgorithmData\_\-setSerializedKeyspace@{CExternalAlgorithmData\_\-setSerializedKeyspace}}
+\index{CExternalAlgorithmData\_\-setSerializedKeyspace@{CExternalAlgorithmData\_\-setSerializedKeyspace}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{CExternalAlgorithmData\_\-setSerializedKeyspace}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalAlgorithmData\_\-setSerializedKeyspace ({\bf CExternalAlgorithmDataPtr} {\em algoDataHandle}, \/  const char $\ast$ {\em keyspace})}}
+\label{CExternalAlgorithmData_8cpp_a41b687180dfdcd133464c9c96d0fabcf}
+\hypertarget{CExternalAlgorithmData_8cpp_a713c7b613c1b30d3e1fa38d4dd537d37}{
+\index{CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}!wrapExternalAlgorithmData@{wrapExternalAlgorithmData}}
+\index{wrapExternalAlgorithmData@{wrapExternalAlgorithmData}!CExternalAlgorithmData.cpp@{CExternalAlgorithmData.cpp}}
+\subsubsection[{wrapExternalAlgorithmData}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalAlgorithmDataPtr} wrapExternalAlgorithmData ({\bf BUSBOY::ExternalAlgorithmData} $\ast$ {\em algoData})}}
+\label{CExternalAlgorithmData_8cpp_a713c7b613c1b30d3e1fa38d4dd537d37}

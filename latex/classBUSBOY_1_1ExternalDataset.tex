@@ -1,0 +1,105 @@
+\hypertarget{classBUSBOY_1_1ExternalDataset}{
+\section{BUSBOY::ExternalDataset Class Reference}
+\label{classBUSBOY_1_1ExternalDataset}\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+}
+
+
+{\ttfamily \#include $<$ExternalDataset.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1ExternalDataset_a5517ac1a6ea84a1593e94f801b90c589}{ExternalDataset} ()
+\item 
+void \hyperlink{classBUSBOY_1_1ExternalDataset_afd6a0915ac381e9f0718c02bdab4295c}{init} (const char $\ast$name)
+\item 
+void \hyperlink{classBUSBOY_1_1ExternalDataset_a6eaec0cd10e6357d48af66e3a0d770e7}{init} (const char $\ast$name, const \hyperlink{structCExternalDatasetCallbacksStruct}{CExternalDatasetCallbacks} \&callbacks)
+\item 
+const char $\ast$ \hyperlink{classBUSBOY_1_1ExternalDataset_a8125089aa997ab26a115820951e17363}{getName} () const 
+\item 
+const char $\ast$ \hyperlink{classBUSBOY_1_1ExternalDataset_ad757fc5cf9424644dbcea27060f87492}{getSerializedDataset} () const 
+\item 
+void \hyperlink{classBUSBOY_1_1ExternalDataset_ae665e4a6d9308cd1637645e57ab5fa79}{setSerializedDataset} (const char $\ast$serializedDataset)
+\item 
+void \hyperlink{classBUSBOY_1_1ExternalDataset_a8b45a79432fd8c06fab25d8d3c27a49f}{addDataFile} (\hyperlink{classBUSBOY_1_1ExternalDataFile}{ExternalDataFile} $\ast$file)
+\item 
+\hyperlink{classBUSBOY_1_1ExternalDataFile}{ExternalDataFile} $\ast$ \hyperlink{classBUSBOY_1_1ExternalDataset_a9df59df2039abbe0171ed8ff33ba5d9c}{getDataFile} (int index) const 
+\item 
+size\_\-t \hyperlink{classBUSBOY_1_1ExternalDataset_adb7bdaf990a57db360a1144caf44ee59}{getFileCount} () const 
+\item 
+const \hyperlink{structCExternalDatasetCallbacksStruct}{CExternalDatasetCallbacks} \& \hyperlink{classBUSBOY_1_1ExternalDataset_a5fd6d9135a9325f4991c8c5245286db2}{getCallbacks} () const 
+\item 
+bool \hyperlink{classBUSBOY_1_1ExternalDataset_a3503bb02f3364cbf244b5c7a8e777a52}{hasDataFile} (const char $\ast$serializedKey) const 
+\item 
+\hyperlink{classBUSBOY_1_1ExternalDataset_a17551ab8422fadcfc57ec0ebaab29ee6}{$\sim$ExternalDataset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a5517ac1a6ea84a1593e94f801b90c589}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!ExternalDataset@{ExternalDataset}}
+\index{ExternalDataset@{ExternalDataset}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{ExternalDataset}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::ExternalDataset::ExternalDataset ()}}
+\label{classBUSBOY_1_1ExternalDataset_a5517ac1a6ea84a1593e94f801b90c589}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a17551ab8422fadcfc57ec0ebaab29ee6}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!$\sim$ExternalDataset@{$\sim$ExternalDataset}}
+\index{$\sim$ExternalDataset@{$\sim$ExternalDataset}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{$\sim$ExternalDataset}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::ExternalDataset::$\sim$ExternalDataset ()}}
+\label{classBUSBOY_1_1ExternalDataset_a17551ab8422fadcfc57ec0ebaab29ee6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a8b45a79432fd8c06fab25d8d3c27a49f}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!addDataFile@{addDataFile}}
+\index{addDataFile@{addDataFile}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{addDataFile}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::ExternalDataset::addDataFile ({\bf ExternalDataFile} $\ast$ {\em file})}}
+\label{classBUSBOY_1_1ExternalDataset_a8b45a79432fd8c06fab25d8d3c27a49f}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a5fd6d9135a9325f4991c8c5245286db2}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!getCallbacks@{getCallbacks}}
+\index{getCallbacks@{getCallbacks}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{getCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf CExternalDatasetCallbacks} \& BUSBOY::ExternalDataset::getCallbacks () const}}
+\label{classBUSBOY_1_1ExternalDataset_a5fd6d9135a9325f4991c8c5245286db2}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a9df59df2039abbe0171ed8ff33ba5d9c}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!getDataFile@{getDataFile}}
+\index{getDataFile@{getDataFile}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{getDataFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ExternalDataFile} $\ast$ BUSBOY::ExternalDataset::getDataFile (int {\em index}) const}}
+\label{classBUSBOY_1_1ExternalDataset_a9df59df2039abbe0171ed8ff33ba5d9c}
+\hypertarget{classBUSBOY_1_1ExternalDataset_adb7bdaf990a57db360a1144caf44ee59}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!getFileCount@{getFileCount}}
+\index{getFileCount@{getFileCount}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{getFileCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::ExternalDataset::getFileCount () const}}
+\label{classBUSBOY_1_1ExternalDataset_adb7bdaf990a57db360a1144caf44ee59}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a8125089aa997ab26a115820951e17363}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!getName@{getName}}
+\index{getName@{getName}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ BUSBOY::ExternalDataset::getName () const}}
+\label{classBUSBOY_1_1ExternalDataset_a8125089aa997ab26a115820951e17363}
+\hypertarget{classBUSBOY_1_1ExternalDataset_ad757fc5cf9424644dbcea27060f87492}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!getSerializedDataset@{getSerializedDataset}}
+\index{getSerializedDataset@{getSerializedDataset}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{getSerializedDataset}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ BUSBOY::ExternalDataset::getSerializedDataset () const}}
+\label{classBUSBOY_1_1ExternalDataset_ad757fc5cf9424644dbcea27060f87492}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a3503bb02f3364cbf244b5c7a8e777a52}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!hasDataFile@{hasDataFile}}
+\index{hasDataFile@{hasDataFile}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{hasDataFile}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::ExternalDataset::hasDataFile (const char $\ast$ {\em serializedKey}) const}}
+\label{classBUSBOY_1_1ExternalDataset_a3503bb02f3364cbf244b5c7a8e777a52}
+\hypertarget{classBUSBOY_1_1ExternalDataset_a6eaec0cd10e6357d48af66e3a0d770e7}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!init@{init}}
+\index{init@{init}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::ExternalDataset::init (const char $\ast$ {\em name}, \/  const {\bf CExternalDatasetCallbacks} \& {\em callbacks})}}
+\label{classBUSBOY_1_1ExternalDataset_a6eaec0cd10e6357d48af66e3a0d770e7}
+\hypertarget{classBUSBOY_1_1ExternalDataset_afd6a0915ac381e9f0718c02bdab4295c}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!init@{init}}
+\index{init@{init}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::ExternalDataset::init (const char $\ast$ {\em name})}}
+\label{classBUSBOY_1_1ExternalDataset_afd6a0915ac381e9f0718c02bdab4295c}
+\hypertarget{classBUSBOY_1_1ExternalDataset_ae665e4a6d9308cd1637645e57ab5fa79}{
+\index{BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}!setSerializedDataset@{setSerializedDataset}}
+\index{setSerializedDataset@{setSerializedDataset}!BUSBOY::ExternalDataset@{BUSBOY::ExternalDataset}}
+\subsubsection[{setSerializedDataset}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::ExternalDataset::setSerializedDataset (const char $\ast$ {\em serializedDataset})}}
+\label{classBUSBOY_1_1ExternalDataset_ae665e4a6d9308cd1637645e57ab5fa79}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/external/\hyperlink{ExternalDataset_8h}{ExternalDataset.h}\item 
+src/cpp/impl/external/\hyperlink{ExternalDataset_8cpp}{ExternalDataset.cpp}\end{DoxyCompactItemize}

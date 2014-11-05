@@ -1,0 +1,58 @@
+\hypertarget{classBUSBOY_1_1SerializerRegistry}{
+\section{BUSBOY::SerializerRegistry Class Reference}
+\label{classBUSBOY_1_1SerializerRegistry}\index{BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}}
+}
+
+
+Singleton that holds a mapping of content types to serializers that can handle those content types.  
+
+
+{\ttfamily \#include $<$SerializerRegistry.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBUSBOY_1_1SerializerRegistry_aa380f8203820578477b1b0a6098683e3}{registerSerializerFactory} (const std::string \&contentType, \hyperlink{classBUSBOY_1_1SerializerFactory}{SerializerFactory} $\ast$factory)
+\item 
+\hyperlink{classBUSBOY_1_1SerializerFactory}{SerializerFactory} $\ast$ \hyperlink{classBUSBOY_1_1SerializerRegistry_ac0afae4f4ea9bb93d0fab518a9a801da}{getSerializerFactory} (const std::string \&contentType) const 
+\item 
+\hyperlink{classBUSBOY_1_1SerializerRegistry_a778ef3cd8813fe5cfb9679086e7024ec}{$\sim$SerializerRegistry} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBUSBOY_1_1SerializerRegistry}{SerializerRegistry} \& \hyperlink{classBUSBOY_1_1SerializerRegistry_a680fd6bd55dd2cda503f6c86e1b45848}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton that holds a mapping of content types to serializers that can handle those content types. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1SerializerRegistry_a778ef3cd8813fe5cfb9679086e7024ec}{
+\index{BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}!$\sim$SerializerRegistry@{$\sim$SerializerRegistry}}
+\index{$\sim$SerializerRegistry@{$\sim$SerializerRegistry}!BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}}
+\subsubsection[{$\sim$SerializerRegistry}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::SerializerRegistry::$\sim$SerializerRegistry ()}}
+\label{classBUSBOY_1_1SerializerRegistry_a778ef3cd8813fe5cfb9679086e7024ec}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1SerializerRegistry_ac0afae4f4ea9bb93d0fab518a9a801da}{
+\index{BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}!getSerializerFactory@{getSerializerFactory}}
+\index{getSerializerFactory@{getSerializerFactory}!BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}}
+\subsubsection[{getSerializerFactory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SerializerFactory} $\ast$ BUSBOY::SerializerRegistry::getSerializerFactory (const std::string \& {\em contentType}) const}}
+\label{classBUSBOY_1_1SerializerRegistry_ac0afae4f4ea9bb93d0fab518a9a801da}
+\hypertarget{classBUSBOY_1_1SerializerRegistry_a680fd6bd55dd2cda503f6c86e1b45848}{
+\index{BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}!instance@{instance}}
+\index{instance@{instance}!BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SerializerRegistry} \& BUSBOY::SerializerRegistry::instance ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1SerializerRegistry_a680fd6bd55dd2cda503f6c86e1b45848}
+\hypertarget{classBUSBOY_1_1SerializerRegistry_aa380f8203820578477b1b0a6098683e3}{
+\index{BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}!registerSerializerFactory@{registerSerializerFactory}}
+\index{registerSerializerFactory@{registerSerializerFactory}!BUSBOY::SerializerRegistry@{BUSBOY::SerializerRegistry}}
+\subsubsection[{registerSerializerFactory}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::SerializerRegistry::registerSerializerFactory (const std::string \& {\em contentType}, \/  {\bf SerializerFactory} $\ast$ {\em factory})}}
+\label{classBUSBOY_1_1SerializerRegistry_aa380f8203820578477b1b0a6098683e3}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/serialize/\hyperlink{SerializerRegistry_8h}{SerializerRegistry.h}\item 
+src/cpp/impl/serialize/\hyperlink{SerializerRegistry_8cpp}{SerializerRegistry.cpp}\end{DoxyCompactItemize}

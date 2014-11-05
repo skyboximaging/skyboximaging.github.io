@@ -1,0 +1,75 @@
+\hypertarget{CExternalDataset_8cpp}{
+\section{src/cpp/impl/external/CExternalDataset.cpp File Reference}
+\label{CExternalDataset_8cpp}\index{src/cpp/impl/external/CExternalDataset.cpp@{src/cpp/impl/external/CExternalDataset.cpp}}
+}
+{\ttfamily \#include \char`\"{}external/external\_\-api.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} \hyperlink{CExternalDataset_8cpp_a4a2732df7af765a3a9055923e0401911}{CExternalDataset\_\-newDataset} (const char $\ast$name, const \hyperlink{structCExternalDatasetCallbacksStruct}{CExternalDatasetCallbacks} \&callbacks)
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{CExternalDataset_8cpp_a5c93749926d9a3285c7cc22903c1d1da}{CExternalDataset\_\-getName} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+const char $\ast$ \hyperlink{CExternalDataset_8cpp_a388d3f92fb2af4a82a0809a8eb9073ee}{CExternalDataset\_\-getSerializedDataset} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+void \hyperlink{CExternalDataset_8cpp_adbd5ebe05dd4e88060dc9363927333cd}{CExternalDataset\_\-setSerializedDataset} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle, const char $\ast$serializedDataset)
+\item 
+void \hyperlink{CExternalDataset_8cpp_a0fa0f9c7e30ef721b9f83da58b395500}{CExternalDataset\_\-addDataFile} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle, \hyperlink{structCExternalDataFileStruct}{CExternalDataFilePtr} fileHandle)
+\item 
+\hyperlink{structCExternalDataFileStruct}{CExternalDataFilePtr} \hyperlink{CExternalDataset_8cpp_a16ce80fb304c1fdf504655b7f9ada0ce}{CExternalDataset\_\-getDataFile} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle, int index)
+\item 
+size\_\-t \hyperlink{CExternalDataset_8cpp_aec86431b4ca10992865204a0dcd2685d}{CExternalDataset\_\-getFileCount} (\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} datasetHandle)
+\item 
+\hyperlink{structCExternalDatasetStruct}{CExternalDatasetPtr} \hyperlink{CExternalDataset_8cpp_ab64a58d66c2331aaf6ab42d484c4d1e0}{wrapExternalDataset} (\hyperlink{classBUSBOY_1_1ExternalDataset}{BUSBOY::ExternalDataset} $\ast$dataset)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{CExternalDataset_8cpp_a0fa0f9c7e30ef721b9f83da58b395500}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-addDataFile@{CExternalDataset\_\-addDataFile}}
+\index{CExternalDataset\_\-addDataFile@{CExternalDataset\_\-addDataFile}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-addDataFile}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalDataset\_\-addDataFile ({\bf CExternalDatasetPtr} {\em datasetHandle}, \/  {\bf CExternalDataFilePtr} {\em fileHandle})}}
+\label{CExternalDataset_8cpp_a0fa0f9c7e30ef721b9f83da58b395500}
+\hypertarget{CExternalDataset_8cpp_a16ce80fb304c1fdf504655b7f9ada0ce}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-getDataFile@{CExternalDataset\_\-getDataFile}}
+\index{CExternalDataset\_\-getDataFile@{CExternalDataset\_\-getDataFile}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-getDataFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDataFilePtr} CExternalDataset\_\-getDataFile ({\bf CExternalDatasetPtr} {\em datasetHandle}, \/  int {\em index})}}
+\label{CExternalDataset_8cpp_a16ce80fb304c1fdf504655b7f9ada0ce}
+\hypertarget{CExternalDataset_8cpp_aec86431b4ca10992865204a0dcd2685d}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-getFileCount@{CExternalDataset\_\-getFileCount}}
+\index{CExternalDataset\_\-getFileCount@{CExternalDataset\_\-getFileCount}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-getFileCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t CExternalDataset\_\-getFileCount ({\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalDataset_8cpp_aec86431b4ca10992865204a0dcd2685d}
+\hypertarget{CExternalDataset_8cpp_a5c93749926d9a3285c7cc22903c1d1da}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-getName@{CExternalDataset\_\-getName}}
+\index{CExternalDataset\_\-getName@{CExternalDataset\_\-getName}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalDataset\_\-getName ({\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalDataset_8cpp_a5c93749926d9a3285c7cc22903c1d1da}
+\hypertarget{CExternalDataset_8cpp_a388d3f92fb2af4a82a0809a8eb9073ee}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-getSerializedDataset@{CExternalDataset\_\-getSerializedDataset}}
+\index{CExternalDataset\_\-getSerializedDataset@{CExternalDataset\_\-getSerializedDataset}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-getSerializedDataset}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalDataset\_\-getSerializedDataset ({\bf CExternalDatasetPtr} {\em datasetHandle})}}
+\label{CExternalDataset_8cpp_a388d3f92fb2af4a82a0809a8eb9073ee}
+\hypertarget{CExternalDataset_8cpp_a4a2732df7af765a3a9055923e0401911}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-newDataset@{CExternalDataset\_\-newDataset}}
+\index{CExternalDataset\_\-newDataset@{CExternalDataset\_\-newDataset}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-newDataset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDatasetPtr} CExternalDataset\_\-newDataset (const char $\ast$ {\em name}, \/  const {\bf CExternalDatasetCallbacks} \& {\em callbacks})}}
+\label{CExternalDataset_8cpp_a4a2732df7af765a3a9055923e0401911}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalDataset_8cpp_adbd5ebe05dd4e88060dc9363927333cd}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!CExternalDataset\_\-setSerializedDataset@{CExternalDataset\_\-setSerializedDataset}}
+\index{CExternalDataset\_\-setSerializedDataset@{CExternalDataset\_\-setSerializedDataset}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{CExternalDataset\_\-setSerializedDataset}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalDataset\_\-setSerializedDataset ({\bf CExternalDatasetPtr} {\em datasetHandle}, \/  const char $\ast$ {\em serializedDataset})}}
+\label{CExternalDataset_8cpp_adbd5ebe05dd4e88060dc9363927333cd}
+\hypertarget{CExternalDataset_8cpp_ab64a58d66c2331aaf6ab42d484c4d1e0}{
+\index{CExternalDataset.cpp@{CExternalDataset.cpp}!wrapExternalDataset@{wrapExternalDataset}}
+\index{wrapExternalDataset@{wrapExternalDataset}!CExternalDataset.cpp@{CExternalDataset.cpp}}
+\subsubsection[{wrapExternalDataset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalDatasetPtr} wrapExternalDataset ({\bf BUSBOY::ExternalDataset} $\ast$ {\em dataset})}}
+\label{CExternalDataset_8cpp_ab64a58d66c2331aaf6ab42d484c4d1e0}

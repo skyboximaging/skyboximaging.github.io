@@ -1,0 +1,120 @@
+\hypertarget{classBUSBOY_1_1KeyspaceDimension}{
+\section{BUSBOY::KeyspaceDimension Class Reference}
+\label{classBUSBOY_1_1KeyspaceDimension}\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+}
+
+
+What elements are included in the keyspace for a given dimension.  
+
+
+{\ttfamily \#include $<$KeyspaceDimension.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1KeyspaceDimension_a55af6f7bfa6bd312170c1f86947ccfd7}{KeyspaceDimension} ()
+\item 
+\hyperlink{classBUSBOY_1_1KeyspaceDimension_a27ca5fae9ad35acbb035846a3b3557d2}{KeyspaceDimension} (const \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \&ksd)
+\item 
+\hyperlink{classBUSBOY_1_1KeyspaceDimension_a562028c48d62066cb8ebd75c1310d83b}{KeyspaceDimension} (const \hyperlink{classBUSBOY_1_1DataKeyDimension}{DataKeyDimension} \&dim, const std::vector$<$ \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} $>$ \&elements)
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyDimension}{DataKeyDimension} \hyperlink{classBUSBOY_1_1KeyspaceDimension_abceed9c7182f44afebf7b8e491224121}{getDimension} () const 
+\item 
+std::vector$<$ \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} $>$ \hyperlink{classBUSBOY_1_1KeyspaceDimension_ad15e4b096758991e184f7eda1e508ea9}{getElements} () const 
+\begin{DoxyCompactList}\small\item\em returns the elements in their defined order, e.g. \item\end{DoxyCompactList}\item 
+size\_\-t \hyperlink{classBUSBOY_1_1KeyspaceDimension_a6e1b8fdd51cc3437e35e3f65162c053f}{getElementCount} () const 
+\item 
+\hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \hyperlink{classBUSBOY_1_1KeyspaceDimension_a9dd72c349a2aed3cc8c2ff500986d269}{getElement} (size\_\-t index) const 
+\item 
+std::string \hyperlink{classBUSBOY_1_1KeyspaceDimension_afb55c8f67a2a21953231462d788e2e60}{str} () const 
+\item 
+\hyperlink{classBUSBOY_1_1KeyspaceDimension_a8bd7f67bb399d7cf9b80be6160e7daf7}{$\sim$KeyspaceDimension} ()
+\item 
+\hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \& \hyperlink{classBUSBOY_1_1KeyspaceDimension_aac917a01e31957456ef0e90f924bfdf5}{operator=} (const \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \&ksd)
+\item 
+bool \hyperlink{classBUSBOY_1_1KeyspaceDimension_a5527508b97f03a40e09ce3fd871942db}{operator==} (const \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \&ksd) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1KeyspaceDimension_a22b8802999a801a96b9da7968753c636}{operator!=} (const \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \&ksd) const 
+\item 
+bool \hyperlink{classBUSBOY_1_1KeyspaceDimension_aa1e0960c0f20c7eeeac9a458e2675281}{operator$<$} (const \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \&ksd) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+What elements are included in the keyspace for a given dimension. Instances are immutable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a55af6f7bfa6bd312170c1f86947ccfd7}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!KeyspaceDimension@{KeyspaceDimension}}
+\index{KeyspaceDimension@{KeyspaceDimension}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{KeyspaceDimension}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::KeyspaceDimension::KeyspaceDimension ()}}
+\label{classBUSBOY_1_1KeyspaceDimension_a55af6f7bfa6bd312170c1f86947ccfd7}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a27ca5fae9ad35acbb035846a3b3557d2}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!KeyspaceDimension@{KeyspaceDimension}}
+\index{KeyspaceDimension@{KeyspaceDimension}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{KeyspaceDimension}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::KeyspaceDimension::KeyspaceDimension (const {\bf KeyspaceDimension} \& {\em ksd})}}
+\label{classBUSBOY_1_1KeyspaceDimension_a27ca5fae9ad35acbb035846a3b3557d2}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a562028c48d62066cb8ebd75c1310d83b}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!KeyspaceDimension@{KeyspaceDimension}}
+\index{KeyspaceDimension@{KeyspaceDimension}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{KeyspaceDimension}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::KeyspaceDimension::KeyspaceDimension (const {\bf DataKeyDimension} \& {\em dim}, \/  const std::vector$<$ {\bf DataKeyElement} $>$ \& {\em elements})}}
+\label{classBUSBOY_1_1KeyspaceDimension_a562028c48d62066cb8ebd75c1310d83b}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a8bd7f67bb399d7cf9b80be6160e7daf7}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!$\sim$KeyspaceDimension@{$\sim$KeyspaceDimension}}
+\index{$\sim$KeyspaceDimension@{$\sim$KeyspaceDimension}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{$\sim$KeyspaceDimension}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::KeyspaceDimension::$\sim$KeyspaceDimension ()}}
+\label{classBUSBOY_1_1KeyspaceDimension_a8bd7f67bb399d7cf9b80be6160e7daf7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_abceed9c7182f44afebf7b8e491224121}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!getDimension@{getDimension}}
+\index{getDimension@{getDimension}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{getDimension}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKeyDimension} BUSBOY::KeyspaceDimension::getDimension () const}}
+\label{classBUSBOY_1_1KeyspaceDimension_abceed9c7182f44afebf7b8e491224121}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a9dd72c349a2aed3cc8c2ff500986d269}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!getElement@{getElement}}
+\index{getElement@{getElement}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{getElement}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKeyElement} BUSBOY::KeyspaceDimension::getElement (size\_\-t {\em index}) const}}
+\label{classBUSBOY_1_1KeyspaceDimension_a9dd72c349a2aed3cc8c2ff500986d269}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a6e1b8fdd51cc3437e35e3f65162c053f}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!getElementCount@{getElementCount}}
+\index{getElementCount@{getElementCount}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{getElementCount}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::KeyspaceDimension::getElementCount () const}}
+\label{classBUSBOY_1_1KeyspaceDimension_a6e1b8fdd51cc3437e35e3f65162c053f}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_ad15e4b096758991e184f7eda1e508ea9}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!getElements@{getElements}}
+\index{getElements@{getElements}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{getElements}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ {\bf DataKeyElement} $>$ BUSBOY::KeyspaceDimension::getElements () const}}
+\label{classBUSBOY_1_1KeyspaceDimension_ad15e4b096758991e184f7eda1e508ea9}
+
+
+returns the elements in their defined order, e.g. a series of frames in timestamp order \hypertarget{classBUSBOY_1_1KeyspaceDimension_a22b8802999a801a96b9da7968753c636}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::KeyspaceDimension::operator!= (const {\bf KeyspaceDimension} \& {\em ksd}) const}}
+\label{classBUSBOY_1_1KeyspaceDimension_a22b8802999a801a96b9da7968753c636}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_aa1e0960c0f20c7eeeac9a458e2675281}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::KeyspaceDimension::operator$<$ (const {\bf KeyspaceDimension} \& {\em ksd}) const}}
+\label{classBUSBOY_1_1KeyspaceDimension_aa1e0960c0f20c7eeeac9a458e2675281}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_aac917a01e31957456ef0e90f924bfdf5}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!operator=@{operator=}}
+\index{operator=@{operator=}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf KeyspaceDimension} \& BUSBOY::KeyspaceDimension::operator= (const {\bf KeyspaceDimension} \& {\em ksd})}}
+\label{classBUSBOY_1_1KeyspaceDimension_aac917a01e31957456ef0e90f924bfdf5}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_a5527508b97f03a40e09ce3fd871942db}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::KeyspaceDimension::operator== (const {\bf KeyspaceDimension} \& {\em ksd}) const}}
+\label{classBUSBOY_1_1KeyspaceDimension_a5527508b97f03a40e09ce3fd871942db}
+\hypertarget{classBUSBOY_1_1KeyspaceDimension_afb55c8f67a2a21953231462d788e2e60}{
+\index{BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}!str@{str}}
+\index{str@{str}!BUSBOY::KeyspaceDimension@{BUSBOY::KeyspaceDimension}}
+\subsubsection[{str}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::KeyspaceDimension::str () const}}
+\label{classBUSBOY_1_1KeyspaceDimension_afb55c8f67a2a21953231462d788e2e60}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/keys/\hyperlink{KeyspaceDimension_8h}{KeyspaceDimension.h}\item 
+src/cpp/impl/keys/\hyperlink{KeyspaceDimension_8cpp}{KeyspaceDimension.cpp}\end{DoxyCompactItemize}

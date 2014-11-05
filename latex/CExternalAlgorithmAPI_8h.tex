@@ -1,0 +1,68 @@
+\hypertarget{CExternalAlgorithmAPI_8h}{
+\section{src/cpp/api/external/capi/CExternalAlgorithmAPI.h File Reference}
+\label{CExternalAlgorithmAPI_8h}\index{src/cpp/api/external/capi/CExternalAlgorithmAPI.h@{src/cpp/api/external/capi/CExternalAlgorithmAPI.h}}
+}
+{\ttfamily \#include $<$stddef.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structCExternalAlgorithmStruct}{CExternalAlgorithmStruct} $\ast$ \hyperlink{CExternalAlgorithmAPI_8h_aa61e1cad744454455b7cdea4b0ee5be0}{CExternalAlgorithmPtr}
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCExternalAlgorithmStruct}{CExternalAlgorithmPtr} \hyperlink{CExternalAlgorithmAPI_8h_a599171f859366375f0722d585dd11072}{CExternalAlgorithm\_\-newAlgorithm} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Copyright 2014 Google Inc. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{CExternalAlgorithmAPI_8h_afa7e6a358fe51a649d918eded9f0f4f4}{CExternalAlgorithm\_\-getName} (\hyperlink{structCExternalAlgorithmStruct}{CExternalAlgorithmPtr} algoHandle)
+\item 
+const char $\ast$ \hyperlink{CExternalAlgorithmAPI_8h_abc4204e67ca5d81b70d0aaa00b91ff9d}{CExternalAlgorithm\_\-getSerializedAlgorithm} (\hyperlink{structCExternalAlgorithmStruct}{CExternalAlgorithmPtr} algoHandle)
+\item 
+void \hyperlink{CExternalAlgorithmAPI_8h_a77a75a0f80c7ff4a5f48a0396642a32d}{CExternalAlgorithm\_\-setSerializedAlgorithm} (\hyperlink{structCExternalAlgorithmStruct}{CExternalAlgorithmPtr} algoHandle, const char $\ast$serializedAlgo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{CExternalAlgorithmAPI_8h_aa61e1cad744454455b7cdea4b0ee5be0}{
+\index{CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}!CExternalAlgorithmPtr@{CExternalAlgorithmPtr}}
+\index{CExternalAlgorithmPtr@{CExternalAlgorithmPtr}!CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}}
+\subsubsection[{CExternalAlgorithmPtr}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf CExternalAlgorithmStruct}$\ast$ {\bf CExternalAlgorithmPtr}}}
+\label{CExternalAlgorithmAPI_8h_aa61e1cad744454455b7cdea4b0ee5be0}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+\subsection{Function Documentation}
+\hypertarget{CExternalAlgorithmAPI_8h_afa7e6a358fe51a649d918eded9f0f4f4}{
+\index{CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}!CExternalAlgorithm\_\-getName@{CExternalAlgorithm\_\-getName}}
+\index{CExternalAlgorithm\_\-getName@{CExternalAlgorithm\_\-getName}!CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}}
+\subsubsection[{CExternalAlgorithm\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalAlgorithm\_\-getName ({\bf CExternalAlgorithmPtr} {\em algoHandle})}}
+\label{CExternalAlgorithmAPI_8h_afa7e6a358fe51a649d918eded9f0f4f4}
+\hypertarget{CExternalAlgorithmAPI_8h_abc4204e67ca5d81b70d0aaa00b91ff9d}{
+\index{CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}!CExternalAlgorithm\_\-getSerializedAlgorithm@{CExternalAlgorithm\_\-getSerializedAlgorithm}}
+\index{CExternalAlgorithm\_\-getSerializedAlgorithm@{CExternalAlgorithm\_\-getSerializedAlgorithm}!CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}}
+\subsubsection[{CExternalAlgorithm\_\-getSerializedAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ CExternalAlgorithm\_\-getSerializedAlgorithm ({\bf CExternalAlgorithmPtr} {\em algoHandle})}}
+\label{CExternalAlgorithmAPI_8h_abc4204e67ca5d81b70d0aaa00b91ff9d}
+\hypertarget{CExternalAlgorithmAPI_8h_a599171f859366375f0722d585dd11072}{
+\index{CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}!CExternalAlgorithm\_\-newAlgorithm@{CExternalAlgorithm\_\-newAlgorithm}}
+\index{CExternalAlgorithm\_\-newAlgorithm@{CExternalAlgorithm\_\-newAlgorithm}!CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}}
+\subsubsection[{CExternalAlgorithm\_\-newAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CExternalAlgorithmPtr} CExternalAlgorithm\_\-newAlgorithm (const char $\ast$ {\em name})}}
+\label{CExternalAlgorithmAPI_8h_a599171f859366375f0722d585dd11072}
+
+
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{CExternalAlgorithmAPI_8h_a77a75a0f80c7ff4a5f48a0396642a32d}{
+\index{CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}!CExternalAlgorithm\_\-setSerializedAlgorithm@{CExternalAlgorithm\_\-setSerializedAlgorithm}}
+\index{CExternalAlgorithm\_\-setSerializedAlgorithm@{CExternalAlgorithm\_\-setSerializedAlgorithm}!CExternalAlgorithmAPI.h@{CExternalAlgorithmAPI.h}}
+\subsubsection[{CExternalAlgorithm\_\-setSerializedAlgorithm}]{\setlength{\rightskip}{0pt plus 5cm}void CExternalAlgorithm\_\-setSerializedAlgorithm ({\bf CExternalAlgorithmPtr} {\em algoHandle}, \/  const char $\ast$ {\em serializedAlgo})}}
+\label{CExternalAlgorithmAPI_8h_a77a75a0f80c7ff4a5f48a0396642a32d}

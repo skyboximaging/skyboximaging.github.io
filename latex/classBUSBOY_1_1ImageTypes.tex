@@ -1,0 +1,123 @@
+\hypertarget{classBUSBOY_1_1ImageTypes}{
+\section{BUSBOY::ImageTypes Class Reference}
+\label{classBUSBOY_1_1ImageTypes}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}
+}
+
+
+Catalog of standard dimensions.  
+
+
+{\ttfamily \#include $<$ImageTypes.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138b}{Type} \{ \par
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba7a4363f0a722777dfbfa0f8850cc8647}{PAN}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab8f12cc577f140ea59d02392bd73c78c}{MS}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba25f1d23f91ba0aee507bf127cf842cd8}{MS\_\-MASK}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab4c008a3635a15158b236acc649084ab}{RGB\_\-PS}, 
+\par
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138baaa7914d33c9dd48a2727d958ad51de5e}{NIR\_\-PS}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab5486382a041b6d3e25c3b7606cf8e40}{RGB\_\-THUMB}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba575c9b6cf0f977b202a1ba506b59f215}{RED}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba9980081229800c761a3370d58f15ea99}{GRN}, 
+\par
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bacae0801289a55455842fccd556d5d7eb}{BLU}, 
+\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba68a2f66136bb061d528bbe55452e18a5}{NIR}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138b}{Type} \hyperlink{classBUSBOY_1_1ImageTypes_aa378a4b1cb7703b83c2c0c7eafbd8344}{enumFromString} (std::string strType)
+\begin{DoxyCompactList}\small\item\em Parses the string equivalent of the enum. \item\end{DoxyCompactList}\item 
+static std::string \hyperlink{classBUSBOY_1_1ImageTypes_ab6b89cbc0feb2e25f386660a8aefcbf4}{enumToString} (\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138b}{Type} type)
+\begin{DoxyCompactList}\small\item\em Returns the string equivalent of the enum. \item\end{DoxyCompactList}\item 
+static \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \hyperlink{classBUSBOY_1_1ImageTypes_a20db6862047c3fb93f4da985155ace43}{toImageType} (\hyperlink{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138b}{Type} type)
+\begin{DoxyCompactList}\small\item\em Create KeyElement object for the image type. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Catalog of standard dimensions. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138b}{
+\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!Type@{Type}}
+\index{Type@{Type}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf BUSBOY::ImageTypes::Type}}}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138b}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PAN@{PAN}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!PAN@{PAN}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba7a4363f0a722777dfbfa0f8850cc8647}{
+PAN}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba7a4363f0a722777dfbfa0f8850cc8647}
+}]Panchromatic. \index{MS@{MS}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!MS@{MS}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab8f12cc577f140ea59d02392bd73c78c}{
+MS}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab8f12cc577f140ea59d02392bd73c78c}
+}]Multispectral. \index{MS\_\-MASK@{MS\_\-MASK}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!MS\_\-MASK@{MS\_\-MASK}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba25f1d23f91ba0aee507bf127cf842cd8}{
+MS\_\-MASK}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba25f1d23f91ba0aee507bf127cf842cd8}
+}]Multispectral Mask. \index{RGB\_\-PS@{RGB\_\-PS}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!RGB\_\-PS@{RGB\_\-PS}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab4c008a3635a15158b236acc649084ab}{
+RGB\_\-PS}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab4c008a3635a15158b236acc649084ab}
+}]RGB PAN Sharpened. \index{NIR\_\-PS@{NIR\_\-PS}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!NIR\_\-PS@{NIR\_\-PS}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138baaa7914d33c9dd48a2727d958ad51de5e}{
+NIR\_\-PS}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138baaa7914d33c9dd48a2727d958ad51de5e}
+}]Near-\/infra-\/red PAN Sharpened. \index{RGB\_\-THUMB@{RGB\_\-THUMB}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!RGB\_\-THUMB@{RGB\_\-THUMB}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab5486382a041b6d3e25c3b7606cf8e40}{
+RGB\_\-THUMB}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bab5486382a041b6d3e25c3b7606cf8e40}
+}]RGB Thumbnail. \index{RED@{RED}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!RED@{RED}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba575c9b6cf0f977b202a1ba506b59f215}{
+RED}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba575c9b6cf0f977b202a1ba506b59f215}
+}]Red. \index{GRN@{GRN}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!GRN@{GRN}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba9980081229800c761a3370d58f15ea99}{
+GRN}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba9980081229800c761a3370d58f15ea99}
+}]Green. \index{BLU@{BLU}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!BLU@{BLU}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bacae0801289a55455842fccd556d5d7eb}{
+BLU}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138bacae0801289a55455842fccd556d5d7eb}
+}]Blue. \index{NIR@{NIR}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!NIR@{NIR}}\item[{\em 
+\hypertarget{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba68a2f66136bb061d528bbe55452e18a5}{
+NIR}
+\label{classBUSBOY_1_1ImageTypes_a3ce0616eb5317335a3b17bd46d56138ba68a2f66136bb061d528bbe55452e18a5}
+}]NIR. \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1ImageTypes_aa378a4b1cb7703b83c2c0c7eafbd8344}{
+\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!enumFromString@{enumFromString}}
+\index{enumFromString@{enumFromString}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}
+\subsubsection[{enumFromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ImageTypes::Type} BUSBOY::ImageTypes::enumFromString (std::string {\em strType})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1ImageTypes_aa378a4b1cb7703b83c2c0c7eafbd8344}
+
+
+Parses the string equivalent of the enum. For example: \char`\"{}PAN\char`\"{} -\/-\/$>$ PAN. Note that an underscore in the enum name will be replaced by a dash in the string equivalent. This is to avoid ambiguity when underscores are used as delimiters between parts of a file name. \hypertarget{classBUSBOY_1_1ImageTypes_ab6b89cbc0feb2e25f386660a8aefcbf4}{
+\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!enumToString@{enumToString}}
+\index{enumToString@{enumToString}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}
+\subsubsection[{enumToString}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::ImageTypes::enumToString ({\bf ImageTypes::Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1ImageTypes_ab6b89cbc0feb2e25f386660a8aefcbf4}
+
+
+Returns the string equivalent of the enum. For example: PAN -\/-\/$>$ \char`\"{}PAN\char`\"{} Note that an underscore in the enum name will be replaced by a dash in the string equivalent. This is to avoid ambiguity when underscores are used as delimiters between parts of a file name. \hypertarget{classBUSBOY_1_1ImageTypes_a20db6862047c3fb93f4da985155ace43}{
+\index{BUSBOY::ImageTypes@{BUSBOY::ImageTypes}!toImageType@{toImageType}}
+\index{toImageType@{toImageType}!BUSBOY::ImageTypes@{BUSBOY::ImageTypes}}
+\subsubsection[{toImageType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataKeyElement} BUSBOY::ImageTypes::toImageType ({\bf ImageTypes::Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1ImageTypes_a20db6862047c3fb93f4da985155ace43}
+
+
+Create KeyElement object for the image type. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/catalog/\hyperlink{ImageTypes_8h}{ImageTypes.h}\item 
+src/cpp/impl/catalog/\hyperlink{ImageTypes_8cpp}{ImageTypes.cpp}\end{DoxyCompactItemize}

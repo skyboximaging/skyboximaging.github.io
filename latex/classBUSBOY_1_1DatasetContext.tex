@@ -1,0 +1,117 @@
+\hypertarget{classBUSBOY_1_1DatasetContext}{
+\section{BUSBOY::DatasetContext Class Reference}
+\label{classBUSBOY_1_1DatasetContext}\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+}
+
+
+{\ttfamily \#include $<$DatasetContext.h$>$}Inheritance diagram for BUSBOY::DatasetContext::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classBUSBOY_1_1DatasetContext}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1DatasetContext_a933c6f2a96c8ed5c9219b1a6dcc3618d}{DatasetContext} ()
+\item 
+virtual \hyperlink{classBUSBOY_1_1DataFile}{DataFile} $\ast$ \hyperlink{classBUSBOY_1_1DatasetContext_a37fe67fa469141703703e7eee9c50a14}{findDataFile} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\begin{DoxyCompactList}\small\item\em Tries to find a file corresponding to the given key. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classBUSBOY_1_1DatasetContext_a25d929ed419ebb4c006d4926f53f504e}{isOutput} () const 
+\begin{DoxyCompactList}\small\item\em default is false \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classBUSBOY_1_1DatasetContext_a934ce529a4ae4cced154260714bbd380}{isQueryOnly} () const 
+\begin{DoxyCompactList}\small\item\em Indicates that no file keys are pushed into the dataset Default is false. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classBUSBOY_1_1DatasetContext_a76ffe901522f6cfc86a09ed3e5087abb}{addDataFile} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key, \hyperlink{classBUSBOY_1_1DataFile}{DataFile} $\ast$file)
+\begin{DoxyCompactList}\small\item\em Create a new output file for writing. \item\end{DoxyCompactList}\item 
+virtual std::string \hyperlink{classBUSBOY_1_1DatasetContext_ae85935dfaf6cb24e10e69f3d466c6699}{getDataFileName} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\begin{DoxyCompactList}\small\item\em Tries to get the name of the data file. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classBUSBOY_1_1RandomAccessFile}{RandomAccessFile} $\ast$ \hyperlink{classBUSBOY_1_1DatasetContext_a371cee56375e6052f1626a525bc35a61}{readFileAsRandomAccess} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\begin{DoxyCompactList}\small\item\em Access input file as a read-\/only random access file Default is to throw exception. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classBUSBOY_1_1WritableRandomAccessFile}{WritableRandomAccessFile} $\ast$ \hyperlink{classBUSBOY_1_1DatasetContext_a9137476c998215cdd6e1434c4325c154}{writeFileAsRandomAccess} (const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key) const 
+\begin{DoxyCompactList}\small\item\em Access output file as a writable random access file Default is to throw exception. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1DatasetContext_a933c6f2a96c8ed5c9219b1a6dcc3618d}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!DatasetContext@{DatasetContext}}
+\index{DatasetContext@{DatasetContext}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{DatasetContext}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::DatasetContext::DatasetContext ()}}
+\label{classBUSBOY_1_1DatasetContext_a933c6f2a96c8ed5c9219b1a6dcc3618d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1DatasetContext_a76ffe901522f6cfc86a09ed3e5087abb}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!addDataFile@{addDataFile}}
+\index{addDataFile@{addDataFile}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{addDataFile}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::DatasetContext::addDataFile (const {\bf DataKey} \& {\em key}, \/  {\bf DataFile} $\ast$ {\em file})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_a76ffe901522f6cfc86a09ed3e5087abb}
+
+
+Create a new output file for writing. Default is to throw exception 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a26b99881ddf50b9956773a0ff390dd7b}{BUSBOY::ExternalDatasetContext}.\hypertarget{classBUSBOY_1_1DatasetContext_a37fe67fa469141703703e7eee9c50a14}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!findDataFile@{findDataFile}}
+\index{findDataFile@{findDataFile}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{findDataFile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DataFile} $\ast$ BUSBOY::DatasetContext::findDataFile (const {\bf DataKey} \& {\em key}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_a37fe67fa469141703703e7eee9c50a14}
+
+
+Tries to find a file corresponding to the given key. Default behavior is no file found. \begin{DoxyReturn}{Returns}
+null if there is no file with this key 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a59835bb9652ace84e3962feb993e4801}{BUSBOY::ExternalDatasetContext}.\hypertarget{classBUSBOY_1_1DatasetContext_ae85935dfaf6cb24e10e69f3d466c6699}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!getDataFileName@{getDataFileName}}
+\index{getDataFileName@{getDataFileName}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{getDataFileName}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::DatasetContext::getDataFileName (const {\bf DataKey} \& {\em key}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_ae85935dfaf6cb24e10e69f3d466c6699}
+
+
+Tries to get the name of the data file. Default is name not available. \begin{DoxyReturn}{Returns}
+empty string if the name is not available 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a263a61c46130cbed03bd843637955f1a}{BUSBOY::ExternalDatasetContext}.\hypertarget{classBUSBOY_1_1DatasetContext_a25d929ed419ebb4c006d4926f53f504e}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!isOutput@{isOutput}}
+\index{isOutput@{isOutput}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{isOutput}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::DatasetContext::isOutput () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_a25d929ed419ebb4c006d4926f53f504e}
+
+
+default is false 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a6fef256e1e09e3bbed17daec4fbbed7b}{BUSBOY::ExternalDatasetContext}.\hypertarget{classBUSBOY_1_1DatasetContext_a934ce529a4ae4cced154260714bbd380}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!isQueryOnly@{isQueryOnly}}
+\index{isQueryOnly@{isQueryOnly}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{isQueryOnly}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::DatasetContext::isQueryOnly () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_a934ce529a4ae4cced154260714bbd380}
+
+
+Indicates that no file keys are pushed into the dataset Default is false. 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a85d83f0dffb7e0fbd8899de1abd28e85}{BUSBOY::ExternalDatasetContext}.\hypertarget{classBUSBOY_1_1DatasetContext_a371cee56375e6052f1626a525bc35a61}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!readFileAsRandomAccess@{readFileAsRandomAccess}}
+\index{readFileAsRandomAccess@{readFileAsRandomAccess}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{readFileAsRandomAccess}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RandomAccessFile} $\ast$ BUSBOY::DatasetContext::readFileAsRandomAccess (const {\bf DataKey} \& {\em key}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_a371cee56375e6052f1626a525bc35a61}
+
+
+Access input file as a read-\/only random access file Default is to throw exception. 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a6379574013a2236a9efba6a823a7a741}{BUSBOY::ExternalDatasetContext}.\hypertarget{classBUSBOY_1_1DatasetContext_a9137476c998215cdd6e1434c4325c154}{
+\index{BUSBOY::DatasetContext@{BUSBOY::DatasetContext}!writeFileAsRandomAccess@{writeFileAsRandomAccess}}
+\index{writeFileAsRandomAccess@{writeFileAsRandomAccess}!BUSBOY::DatasetContext@{BUSBOY::DatasetContext}}
+\subsubsection[{writeFileAsRandomAccess}]{\setlength{\rightskip}{0pt plus 5cm}{\bf WritableRandomAccessFile} $\ast$ BUSBOY::DatasetContext::writeFileAsRandomAccess (const {\bf DataKey} \& {\em key}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1DatasetContext_a9137476c998215cdd6e1434c4325c154}
+
+
+Access output file as a writable random access file Default is to throw exception. 
+
+Reimplemented in \hyperlink{classBUSBOY_1_1ExternalDatasetContext_a6f81aca310286df497632e916e555bee}{BUSBOY::ExternalDatasetContext}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/dataset/\hyperlink{DatasetContext_8h}{DatasetContext.h}\item 
+src/cpp/impl/dataset/\hyperlink{DatasetContext_8cpp}{DatasetContext.cpp}\end{DoxyCompactItemize}

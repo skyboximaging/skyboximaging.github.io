@@ -1,0 +1,45 @@
+\hypertarget{classBUSBOY_1_1BusboyLogging}{
+\section{BUSBOY::BusboyLogging Class Reference}
+\label{classBUSBOY_1_1BusboyLogging}\index{BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}}
+}
+
+
+{\ttfamily \#include $<$BusboyLogging.h$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static log4cxx::LoggerPtr \hyperlink{classBUSBOY_1_1BusboyLogging_aafe3f0190e28c0053b23368f93de255b}{getLogger} (const std::string \&name)
+\begin{DoxyCompactList}\small\item\em All Busboy framework classes should call this method to get their logger. \item\end{DoxyCompactList}\item 
+static log4cxx::LoggerPtr \hyperlink{classBUSBOY_1_1BusboyLogging_a429feabee73838517884e5ba2229ea9f}{getAlgorithmLogger} (const std::string \&name)
+\begin{DoxyCompactList}\small\item\em Returns the logger to send algorithm log messages. \item\end{DoxyCompactList}\item 
+static std::set$<$ std::string $>$ \hyperlink{classBUSBOY_1_1BusboyLogging_af896d8b674715e3e4adffd1ffa52bc41}{extractLogFiles} ()
+\begin{DoxyCompactList}\small\item\em Returns the paths for all log files in the log4cxx configuration. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1BusboyLogging_af896d8b674715e3e4adffd1ffa52bc41}{
+\index{BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}!extractLogFiles@{extractLogFiles}}
+\index{extractLogFiles@{extractLogFiles}!BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}}
+\subsubsection[{extractLogFiles}]{\setlength{\rightskip}{0pt plus 5cm}std::set$<$ std::string $>$ BUSBOY::BusboyLogging::extractLogFiles ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyLogging_af896d8b674715e3e4adffd1ffa52bc41}
+
+
+Returns the paths for all log files in the log4cxx configuration. \hypertarget{classBUSBOY_1_1BusboyLogging_a429feabee73838517884e5ba2229ea9f}{
+\index{BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}!getAlgorithmLogger@{getAlgorithmLogger}}
+\index{getAlgorithmLogger@{getAlgorithmLogger}!BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}}
+\subsubsection[{getAlgorithmLogger}]{\setlength{\rightskip}{0pt plus 5cm}LoggerPtr BUSBOY::BusboyLogging::getAlgorithmLogger (const std::string \& {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyLogging_a429feabee73838517884e5ba2229ea9f}
+
+
+Returns the logger to send algorithm log messages. \hypertarget{classBUSBOY_1_1BusboyLogging_aafe3f0190e28c0053b23368f93de255b}{
+\index{BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}!getLogger@{getLogger}}
+\index{getLogger@{getLogger}!BUSBOY::BusboyLogging@{BUSBOY::BusboyLogging}}
+\subsubsection[{getLogger}]{\setlength{\rightskip}{0pt plus 5cm}LoggerPtr BUSBOY::BusboyLogging::getLogger (const std::string \& {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyLogging_aafe3f0190e28c0053b23368f93de255b}
+
+
+All Busboy framework classes should call this method to get their logger. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/util/\hyperlink{BusboyLogging_8h}{BusboyLogging.h}\item 
+src/cpp/impl/util/\hyperlink{BusboyLogging_8cpp}{BusboyLogging.cpp}\end{DoxyCompactItemize}

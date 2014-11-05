@@ -1,0 +1,565 @@
+\hypertarget{namespaceBUSBOY}{
+\section{BUSBOY Namespace Reference}
+\label{namespaceBUSBOY}\index{BUSBOY@{BUSBOY}}
+}
+
+
+Copyright 2014 Google Inc.  
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBUSBOY_1_1Algorithm}{Algorithm}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBUSBOY_1_1Algorithm}{Algorithm} developers must extend this class to implement an algorithm. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmAutoRegister}{AlgorithmAutoRegister}
+\begin{DoxyCompactList}\small\item\em Registers an algorithm upon instantiation. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmConfig}{AlgorithmConfig}
+\begin{DoxyCompactList}\small\item\em A map of configuration properties passed to an algorithm. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmData}{AlgorithmData}
+\begin{DoxyCompactList}\small\item\em Root object for access to all data used by an executing algorithm. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmRegistry}{AlgorithmRegistry}
+\begin{DoxyCompactList}\small\item\em Singleton that holds a mapping of names to algorithms. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmRunner}{AlgorithmRunner}
+\item 
+class \hyperlink{classBUSBOY_1_1DimensionCatalog}{DimensionCatalog}
+\begin{DoxyCompactList}\small\item\em Catalog of standard dimensions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1ImageTypes}{ImageTypes}
+\begin{DoxyCompactList}\small\item\em Catalog of standard dimensions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmContext}{AlgorithmContext}
+\begin{DoxyCompactList}\small\item\em Provides algorithms with access to various services provided by the framework. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1Logger}{Logger}
+\begin{DoxyCompactList}\small\item\em Class to extend to receive log messages. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1Message}{Message}
+\item 
+class \hyperlink{classBUSBOY_1_1MessageConsumer}{MessageConsumer}
+\begin{DoxyCompactList}\small\item\em Class to extend to receive messages sent to topics. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1ProgressReporter}{ProgressReporter}
+\begin{DoxyCompactList}\small\item\em Class to extend to receive progress messages. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1DataFile}{DataFile}
+\begin{DoxyCompactList}\small\item\em Content of a file. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1DataFileSink}{DataFileSink}
+\item 
+class \hyperlink{classBUSBOY_1_1DataFileSource}{DataFileSource}
+\item 
+class \hyperlink{classBUSBOY_1_1Dataset}{Dataset}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{classBUSBOY_1_1Dataset}{Dataset} is a bundle of conceptually related files and metadata. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1DatasetContext}{DatasetContext}
+\item 
+class \hyperlink{classBUSBOY_1_1LocalDataFileSink}{LocalDataFileSink}
+\item 
+class \hyperlink{classBUSBOY_1_1LocalDataFileSource}{LocalDataFileSource}
+\item 
+class \hyperlink{classBUSBOY_1_1LocalTempFile}{LocalTempFile}
+\begin{DoxyCompactList}\small\item\em Manages storage of a temp file on local disk. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1RandomAccessFile}{RandomAccessFile}
+\begin{DoxyCompactList}\small\item\em File that allows arbitrary movement of the file pointer. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1SimpleDataFileSource}{SimpleDataFileSource}
+\item 
+class \hyperlink{classBUSBOY_1_1WritableRandomAccessFile}{WritableRandomAccessFile}
+\item 
+class \hyperlink{classBUSBOY_1_1Error}{Error}
+\item 
+class \hyperlink{classBUSBOY_1_1ErrorReporter}{ErrorReporter}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonErrorSerializer}{JsonErrorSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithm}{ExternalAlgorithm}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmData}{ExternalAlgorithmData}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmDataSerializer}{ExternalAlgorithmDataSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmSerializer}{ExternalAlgorithmSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalContext}{ExternalContext}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataFile}{ExternalDataFile}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataFileSink}{ExternalDataFileSink}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataFileSource}{ExternalDataFileSource}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataset}{ExternalDataset}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDatasetContext}{ExternalDatasetContext}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDatasetSerializer}{ExternalDatasetSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalEntry}{ExternalEntry}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalRandomAccessFile}{ExternalRandomAccessFile}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalRandomAccessFileSink}{ExternalRandomAccessFileSink}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalRandomAccessFileSource}{ExternalRandomAccessFileSource}
+\item 
+class \hyperlink{classBUSBOY_1_1DataKey}{DataKey}
+\begin{DoxyCompactList}\small\item\em A key includes zero or one elements in each dimension. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1DataKeyBuilder}{DataKeyBuilder}
+\begin{DoxyCompactList}\small\item\em Use this class to build up a key step-\/by-\/step. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1DataKeyDimension}{DataKeyDimension}
+\begin{DoxyCompactList}\small\item\em Represents a dimension for data, such as sensors, frames, etc. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement}
+\begin{DoxyCompactList}\small\item\em Represents one element of a data key, such as a specific frame. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace} captures all the elements that are present in the datasets passed to an algorithm. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1KeyspaceBuilder}{KeyspaceBuilder}
+\begin{DoxyCompactList}\small\item\em Use this class to build up a keyspace from a bunch of keys. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension}
+\begin{DoxyCompactList}\small\item\em What elements are included in the keyspace for a given dimension. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1MetadataArray}{MetadataArray}
+\begin{DoxyCompactList}\small\item\em An array of primitive values of a single type. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement}
+\begin{DoxyCompactList}\small\item\em Base class for the different types of metadata. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1CloneableMetadataElement}{CloneableMetadataElement}
+\begin{DoxyCompactList}\small\item\em Base class for types of metadata that may be cloned. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1MetadataField}{MetadataField}
+\begin{DoxyCompactList}\small\item\em A single primitive value. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1MetadataKey}{MetadataKey}
+\begin{DoxyCompactList}\small\item\em Thin wrapper to allow \hyperlink{classBUSBOY_1_1DataKey}{DataKey} to be a piece of metadata. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList}
+\begin{DoxyCompactList}\small\item\em A sequential list of arbitrary metadata elements. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1MetadataMap}{MetadataMap}
+\begin{DoxyCompactList}\small\item\em A map of names to arbitrary metadata elements. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1Primitive}{Primitive}
+\begin{DoxyCompactList}\small\item\em Enumeration and utilities for the primitive types in fields and arrays. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmConfigSerializer}{AlgorithmConfigSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmSerializer}{AlgorithmSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1DatasetSerializer}{DatasetSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JanssonUtil}{JanssonUtil}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonAlgorithmConfigSerializer}{JsonAlgorithmConfigSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonAlgorithmSerializer}{JsonAlgorithmSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonCommonSerializer}{JsonCommonSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonDatasetSerializer}{JsonDatasetSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonKeyspaceSerializer}{JsonKeyspaceSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonPropertiesSerializer}{JsonPropertiesSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonSerializerFactory}{JsonSerializerFactory}
+\item 
+class \hyperlink{classBUSBOY_1_1KeyspaceSerializer}{KeyspaceSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1PropertiesSerializer}{PropertiesSerializer}
+\item 
+class \hyperlink{classBUSBOY_1_1Serializer}{Serializer}
+\item 
+class \hyperlink{classBUSBOY_1_1SerializerFactory}{SerializerFactory}
+\item 
+class \hyperlink{classBUSBOY_1_1SerializerRegistry}{SerializerRegistry}
+\begin{DoxyCompactList}\small\item\em Singleton that holds a mapping of content types to serializers that can handle those content types. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1BusboyEnvironment}{BusboyEnvironment}
+\begin{DoxyCompactList}\small\item\em Singleton for managing environmental properties. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1BusboyLogging}{BusboyLogging}
+\item 
+class \hyperlink{classBUSBOY_1_1BusboyTempFiles}{BusboyTempFiles}
+\begin{DoxyCompactList}\small\item\em Singleton for managing environmental properties. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1IOUtil}{IOUtil}
+\item 
+class \hyperlink{classBUSBOY_1_1Properties}{Properties}
+\begin{DoxyCompactList}\small\item\em Replicates some of the functionality of Java's \hyperlink{classBUSBOY_1_1Properties}{Properties} class. \item\end{DoxyCompactList}\item 
+class \hyperlink{classBUSBOY_1_1StackUtil}{StackUtil}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmImpl}{AlgorithmImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmConfigImpl}{AlgorithmConfigImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmDataImpl}{AlgorithmDataImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmRegistryImpl}{AlgorithmRegistryImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmRunnerImpl}{AlgorithmRunnerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DimensionCatalogImpl}{DimensionCatalogImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ImageTypesImpl}{ImageTypesImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmContextAlgoLogger}{AlgorithmContextAlgoLogger}
+\item 
+class \hyperlink{classBUSBOY_1_1AlgorithmContextImpl}{AlgorithmContextImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1LogLevels}{LogLevels}
+\item 
+class \hyperlink{classBUSBOY_1_1MessageImpl}{MessageImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DataFileImpl}{DataFileImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DatasetImpl}{DatasetImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1LocalDataFileSinkImpl}{LocalDataFileSinkImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1LocalDataFileSourceImpl}{LocalDataFileSourceImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1LocalTempFileImpl}{LocalTempFileImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1SimpleDataFileSourceImpl}{SimpleDataFileSourceImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ErrorSeverities}{ErrorSeverities}
+\item 
+class \hyperlink{classBUSBOY_1_1ErrorImpl}{ErrorImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ErrorReporterImpl}{ErrorReporterImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonErrorSerializerImpl}{JsonErrorSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmImpl}{ExternalAlgorithmImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmDataImpl}{ExternalAlgorithmDataImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmDataSerializerImpl}{ExternalAlgorithmDataSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalAlgorithmSerializerImpl}{ExternalAlgorithmSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalContextImpl}{ExternalContextImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataFileImpl}{ExternalDataFileImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataFileSinkImpl}{ExternalDataFileSinkImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDataFileSourceImpl}{ExternalDataFileSourceImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDatasetImpl}{ExternalDatasetImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDatasetContextImpl}{ExternalDatasetContextImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalDatasetSerializerImpl}{ExternalDatasetSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalRandomAccessFileImpl}{ExternalRandomAccessFileImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1ExternalRandomAccessFileSinkImpl}{ExternalRandomAccessFileSinkImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DataKeyImpl}{DataKeyImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DataKeyBuilderImpl}{DataKeyBuilderImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DataKeyDimensionImpl}{DataKeyDimensionImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1DataKeyElementImpl}{DataKeyElementImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1KeyspaceImpl}{KeyspaceImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1KeyspaceBuilderImpl}{KeyspaceBuilderImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1KeyspaceDimensionImpl}{KeyspaceDimensionImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1MetadataArrayImpl}{MetadataArrayImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1MetadataTypes}{MetadataTypes}
+\item 
+class \hyperlink{classBUSBOY_1_1MetadataFieldImpl}{MetadataFieldImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1MetadataKeyImpl}{MetadataKeyImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1MetadataListImpl}{MetadataListImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1MetadataMapImpl}{MetadataMapImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1PrimitiveImpl}{PrimitiveImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonAlgorithmConfigSerializerImpl}{JsonAlgorithmConfigSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonAlgorithmSerializerImpl}{JsonAlgorithmSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonDatasetSerializerImpl}{JsonDatasetSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonKeyspaceSerializerImpl}{JsonKeyspaceSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonPropertiesSerializerImpl}{JsonPropertiesSerializerImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1JsonSerializerFactoryRegister}{JsonSerializerFactoryRegister}
+\item 
+class \hyperlink{classBUSBOY_1_1SerializerRegistryImpl}{SerializerRegistryImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1EnvSets}{EnvSets}
+\item 
+class \hyperlink{classBUSBOY_1_1BusboyEnvironmentImpl}{BusboyEnvironmentImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1BusboyLoggingImpl}{BusboyLoggingImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1BusboyTempFilesImpl}{BusboyTempFilesImpl}
+\item 
+class \hyperlink{classBUSBOY_1_1PropertiesImpl}{PropertiesImpl}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_aa34993c405d596f786e60c5e28227ee0}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1Message}{Message} \&msg)
+\item 
+bool \hyperlink{namespaceBUSBOY_a1a5eaeb88615f0cf63f6d095afa22001}{operator==} (const \hyperlink{classBUSBOY_1_1DataFileSource}{DataFileSource} \&src1, const \hyperlink{classBUSBOY_1_1DataFileSource}{DataFileSource} \&src2)
+\begin{DoxyCompactList}\small\item\em Compare the content of two sources. \item\end{DoxyCompactList}\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_abf725420838926e6e0be40f6be286e1e}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1Error}{Error} \&error)
+\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_a37db6513c53aae204080d673cf0fe9ac}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1DataKey}{DataKey} \&key)
+\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_aef9a872b4e1de144c66c31eebe6cb391}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1DataKeyDimension}{DataKeyDimension} \&dim)
+\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_ab363c0d7faea2289510d7538af45dbf4}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1DataKeyElement}{DataKeyElement} \&element)
+\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_a2fe378367a91118bd460bb2949833f07}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1Keyspace}{Keyspace} \&keyspace)
+\item 
+std::ostream \& \hyperlink{namespaceBUSBOY_a6c78735918c3de429c845f19928761ee}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classBUSBOY_1_1KeyspaceDimension}{KeyspaceDimension} \&ksd)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceBUSBOY_af886065748417a14b9702e52d3db9773}{copyArray} (const T $\ast$src, T $\ast$dest, size\_\-t size)
+\begin{DoxyCompactList}\small\item\em Copy an array into space allocated by the caller. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceBUSBOY_a572172ab912dc882a1027ae02ecdec14}{copyArray} (const T $\ast$src, size\_\-t size)
+\begin{DoxyCompactList}\small\item\em Copy an array into space allocated by this method. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespaceBUSBOY_afab314ffc342c103654ef4cf843d8e1f}{compareArray} (const T $\ast$arr1, const T $\ast$arr2, size\_\-t size)
+\begin{DoxyCompactList}\small\item\em Memberwise array comparison of arrays known to be the same size. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespaceBUSBOY_ada56f4be13026b9d79af28c8d7e97991}{comparePointers} (const T $\ast$p1, const T $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Helper method for compareVectorOfPointers. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespaceBUSBOY_ab0e8dfb62808cc1ad5e55a91524bac51}{compareVectorsOfPointers} (const std::vector$<$ T $\ast$ $>$ vector1, const std::vector$<$ T $\ast$ $>$ vector2)
+\begin{DoxyCompactList}\small\item\em Operator== for vectors where the elements are pointers. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename V $>$ }\\void \hyperlink{namespaceBUSBOY_a31674a02d5b0c7247036251b9ddfb446}{deleteVectorOfPointers} (std::vector$<$ V $\ast$ $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Deletes all the values in a vector of pointers. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K , typename V $>$ }\\bool \hyperlink{namespaceBUSBOY_a6596aa28107eeff9118f3104c26c7885}{comparePointerPairs} (const std::pair$<$ K, V $\ast$ $>$ \&pair1, const std::pair$<$ K, V $\ast$ $>$ \&pair2)
+\begin{DoxyCompactList}\small\item\em Helper method for compareMapOfPointers. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K , typename V $>$ }\\bool \hyperlink{namespaceBUSBOY_a2f0bdbc11fc2b82453ee5929bdf887bc}{compareMapsOfPointers} (const std::map$<$ K, V $\ast$ $>$ map1, const std::map$<$ K, V $\ast$ $>$ map2)
+\begin{DoxyCompactList}\small\item\em Operator== for maps where the elements are pointers. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K , typename V $>$ }\\void \hyperlink{namespaceBUSBOY_a1a243fc2a20b020d9280a4df0e325402}{deleteMapOfPointers} (std::map$<$ K, V $\ast$ $>$ \&map)
+\begin{DoxyCompactList}\small\item\em Deletes all the values in a map of pointers. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K , typename V $>$ }\\std::set$<$ K $>$ \hyperlink{namespaceBUSBOY_a532e2d36284b7d18c06080572130098e}{keySet} (const std::map$<$ K, V $>$ \&map)
+\begin{DoxyCompactList}\small\item\em Returns all the keys in a map. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K , typename V $>$ }\\void \hyperlink{namespaceBUSBOY_ab648989876ee1856c8eb27d39f7c5497}{mapAddAll} (std::map$<$ K, V $>$ $\ast$map1, const std::map$<$ K, V $>$ \&map2)
+\begin{DoxyCompactList}\small\item\em Add contents of map2 to map1, updating map1. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std::string \hyperlink{namespaceBUSBOY_a68fd7fa31d51e040063f543e540a3ab4}{vectorToString} (const std::vector$<$ T $>$ \&vec, const std::string \&delim)
+\begin{DoxyCompactList}\small\item\em Converts a vector to a delimited string. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std::string \hyperlink{namespaceBUSBOY_ab379f561542ab99122e582c5d8d7a4de}{setToString} (const std::set$<$ T $>$ \&set, const std::string \&delim)
+\begin{DoxyCompactList}\small\item\em Converts a set to a delimited string. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename InputIterator $>$ }\\std::string \hyperlink{namespaceBUSBOY_a93313a8b24721856c352d58ce902de0b}{containerToString} (const InputIterator begin, const InputIterator end, const std::string \&delim)
+\begin{DoxyCompactList}\small\item\em Converts elements between begin and end to a delimited string. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std::vector$<$ T $>$ \hyperlink{namespaceBUSBOY_a30565802dd1d32848b0780a68bb1c3f2}{setToVector} (const std::set$<$ T $>$ \&set)
+\begin{DoxyCompactList}\small\item\em Converts a set to a vector using the natural set ordering. \item\end{DoxyCompactList}\item 
+\hyperlink{classBUSBOY_1_1ExternalDatasetSerializer}{ExternalDatasetSerializer} $\ast$ \hyperlink{namespaceBUSBOY_aae13194f46d8e019992b0f869869ff59}{buildDatasetSerializer} ()
+\item 
+\hyperlink{classBUSBOY_1_1ExternalAlgorithmDataSerializer}{ExternalAlgorithmDataSerializer} $\ast$ \hyperlink{namespaceBUSBOY_abe28e9b3e829acb3638a78f75cecf91c}{buildAlgoDataSerializer} ()
+\item 
+\hyperlink{classBUSBOY_1_1ExternalAlgorithmSerializer}{ExternalAlgorithmSerializer} $\ast$ \hyperlink{namespaceBUSBOY_a13b558c3160921511fc5451948a411a0}{buildAlgorithmSerializer} ()
+\item 
+template std::string \hyperlink{namespaceBUSBOY_a533d026b15dd61e6cecd58c893351a91}{Primitive::toString$<$ std::string $>$} (const std::string \&val)
+\item 
+template std::string \hyperlink{namespaceBUSBOY_ae9cfd49649c24e5866a81067a2787906}{Primitive::fromString$<$ std::string $>$} (const std::string \&str)
+\item 
+template void \hyperlink{namespaceBUSBOY_aaf1c55f7460aa06870133ce02137c52c}{Primitive::toString$<$ std::string $>$} (const std::string $\ast$vals, std::string $\ast$strs, size\_\-t size)
+\item 
+template void \hyperlink{namespaceBUSBOY_a07a2b3789d315b22647f060788aa72ab}{Primitive::fromString$<$ std::string $>$} (const std::string $\ast$strs, std::string $\ast$vals, size\_\-t size)
+\item 
+std::string \hyperlink{namespaceBUSBOY_a85e2c1eb3640b9f6f7a21a3992dfd900}{jsonTypeEnumToString} (int type)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1JsonSerializerFactoryRegister}{JsonSerializerFactoryRegister} \hyperlink{namespaceBUSBOY_a214b8e47f93cf25f6a034c961ad58f2e}{jsonSerializerFactoryRegister}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the \char`\"{}License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http://www.apache.org/licenses/LICENSE-\/2.0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceBUSBOY_abe28e9b3e829acb3638a78f75cecf91c}{
+\index{BUSBOY@{BUSBOY}!buildAlgoDataSerializer@{buildAlgoDataSerializer}}
+\index{buildAlgoDataSerializer@{buildAlgoDataSerializer}!BUSBOY@{BUSBOY}}
+\subsubsection[{buildAlgoDataSerializer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ExternalAlgorithmDataSerializer}$\ast$ BUSBOY::buildAlgoDataSerializer ()}}
+\label{namespaceBUSBOY_abe28e9b3e829acb3638a78f75cecf91c}
+\hypertarget{namespaceBUSBOY_a13b558c3160921511fc5451948a411a0}{
+\index{BUSBOY@{BUSBOY}!buildAlgorithmSerializer@{buildAlgorithmSerializer}}
+\index{buildAlgorithmSerializer@{buildAlgorithmSerializer}!BUSBOY@{BUSBOY}}
+\subsubsection[{buildAlgorithmSerializer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ExternalAlgorithmSerializer}$\ast$ BUSBOY::buildAlgorithmSerializer ()}}
+\label{namespaceBUSBOY_a13b558c3160921511fc5451948a411a0}
+\hypertarget{namespaceBUSBOY_aae13194f46d8e019992b0f869869ff59}{
+\index{BUSBOY@{BUSBOY}!buildDatasetSerializer@{buildDatasetSerializer}}
+\index{buildDatasetSerializer@{buildDatasetSerializer}!BUSBOY@{BUSBOY}}
+\subsubsection[{buildDatasetSerializer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ExternalDatasetSerializer}$\ast$ BUSBOY::buildDatasetSerializer ()}}
+\label{namespaceBUSBOY_aae13194f46d8e019992b0f869869ff59}
+\hypertarget{namespaceBUSBOY_afab314ffc342c103654ef4cf843d8e1f}{
+\index{BUSBOY@{BUSBOY}!compareArray@{compareArray}}
+\index{compareArray@{compareArray}!BUSBOY@{BUSBOY}}
+\subsubsection[{compareArray}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool BUSBOY::compareArray (const T $\ast$ {\em arr1}, \/  const T $\ast$ {\em arr2}, \/  size\_\-t {\em size})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_afab314ffc342c103654ef4cf843d8e1f}
+
+
+Memberwise array comparison of arrays known to be the same size. \hypertarget{namespaceBUSBOY_a2f0bdbc11fc2b82453ee5929bdf887bc}{
+\index{BUSBOY@{BUSBOY}!compareMapsOfPointers@{compareMapsOfPointers}}
+\index{compareMapsOfPointers@{compareMapsOfPointers}!BUSBOY@{BUSBOY}}
+\subsubsection[{compareMapsOfPointers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V $>$ bool BUSBOY::compareMapsOfPointers (const std::map$<$ K, V $\ast$ $>$ {\em map1}, \/  const std::map$<$ K, V $\ast$ $>$ {\em map2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a2f0bdbc11fc2b82453ee5929bdf887bc}
+
+
+Operator== for maps where the elements are pointers. The elements comparison will compare the dereferenced pointers \hypertarget{namespaceBUSBOY_a6596aa28107eeff9118f3104c26c7885}{
+\index{BUSBOY@{BUSBOY}!comparePointerPairs@{comparePointerPairs}}
+\index{comparePointerPairs@{comparePointerPairs}!BUSBOY@{BUSBOY}}
+\subsubsection[{comparePointerPairs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V $>$ bool BUSBOY::comparePointerPairs (const std::pair$<$ K, V $\ast$ $>$ \& {\em pair1}, \/  const std::pair$<$ K, V $\ast$ $>$ \& {\em pair2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a6596aa28107eeff9118f3104c26c7885}
+
+
+Helper method for compareMapOfPointers. \hypertarget{namespaceBUSBOY_ada56f4be13026b9d79af28c8d7e97991}{
+\index{BUSBOY@{BUSBOY}!comparePointers@{comparePointers}}
+\index{comparePointers@{comparePointers}!BUSBOY@{BUSBOY}}
+\subsubsection[{comparePointers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool BUSBOY::comparePointers (const T $\ast$ {\em p1}, \/  const T $\ast$ {\em p2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_ada56f4be13026b9d79af28c8d7e97991}
+
+
+Helper method for compareVectorOfPointers. \hypertarget{namespaceBUSBOY_ab0e8dfb62808cc1ad5e55a91524bac51}{
+\index{BUSBOY@{BUSBOY}!compareVectorsOfPointers@{compareVectorsOfPointers}}
+\index{compareVectorsOfPointers@{compareVectorsOfPointers}!BUSBOY@{BUSBOY}}
+\subsubsection[{compareVectorsOfPointers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool BUSBOY::compareVectorsOfPointers (const std::vector$<$ T $\ast$ $>$ {\em vector1}, \/  const std::vector$<$ T $\ast$ $>$ {\em vector2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_ab0e8dfb62808cc1ad5e55a91524bac51}
+
+
+Operator== for vectors where the elements are pointers. The elements comparison will compare the dereferenced pointers \hypertarget{namespaceBUSBOY_a93313a8b24721856c352d58ce902de0b}{
+\index{BUSBOY@{BUSBOY}!containerToString@{containerToString}}
+\index{containerToString@{containerToString}!BUSBOY@{BUSBOY}}
+\subsubsection[{containerToString}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename InputIterator $>$ std::string BUSBOY::containerToString (const InputIterator {\em begin}, \/  const InputIterator {\em end}, \/  const std::string \& {\em delim})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a93313a8b24721856c352d58ce902de0b}
+
+
+Converts elements between begin and end to a delimited string. The elements must implement operator$<$$<$ \hypertarget{namespaceBUSBOY_a572172ab912dc882a1027ae02ecdec14}{
+\index{BUSBOY@{BUSBOY}!copyArray@{copyArray}}
+\index{copyArray@{copyArray}!BUSBOY@{BUSBOY}}
+\subsubsection[{copyArray}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T$\ast$ BUSBOY::copyArray (const T $\ast$ {\em src}, \/  size\_\-t {\em size})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a572172ab912dc882a1027ae02ecdec14}
+
+
+Copy an array into space allocated by this method. The array is allocated with new\mbox{[}\mbox{]}. Caller is responsible for disposing with delete\mbox{[}\mbox{]}. \hypertarget{namespaceBUSBOY_af886065748417a14b9702e52d3db9773}{
+\index{BUSBOY@{BUSBOY}!copyArray@{copyArray}}
+\index{copyArray@{copyArray}!BUSBOY@{BUSBOY}}
+\subsubsection[{copyArray}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void BUSBOY::copyArray (const T $\ast$ {\em src}, \/  T $\ast$ {\em dest}, \/  size\_\-t {\em size})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_af886065748417a14b9702e52d3db9773}
+
+
+Copy an array into space allocated by the caller. \hypertarget{namespaceBUSBOY_a1a243fc2a20b020d9280a4df0e325402}{
+\index{BUSBOY@{BUSBOY}!deleteMapOfPointers@{deleteMapOfPointers}}
+\index{deleteMapOfPointers@{deleteMapOfPointers}!BUSBOY@{BUSBOY}}
+\subsubsection[{deleteMapOfPointers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V $>$ void BUSBOY::deleteMapOfPointers (std::map$<$ K, V $\ast$ $>$ \& {\em map})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a1a243fc2a20b020d9280a4df0e325402}
+
+
+Deletes all the values in a map of pointers. \hypertarget{namespaceBUSBOY_a31674a02d5b0c7247036251b9ddfb446}{
+\index{BUSBOY@{BUSBOY}!deleteVectorOfPointers@{deleteVectorOfPointers}}
+\index{deleteVectorOfPointers@{deleteVectorOfPointers}!BUSBOY@{BUSBOY}}
+\subsubsection[{deleteVectorOfPointers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V $>$ void BUSBOY::deleteVectorOfPointers (std::vector$<$ V $\ast$ $>$ \& {\em vector})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a31674a02d5b0c7247036251b9ddfb446}
+
+
+Deletes all the values in a vector of pointers. \hypertarget{namespaceBUSBOY_a85e2c1eb3640b9f6f7a21a3992dfd900}{
+\index{BUSBOY@{BUSBOY}!jsonTypeEnumToString@{jsonTypeEnumToString}}
+\index{jsonTypeEnumToString@{jsonTypeEnumToString}!BUSBOY@{BUSBOY}}
+\subsubsection[{jsonTypeEnumToString}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::jsonTypeEnumToString (int {\em type})}}
+\label{namespaceBUSBOY_a85e2c1eb3640b9f6f7a21a3992dfd900}
+\hypertarget{namespaceBUSBOY_a532e2d36284b7d18c06080572130098e}{
+\index{BUSBOY@{BUSBOY}!keySet@{keySet}}
+\index{keySet@{keySet}!BUSBOY@{BUSBOY}}
+\subsubsection[{keySet}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V $>$ std::set$<$K$>$ BUSBOY::keySet (const std::map$<$ K, V $>$ \& {\em map})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a532e2d36284b7d18c06080572130098e}
+
+
+Returns all the keys in a map. C++ equivalent of \hyperlink{namespaceBUSBOY_a532e2d36284b7d18c06080572130098e}{java.util.Map.keySet()} \hypertarget{namespaceBUSBOY_ab648989876ee1856c8eb27d39f7c5497}{
+\index{BUSBOY@{BUSBOY}!mapAddAll@{mapAddAll}}
+\index{mapAddAll@{mapAddAll}!BUSBOY@{BUSBOY}}
+\subsubsection[{mapAddAll}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename V $>$ void BUSBOY::mapAddAll (std::map$<$ K, V $>$ $\ast$ {\em map1}, \/  const std::map$<$ K, V $>$ \& {\em map2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_ab648989876ee1856c8eb27d39f7c5497}
+
+
+Add contents of map2 to map1, updating map1. If a key already exists in map1, it is updated to the value from map2 \hypertarget{namespaceBUSBOY_a6c78735918c3de429c845f19928761ee}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const KeyspaceDimension \& {\em ksd})}}
+\label{namespaceBUSBOY_a6c78735918c3de429c845f19928761ee}
+\hypertarget{namespaceBUSBOY_a2fe378367a91118bd460bb2949833f07}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const Keyspace \& {\em keyspace})}}
+\label{namespaceBUSBOY_a2fe378367a91118bd460bb2949833f07}
+\hypertarget{namespaceBUSBOY_ab363c0d7faea2289510d7538af45dbf4}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const DataKeyElement \& {\em element})}}
+\label{namespaceBUSBOY_ab363c0d7faea2289510d7538af45dbf4}
+\hypertarget{namespaceBUSBOY_aef9a872b4e1de144c66c31eebe6cb391}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const DataKeyDimension \& {\em dim})}}
+\label{namespaceBUSBOY_aef9a872b4e1de144c66c31eebe6cb391}
+\hypertarget{namespaceBUSBOY_a37db6513c53aae204080d673cf0fe9ac}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const DataKey \& {\em key})}}
+\label{namespaceBUSBOY_a37db6513c53aae204080d673cf0fe9ac}
+\hypertarget{namespaceBUSBOY_abf725420838926e6e0be40f6be286e1e}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const Error \& {\em error})}}
+\label{namespaceBUSBOY_abf725420838926e6e0be40f6be286e1e}
+\hypertarget{namespaceBUSBOY_aa34993c405d596f786e60c5e28227ee0}{
+\index{BUSBOY@{BUSBOY}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream \& BUSBOY::operator$<$$<$ (std::ostream \& {\em os}, \/  const Message \& {\em msg})}}
+\label{namespaceBUSBOY_aa34993c405d596f786e60c5e28227ee0}
+\hypertarget{namespaceBUSBOY_a1a5eaeb88615f0cf63f6d095afa22001}{
+\index{BUSBOY@{BUSBOY}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY@{BUSBOY}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::operator== (const DataFileSource \& {\em src1}, \/  const DataFileSource \& {\em src2})}}
+\label{namespaceBUSBOY_a1a5eaeb88615f0cf63f6d095afa22001}
+
+
+Compare the content of two sources. This is only a valid comparison if both sources have not been released. An exception will be thrown if either has been released \hypertarget{namespaceBUSBOY_a07a2b3789d315b22647f060788aa72ab}{
+\index{BUSBOY@{BUSBOY}!Primitive::fromString$<$ std::string $>$@{Primitive::fromString$<$ std::string $>$}}
+\index{Primitive::fromString$<$ std::string $>$@{Primitive::fromString$<$ std::string $>$}!BUSBOY@{BUSBOY}}
+\subsubsection[{Primitive::fromString$<$ std::string $>$}]{\setlength{\rightskip}{0pt plus 5cm}template void BUSBOY::Primitive::fromString$<$ std::string $>$ (const std::string $\ast$ {\em strs}, \/  std::string $\ast$ {\em vals}, \/  size\_\-t {\em size})}}
+\label{namespaceBUSBOY_a07a2b3789d315b22647f060788aa72ab}
+\hypertarget{namespaceBUSBOY_ae9cfd49649c24e5866a81067a2787906}{
+\index{BUSBOY@{BUSBOY}!Primitive::fromString$<$ std::string $>$@{Primitive::fromString$<$ std::string $>$}}
+\index{Primitive::fromString$<$ std::string $>$@{Primitive::fromString$<$ std::string $>$}!BUSBOY@{BUSBOY}}
+\subsubsection[{Primitive::fromString$<$ std::string $>$}]{\setlength{\rightskip}{0pt plus 5cm}template std::string BUSBOY::Primitive::fromString$<$ std::string $>$ (const std::string \& {\em str})}}
+\label{namespaceBUSBOY_ae9cfd49649c24e5866a81067a2787906}
+\hypertarget{namespaceBUSBOY_aaf1c55f7460aa06870133ce02137c52c}{
+\index{BUSBOY@{BUSBOY}!Primitive::toString$<$ std::string $>$@{Primitive::toString$<$ std::string $>$}}
+\index{Primitive::toString$<$ std::string $>$@{Primitive::toString$<$ std::string $>$}!BUSBOY@{BUSBOY}}
+\subsubsection[{Primitive::toString$<$ std::string $>$}]{\setlength{\rightskip}{0pt plus 5cm}template void BUSBOY::Primitive::toString$<$ std::string $>$ (const std::string $\ast$ {\em vals}, \/  std::string $\ast$ {\em strs}, \/  size\_\-t {\em size})}}
+\label{namespaceBUSBOY_aaf1c55f7460aa06870133ce02137c52c}
+\hypertarget{namespaceBUSBOY_a533d026b15dd61e6cecd58c893351a91}{
+\index{BUSBOY@{BUSBOY}!Primitive::toString$<$ std::string $>$@{Primitive::toString$<$ std::string $>$}}
+\index{Primitive::toString$<$ std::string $>$@{Primitive::toString$<$ std::string $>$}!BUSBOY@{BUSBOY}}
+\subsubsection[{Primitive::toString$<$ std::string $>$}]{\setlength{\rightskip}{0pt plus 5cm}template std::string BUSBOY::Primitive::toString$<$ std::string $>$ (const std::string \& {\em val})}}
+\label{namespaceBUSBOY_a533d026b15dd61e6cecd58c893351a91}
+\hypertarget{namespaceBUSBOY_ab379f561542ab99122e582c5d8d7a4de}{
+\index{BUSBOY@{BUSBOY}!setToString@{setToString}}
+\index{setToString@{setToString}!BUSBOY@{BUSBOY}}
+\subsubsection[{setToString}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::string BUSBOY::setToString (const std::set$<$ T $>$ \& {\em set}, \/  const std::string \& {\em delim})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_ab379f561542ab99122e582c5d8d7a4de}
+
+
+Converts a set to a delimited string. The elements must implement operator$<$$<$ \hypertarget{namespaceBUSBOY_a30565802dd1d32848b0780a68bb1c3f2}{
+\index{BUSBOY@{BUSBOY}!setToVector@{setToVector}}
+\index{setToVector@{setToVector}!BUSBOY@{BUSBOY}}
+\subsubsection[{setToVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::vector$<$T$>$ BUSBOY::setToVector (const std::set$<$ T $>$ \& {\em set})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a30565802dd1d32848b0780a68bb1c3f2}
+
+
+Converts a set to a vector using the natural set ordering. \hypertarget{namespaceBUSBOY_a68fd7fa31d51e040063f543e540a3ab4}{
+\index{BUSBOY@{BUSBOY}!vectorToString@{vectorToString}}
+\index{vectorToString@{vectorToString}!BUSBOY@{BUSBOY}}
+\subsubsection[{vectorToString}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std::string BUSBOY::vectorToString (const std::vector$<$ T $>$ \& {\em vec}, \/  const std::string \& {\em delim})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{namespaceBUSBOY_a68fd7fa31d51e040063f543e540a3ab4}
+
+
+Converts a vector to a delimited string. The elements must implement operator$<$$<$ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceBUSBOY_a214b8e47f93cf25f6a034c961ad58f2e}{
+\index{BUSBOY@{BUSBOY}!jsonSerializerFactoryRegister@{jsonSerializerFactoryRegister}}
+\index{jsonSerializerFactoryRegister@{jsonSerializerFactoryRegister}!BUSBOY@{BUSBOY}}
+\subsubsection[{jsonSerializerFactoryRegister}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JsonSerializerFactoryRegister} {\bf BUSBOY::jsonSerializerFactoryRegister}}}
+\label{namespaceBUSBOY_a214b8e47f93cf25f6a034c961ad58f2e}

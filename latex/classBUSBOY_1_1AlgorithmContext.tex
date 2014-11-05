@@ -1,0 +1,140 @@
+\hypertarget{classBUSBOY_1_1AlgorithmContext}{
+\section{BUSBOY::AlgorithmContext Class Reference}
+\label{classBUSBOY_1_1AlgorithmContext}\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+}
+
+
+Provides algorithms with access to various services provided by the framework.  
+
+
+{\ttfamily \#include $<$AlgorithmContext.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1AlgorithmContext_a9f280b865d71a0b4fb5c8070f79c1df4}{AlgorithmContext} (const std::string \&name)
+\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_ad34588d7242c99541351256fff32a352}{log} (\hyperlink{classBUSBOY_1_1Logger_ac674cbb789eaa29c338c66248a4e4234}{Logger::LogLevel} level, const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em Printf style logging method for algorithms. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_a9c7487e4a8e36878e06ceff4f15d69f4}{log} (const std::string \&file, int line, \hyperlink{classBUSBOY_1_1Logger_ac674cbb789eaa29c338c66248a4e4234}{Logger::LogLevel} level, const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em Printf style logging method for algorithms with code location. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_abbec3e4f56f5789e78a965bb34740273}{log} (\hyperlink{classBUSBOY_1_1Logger_ac674cbb789eaa29c338c66248a4e4234}{Logger::LogLevel} level, const std::string \&msg)
+\begin{DoxyCompactList}\small\item\em Logging method for algorithms. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_a5b7af6c6d4210beb4dc960e3f73b702b}{log} (const std::string \&file, int line, \hyperlink{classBUSBOY_1_1Logger_ac674cbb789eaa29c338c66248a4e4234}{Logger::LogLevel} level, const std::string \&msg)
+\begin{DoxyCompactList}\small\item\em Logging method for algorithms with code location. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_aa5bcd4c4eef6881a044ac49a949893ee}{progress} (float percentDone, const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em Printf style progress reporting method for algorithms. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_af7cd5e155ce3598f21e9130f36ae258a}{progress} (float percentDone, const std::string \&msg)
+\begin{DoxyCompactList}\small\item\em Progress reporting method for algorithms. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_a4ea5204f7bfb563ae6e1a90a152a15e8}{registerLogger} (\hyperlink{classBUSBOY_1_1Logger}{Logger} $\ast$logger)
+\begin{DoxyCompactList}\small\item\em Register an object to receive all logging messages. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_ada0123d7af4b630548725cbff1ad606a}{registerProgressReporter} (\hyperlink{classBUSBOY_1_1ProgressReporter}{ProgressReporter} $\ast$prog)
+\begin{DoxyCompactList}\small\item\em Register an object to receive all progress messages. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classBUSBOY_1_1AlgorithmContext_ae745dab8a603182ecb4864582eba72a2}{createTempDirectory} ()
+\begin{DoxyCompactList}\small\item\em Create a temporary directory for use by the algorithm. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_a9874aa4a2bec24d137e5bf9d33ec8919}{sendMessage} (const \hyperlink{classBUSBOY_1_1Message}{Message} \&msg)
+\begin{DoxyCompactList}\small\item\em Send message to a topic. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1AlgorithmContext_ae2bdc8d592cbadcd8cf5b8f55244c804}{registerMessageConsumer} (\hyperlink{classBUSBOY_1_1MessageConsumer}{MessageConsumer} $\ast$consumer)
+\begin{DoxyCompactList}\small\item\em Register an object to receive all messages sent to topics. \item\end{DoxyCompactList}\item 
+\hyperlink{classBUSBOY_1_1AlgorithmContext_ae8d049caecb0efe1c46702e910401d5a}{$\sim$AlgorithmContext} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides algorithms with access to various services provided by the framework. A context instance is valid for the duration of a single algorithm execution. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1AlgorithmContext_a9f280b865d71a0b4fb5c8070f79c1df4}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!AlgorithmContext@{AlgorithmContext}}
+\index{AlgorithmContext@{AlgorithmContext}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{AlgorithmContext}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::AlgorithmContext::AlgorithmContext (const std::string \& {\em name})}}
+\label{classBUSBOY_1_1AlgorithmContext_a9f280b865d71a0b4fb5c8070f79c1df4}
+\hypertarget{classBUSBOY_1_1AlgorithmContext_ae8d049caecb0efe1c46702e910401d5a}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!$\sim$AlgorithmContext@{$\sim$AlgorithmContext}}
+\index{$\sim$AlgorithmContext@{$\sim$AlgorithmContext}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{$\sim$AlgorithmContext}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::AlgorithmContext::$\sim$AlgorithmContext ()}}
+\label{classBUSBOY_1_1AlgorithmContext_ae8d049caecb0efe1c46702e910401d5a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1AlgorithmContext_ae745dab8a603182ecb4864582eba72a2}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!createTempDirectory@{createTempDirectory}}
+\index{createTempDirectory@{createTempDirectory}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{createTempDirectory}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::AlgorithmContext::createTempDirectory ()}}
+\label{classBUSBOY_1_1AlgorithmContext_ae745dab8a603182ecb4864582eba72a2}
+
+
+Create a temporary directory for use by the algorithm. Busboy is responsible for cleaning up the directory after the algorithm exits. \hypertarget{classBUSBOY_1_1AlgorithmContext_a5b7af6c6d4210beb4dc960e3f73b702b}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!log@{log}}
+\index{log@{log}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::log (const std::string \& {\em file}, \/  int {\em line}, \/  {\bf Logger::LogLevel} {\em level}, \/  const std::string \& {\em msg})}}
+\label{classBUSBOY_1_1AlgorithmContext_a5b7af6c6d4210beb4dc960e3f73b702b}
+
+
+Logging method for algorithms with code location. \hypertarget{classBUSBOY_1_1AlgorithmContext_abbec3e4f56f5789e78a965bb34740273}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!log@{log}}
+\index{log@{log}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::log ({\bf Logger::LogLevel} {\em level}, \/  const std::string \& {\em msg})}}
+\label{classBUSBOY_1_1AlgorithmContext_abbec3e4f56f5789e78a965bb34740273}
+
+
+Logging method for algorithms. \hypertarget{classBUSBOY_1_1AlgorithmContext_a9c7487e4a8e36878e06ceff4f15d69f4}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!log@{log}}
+\index{log@{log}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::log (const std::string \& {\em file}, \/  int {\em line}, \/  {\bf Logger::LogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{classBUSBOY_1_1AlgorithmContext_a9c7487e4a8e36878e06ceff4f15d69f4}
+
+
+Printf style logging method for algorithms with code location. \hypertarget{classBUSBOY_1_1AlgorithmContext_ad34588d7242c99541351256fff32a352}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!log@{log}}
+\index{log@{log}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::log ({\bf Logger::LogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{classBUSBOY_1_1AlgorithmContext_ad34588d7242c99541351256fff32a352}
+
+
+Printf style logging method for algorithms. \hypertarget{classBUSBOY_1_1AlgorithmContext_af7cd5e155ce3598f21e9130f36ae258a}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!progress@{progress}}
+\index{progress@{progress}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{progress}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::progress (float {\em percentDone}, \/  const std::string \& {\em msg})}}
+\label{classBUSBOY_1_1AlgorithmContext_af7cd5e155ce3598f21e9130f36ae258a}
+
+
+Progress reporting method for algorithms. \hypertarget{classBUSBOY_1_1AlgorithmContext_aa5bcd4c4eef6881a044ac49a949893ee}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!progress@{progress}}
+\index{progress@{progress}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{progress}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::progress (float {\em percentDone}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{classBUSBOY_1_1AlgorithmContext_aa5bcd4c4eef6881a044ac49a949893ee}
+
+
+Printf style progress reporting method for algorithms. \hypertarget{classBUSBOY_1_1AlgorithmContext_a4ea5204f7bfb563ae6e1a90a152a15e8}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!registerLogger@{registerLogger}}
+\index{registerLogger@{registerLogger}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{registerLogger}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::registerLogger ({\bf Logger} $\ast$ {\em logger})}}
+\label{classBUSBOY_1_1AlgorithmContext_a4ea5204f7bfb563ae6e1a90a152a15e8}
+
+
+Register an object to receive all logging messages. \hypertarget{classBUSBOY_1_1AlgorithmContext_ae2bdc8d592cbadcd8cf5b8f55244c804}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!registerMessageConsumer@{registerMessageConsumer}}
+\index{registerMessageConsumer@{registerMessageConsumer}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{registerMessageConsumer}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::registerMessageConsumer ({\bf MessageConsumer} $\ast$ {\em consumer})}}
+\label{classBUSBOY_1_1AlgorithmContext_ae2bdc8d592cbadcd8cf5b8f55244c804}
+
+
+Register an object to receive all messages sent to topics. \hypertarget{classBUSBOY_1_1AlgorithmContext_ada0123d7af4b630548725cbff1ad606a}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!registerProgressReporter@{registerProgressReporter}}
+\index{registerProgressReporter@{registerProgressReporter}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{registerProgressReporter}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::registerProgressReporter ({\bf ProgressReporter} $\ast$ {\em prog})}}
+\label{classBUSBOY_1_1AlgorithmContext_ada0123d7af4b630548725cbff1ad606a}
+
+
+Register an object to receive all progress messages. \hypertarget{classBUSBOY_1_1AlgorithmContext_a9874aa4a2bec24d137e5bf9d33ec8919}{
+\index{BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!BUSBOY::AlgorithmContext@{BUSBOY::AlgorithmContext}}
+\subsubsection[{sendMessage}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::AlgorithmContext::sendMessage (const {\bf Message} \& {\em msg})}}
+\label{classBUSBOY_1_1AlgorithmContext_a9874aa4a2bec24d137e5bf9d33ec8919}
+
+
+Send message to a topic. If a handler has not been configured for the topic, the message will just be logged 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/context/\hyperlink{AlgorithmContext_8h}{AlgorithmContext.h}\item 
+src/cpp/impl/context/\hyperlink{AlgorithmContext_8cpp}{AlgorithmContext.cpp}\end{DoxyCompactItemize}

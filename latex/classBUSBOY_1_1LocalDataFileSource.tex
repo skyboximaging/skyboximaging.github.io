@@ -1,0 +1,110 @@
+\hypertarget{classBUSBOY_1_1LocalDataFileSource}{
+\section{BUSBOY::LocalDataFileSource Class Reference}
+\label{classBUSBOY_1_1LocalDataFileSource}\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+}
+
+
+{\ttfamily \#include $<$LocalDataFileSource.h$>$}Inheritance diagram for BUSBOY::LocalDataFileSource::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classBUSBOY_1_1LocalDataFileSource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBUSBOY_1_1LocalDataFileSource_ab54e3f2b04898b2f5a37b536c242a78b}{LocalDataFileSource} (const std::string \&path)
+\item 
+std::string \hyperlink{classBUSBOY_1_1LocalDataFileSource_a22b5c087c929d200300ffe914f241c8b}{getPath} () const 
+\item 
+char $\ast$ \hyperlink{classBUSBOY_1_1LocalDataFileSource_a15f28fad4b6a526d1a0ab341e133bbaa}{getFileBytes} () const 
+\begin{DoxyCompactList}\small\item\em NOTE: logical const, implementations may make changes behind the interface to lookup the data. \item\end{DoxyCompactList}\item 
+size\_\-t \hyperlink{classBUSBOY_1_1LocalDataFileSource_a2c0ff175265c5460a699910027d3a837}{getFileSize} () const 
+\begin{DoxyCompactList}\small\item\em NOTE: logical const, implementations may make changes behind the interface to lookup the data. \item\end{DoxyCompactList}\item 
+size\_\-t \hyperlink{classBUSBOY_1_1LocalDataFileSource_af5b845f0dca80268e2d2d58fa101a38b}{read} (char $\ast$buf, size\_\-t num)
+\begin{DoxyCompactList}\small\item\em Read up to the next num bytes into buf, returns the number of bytes read. \item\end{DoxyCompactList}\item 
+size\_\-t \hyperlink{classBUSBOY_1_1LocalDataFileSource_afe40ac6d9ab78d27b52be6ba234849d4}{skip} (size\_\-t num)
+\begin{DoxyCompactList}\small\item\em Skip up to the next num bytes, returns the number of bytes skipped. \item\end{DoxyCompactList}\item 
+void \hyperlink{classBUSBOY_1_1LocalDataFileSource_a6c452d0aa712dac330e68e4de6b77ce9}{release} ()
+\item 
+bool \hyperlink{classBUSBOY_1_1LocalDataFileSource_aa179b315828ee666797dfb91254ab1e1}{isReleased} () const 
+\item 
+\hyperlink{classBUSBOY_1_1LocalDataFileSource_a7c14304fe18454e0d6c1d3bcc6c4904c}{$\sim$LocalDataFileSource} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1LocalDataFileSource_ab54e3f2b04898b2f5a37b536c242a78b}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!LocalDataFileSource@{LocalDataFileSource}}
+\index{LocalDataFileSource@{LocalDataFileSource}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{LocalDataFileSource}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::LocalDataFileSource::LocalDataFileSource (const std::string \& {\em path})}}
+\label{classBUSBOY_1_1LocalDataFileSource_ab54e3f2b04898b2f5a37b536c242a78b}
+\hypertarget{classBUSBOY_1_1LocalDataFileSource_a7c14304fe18454e0d6c1d3bcc6c4904c}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!$\sim$LocalDataFileSource@{$\sim$LocalDataFileSource}}
+\index{$\sim$LocalDataFileSource@{$\sim$LocalDataFileSource}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{$\sim$LocalDataFileSource}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::LocalDataFileSource::$\sim$LocalDataFileSource ()}}
+\label{classBUSBOY_1_1LocalDataFileSource_a7c14304fe18454e0d6c1d3bcc6c4904c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1LocalDataFileSource_a15f28fad4b6a526d1a0ab341e133bbaa}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!getFileBytes@{getFileBytes}}
+\index{getFileBytes@{getFileBytes}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{getFileBytes}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ BUSBOY::LocalDataFileSource::getFileBytes () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1LocalDataFileSource_a15f28fad4b6a526d1a0ab341e133bbaa}
+
+
+NOTE: logical const, implementations may make changes behind the interface to lookup the data. 
+
+Implements \hyperlink{classBUSBOY_1_1DataFileSource_ada5ea0b760f3cf5a865197d3fb9e4fcd}{BUSBOY::DataFileSource}.\hypertarget{classBUSBOY_1_1LocalDataFileSource_a2c0ff175265c5460a699910027d3a837}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!getFileSize@{getFileSize}}
+\index{getFileSize@{getFileSize}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{getFileSize}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::LocalDataFileSource::getFileSize () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1LocalDataFileSource_a2c0ff175265c5460a699910027d3a837}
+
+
+NOTE: logical const, implementations may make changes behind the interface to lookup the data. 
+
+Implements \hyperlink{classBUSBOY_1_1DataFileSource_a79ad2660b524ee38093b7cc72d2924f5}{BUSBOY::DataFileSource}.\hypertarget{classBUSBOY_1_1LocalDataFileSource_a22b5c087c929d200300ffe914f241c8b}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!getPath@{getPath}}
+\index{getPath@{getPath}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{getPath}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::LocalDataFileSource::getPath () const}}
+\label{classBUSBOY_1_1LocalDataFileSource_a22b5c087c929d200300ffe914f241c8b}
+\hypertarget{classBUSBOY_1_1LocalDataFileSource_aa179b315828ee666797dfb91254ab1e1}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!isReleased@{isReleased}}
+\index{isReleased@{isReleased}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{isReleased}]{\setlength{\rightskip}{0pt plus 5cm}bool BUSBOY::LocalDataFileSource::isReleased () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1LocalDataFileSource_aa179b315828ee666797dfb91254ab1e1}
+
+
+Implements \hyperlink{classBUSBOY_1_1DataFileSource_afd39ef6968c00cc9202c01d68bc87709}{BUSBOY::DataFileSource}.\hypertarget{classBUSBOY_1_1LocalDataFileSource_af5b845f0dca80268e2d2d58fa101a38b}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!read@{read}}
+\index{read@{read}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::LocalDataFileSource::read (char $\ast$ {\em buf}, \/  size\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1LocalDataFileSource_af5b845f0dca80268e2d2d58fa101a38b}
+
+
+Read up to the next num bytes into buf, returns the number of bytes read. 
+
+Reimplemented from \hyperlink{classBUSBOY_1_1DataFileSource_a7466bffda1100fb6f330382b4e491dd6}{BUSBOY::DataFileSource}.\hypertarget{classBUSBOY_1_1LocalDataFileSource_a6c452d0aa712dac330e68e4de6b77ce9}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!release@{release}}
+\index{release@{release}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::LocalDataFileSource::release ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1LocalDataFileSource_a6c452d0aa712dac330e68e4de6b77ce9}
+
+
+Implements \hyperlink{classBUSBOY_1_1DataFileSource_a9f78f31eddcf41fd393e99ee00278d09}{BUSBOY::DataFileSource}.\hypertarget{classBUSBOY_1_1LocalDataFileSource_afe40ac6d9ab78d27b52be6ba234849d4}{
+\index{BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}!skip@{skip}}
+\index{skip@{skip}!BUSBOY::LocalDataFileSource@{BUSBOY::LocalDataFileSource}}
+\subsubsection[{skip}]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t BUSBOY::LocalDataFileSource::skip (size\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBUSBOY_1_1LocalDataFileSource_afe40ac6d9ab78d27b52be6ba234849d4}
+
+
+Skip up to the next num bytes, returns the number of bytes skipped. 
+
+Reimplemented from \hyperlink{classBUSBOY_1_1DataFileSource_ab50fe5821ccaa51a26b65debe8fd1c84}{BUSBOY::DataFileSource}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/dataset/\hyperlink{LocalDataFileSource_8h}{LocalDataFileSource.h}\item 
+src/cpp/impl/dataset/\hyperlink{LocalDataFileSource_8cpp}{LocalDataFileSource.cpp}\end{DoxyCompactItemize}

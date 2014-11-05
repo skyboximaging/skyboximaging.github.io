@@ -1,0 +1,129 @@
+\hypertarget{classBUSBOY_1_1BusboyEnvironment}{
+\section{BUSBOY::BusboyEnvironment Class Reference}
+\label{classBUSBOY_1_1BusboyEnvironment}\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+}
+
+
+Singleton for managing environmental properties.  
+
+
+{\ttfamily \#include $<$BusboyEnvironment.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} \{ \hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58a544ca0093b4f12e7ff75d8d26c2d503b}{RUNTIME}, 
+\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58a435e5b0d187e37994ddb2211e5cb8529}{JAVA}, 
+\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58aaeb8086d5c8ac6c14121d3d14440a5fe}{CUSTOM}, 
+\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58af958bf56ea0a1945ce595a86ce0bd7c4}{RAW}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBUSBOY_1_1BusboyEnvironment_a92aebf474cd88558005f88ec2738d622}{addPropertySet} (\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} envSet, const \hyperlink{classBUSBOY_1_1Properties}{Properties} \&props)
+\item 
+\hyperlink{classBUSBOY_1_1Properties}{Properties} \hyperlink{classBUSBOY_1_1BusboyEnvironment_a92b3d872e87465d4d566ef02d5a1a2c1}{getProperties} (\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} envSet) const 
+\item 
+\hyperlink{classBUSBOY_1_1BusboyEnvironment_a8612366d6249caecac58b1ea9f30e514}{$\sim$BusboyEnvironment} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBUSBOY_1_1BusboyEnvironment}{BusboyEnvironment} \& \hyperlink{classBUSBOY_1_1BusboyEnvironment_a06ca687507e5be7e839aa4d4de5f8931}{instance} ()
+\item 
+static \hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} \hyperlink{classBUSBOY_1_1BusboyEnvironment_a51027f0a6a448a5b8bf4588a9055fdb6}{enumFromString} (const std::string \&strEnvSet)
+\begin{DoxyCompactList}\small\item\em Parses the string equivalent of the enum. \item\end{DoxyCompactList}\item 
+static std::string \hyperlink{classBUSBOY_1_1BusboyEnvironment_a4566e20c382a55bb6d733c1a72282461}{enumToString} (\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} envSet)
+\begin{DoxyCompactList}\small\item\em Returns the string equivalent of the enum. \item\end{DoxyCompactList}\item 
+static std::string \hyperlink{classBUSBOY_1_1BusboyEnvironment_a29a094cb93bb81775005cf2ad71106e2}{getVariablePrefix} (\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} envSet)
+\item 
+static std::string \hyperlink{classBUSBOY_1_1BusboyEnvironment_ad856c8aeab75e7498f50b8ee9b5b70a5}{getVariableName} (\hyperlink{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{EnvSet} envSet, const std::string \&name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton for managing environmental properties. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!EnvSet@{EnvSet}}
+\index{EnvSet@{EnvSet}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{EnvSet}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf BUSBOY::BusboyEnvironment::EnvSet}}}
+\label{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{RUNTIME@{RUNTIME}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!RUNTIME@{RUNTIME}}\item[{\em 
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58a544ca0093b4f12e7ff75d8d26c2d503b}{
+RUNTIME}
+\label{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58a544ca0093b4f12e7ff75d8d26c2d503b}
+}]Busboy runtime properties: busboy.runtime.XXX. \index{JAVA@{JAVA}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!JAVA@{JAVA}}\item[{\em 
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58a435e5b0d187e37994ddb2211e5cb8529}{
+JAVA}
+\label{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58a435e5b0d187e37994ddb2211e5cb8529}
+}]Java system properties: busboy.java.XXX. \index{CUSTOM@{CUSTOM}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!CUSTOM@{CUSTOM}}\item[{\em 
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58aaeb8086d5c8ac6c14121d3d14440a5fe}{
+CUSTOM}
+\label{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58aaeb8086d5c8ac6c14121d3d14440a5fe}
+}]Custom properties: busboy.custom.XXX. \index{RAW@{RAW}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!RAW@{RAW}}\item[{\em 
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58af958bf56ea0a1945ce595a86ce0bd7c4}{
+RAW}
+\label{classBUSBOY_1_1BusboyEnvironment_a1ff6c2014ac112710c1a91fcefd18f58af958bf56ea0a1945ce595a86ce0bd7c4}
+}]Raw properties: XXX. \end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a8612366d6249caecac58b1ea9f30e514}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!$\sim$BusboyEnvironment@{$\sim$BusboyEnvironment}}
+\index{$\sim$BusboyEnvironment@{$\sim$BusboyEnvironment}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{$\sim$BusboyEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}BUSBOY::BusboyEnvironment::$\sim$BusboyEnvironment ()}}
+\label{classBUSBOY_1_1BusboyEnvironment_a8612366d6249caecac58b1ea9f30e514}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a92aebf474cd88558005f88ec2738d622}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!addPropertySet@{addPropertySet}}
+\index{addPropertySet@{addPropertySet}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{addPropertySet}]{\setlength{\rightskip}{0pt plus 5cm}void BUSBOY::BusboyEnvironment::addPropertySet ({\bf EnvSet} {\em envSet}, \/  const {\bf Properties} \& {\em props})}}
+\label{classBUSBOY_1_1BusboyEnvironment_a92aebf474cd88558005f88ec2738d622}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a51027f0a6a448a5b8bf4588a9055fdb6}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!enumFromString@{enumFromString}}
+\index{enumFromString@{enumFromString}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{enumFromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BusboyEnvironment::EnvSet} BUSBOY::BusboyEnvironment::enumFromString (const std::string \& {\em strEnvSet})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyEnvironment_a51027f0a6a448a5b8bf4588a9055fdb6}
+
+
+Parses the string equivalent of the enum. For example: \char`\"{}JAVA\char`\"{} -\/-\/$>$ JAVA \hypertarget{classBUSBOY_1_1BusboyEnvironment_a4566e20c382a55bb6d733c1a72282461}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!enumToString@{enumToString}}
+\index{enumToString@{enumToString}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{enumToString}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::BusboyEnvironment::enumToString ({\bf EnvSet} {\em envSet})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyEnvironment_a4566e20c382a55bb6d733c1a72282461}
+
+
+Returns the string equivalent of the enum. For example: JAVA -\/-\/$>$ \char`\"{}JAVA\char`\"{} \hypertarget{classBUSBOY_1_1BusboyEnvironment_a92b3d872e87465d4d566ef02d5a1a2c1}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{getProperties}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Properties} BUSBOY::BusboyEnvironment::getProperties ({\bf EnvSet} {\em envSet}) const}}
+\label{classBUSBOY_1_1BusboyEnvironment_a92b3d872e87465d4d566ef02d5a1a2c1}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_ad856c8aeab75e7498f50b8ee9b5b70a5}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!getVariableName@{getVariableName}}
+\index{getVariableName@{getVariableName}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{getVariableName}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::BusboyEnvironment::getVariableName ({\bf EnvSet} {\em envSet}, \/  const std::string \& {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyEnvironment_ad856c8aeab75e7498f50b8ee9b5b70a5}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a29a094cb93bb81775005cf2ad71106e2}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!getVariablePrefix@{getVariablePrefix}}
+\index{getVariablePrefix@{getVariablePrefix}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{getVariablePrefix}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::BusboyEnvironment::getVariablePrefix ({\bf EnvSet} {\em envSet})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyEnvironment_a29a094cb93bb81775005cf2ad71106e2}
+\hypertarget{classBUSBOY_1_1BusboyEnvironment_a06ca687507e5be7e839aa4d4de5f8931}{
+\index{BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}!instance@{instance}}
+\index{instance@{instance}!BUSBOY::BusboyEnvironment@{BUSBOY::BusboyEnvironment}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BusboyEnvironment} \& BUSBOY::BusboyEnvironment::instance ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1BusboyEnvironment_a06ca687507e5be7e839aa4d4de5f8931}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/util/\hyperlink{BusboyEnvironment_8h}{BusboyEnvironment.h}\item 
+src/cpp/impl/util/\hyperlink{BusboyEnvironment_8cpp}{BusboyEnvironment.cpp}\end{DoxyCompactItemize}

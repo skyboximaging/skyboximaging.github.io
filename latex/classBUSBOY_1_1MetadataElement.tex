@@ -1,0 +1,155 @@
+\hypertarget{classBUSBOY_1_1MetadataElement}{
+\section{BUSBOY::MetadataElement Class Reference}
+\label{classBUSBOY_1_1MetadataElement}\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+}
+
+
+Base class for the different types of metadata.  
+
+
+{\ttfamily \#include $<$MetadataElement.h$>$}Inheritance diagram for BUSBOY::MetadataElement::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.82609cm]{classBUSBOY_1_1MetadataElement}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} \{ \par
+\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12aadd64fda57e8ba7a46a5d86e0b00c64f}{FIELD}, 
+\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a57cff7a6570df185fc3cd8f2eba33ba5}{ARRAY}, 
+\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12af5c9130caeec98fc4bce92db8b0afcd6}{LIST}, 
+\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a1356e0e0985619afde22f5a5c0d94ec1}{MAP}, 
+\par
+\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a9d7d5960abd8febde4cd4ec2bb0ea3f5}{KEY}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} \hyperlink{classBUSBOY_1_1MetadataElement_a048a64f1d70affc5bfdd78a9958c5fb9}{getMetadataElementType} () const =0
+\item 
+virtual bool \hyperlink{classBUSBOY_1_1MetadataElement_ac56f20521c49259ff043c2d69bc4c08e}{operator==} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element) const =0
+\item 
+virtual bool \hyperlink{classBUSBOY_1_1MetadataElement_a9895dfd3f251e26e8d818871405ce4c7}{operator!=} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element) const =0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} \hyperlink{classBUSBOY_1_1MetadataElement_a433c50e9707c1219f43c203d03b46cd5}{enumFromString} (std::string strType)
+\begin{DoxyCompactList}\small\item\em Parses the string equivalent of the enum. \item\end{DoxyCompactList}\item 
+static std::string \hyperlink{classBUSBOY_1_1MetadataElement_ab47c6ba17444aad6b1355bbba53280f5}{enumToString} (\hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} type)
+\begin{DoxyCompactList}\small\item\em Returns the string equivalent of the enum. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static const T $\ast$ \hyperlink{classBUSBOY_1_1MetadataElement_adb43074cccd4b5497e8270c52d22d557}{castElement} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} $\ast$element, \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} type)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T $\ast$ \hyperlink{classBUSBOY_1_1MetadataElement_ac99ac7b0cb21562de6f6b8384e9e1d50}{castElement} (\hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} $\ast$element, \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} type)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static const T \& \hyperlink{classBUSBOY_1_1MetadataElement_ac5a43c0171daa27d6b6d21979a1dfcd5}{castElement} (const \hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element, \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} type)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \& \hyperlink{classBUSBOY_1_1MetadataElement_a690ed8d331b145bbb8cbc2f545da9f8a}{castElement} (\hyperlink{classBUSBOY_1_1MetadataElement}{MetadataElement} \&element, \hyperlink{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{Type} type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for the different types of metadata. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!Type@{Type}}
+\index{Type@{Type}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf BUSBOY::MetadataElement::Type}}}
+\label{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{FIELD@{FIELD}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!FIELD@{FIELD}}\item[{\em 
+\hypertarget{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12aadd64fda57e8ba7a46a5d86e0b00c64f}{
+FIELD}
+\label{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12aadd64fda57e8ba7a46a5d86e0b00c64f}
+}]Implemented by \hyperlink{classBUSBOY_1_1MetadataField}{MetadataField}. \index{ARRAY@{ARRAY}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!ARRAY@{ARRAY}}\item[{\em 
+\hypertarget{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a57cff7a6570df185fc3cd8f2eba33ba5}{
+ARRAY}
+\label{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a57cff7a6570df185fc3cd8f2eba33ba5}
+}]Implemented by \hyperlink{classBUSBOY_1_1MetadataArray}{MetadataArray}. \index{LIST@{LIST}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!LIST@{LIST}}\item[{\em 
+\hypertarget{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12af5c9130caeec98fc4bce92db8b0afcd6}{
+LIST}
+\label{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12af5c9130caeec98fc4bce92db8b0afcd6}
+}]Implemented by \hyperlink{classBUSBOY_1_1MetadataList}{MetadataList}. \index{MAP@{MAP}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!MAP@{MAP}}\item[{\em 
+\hypertarget{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a1356e0e0985619afde22f5a5c0d94ec1}{
+MAP}
+\label{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a1356e0e0985619afde22f5a5c0d94ec1}
+}]Implemented by \hyperlink{classBUSBOY_1_1MetadataMap}{MetadataMap}. \index{KEY@{KEY}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!KEY@{KEY}}\item[{\em 
+\hypertarget{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a9d7d5960abd8febde4cd4ec2bb0ea3f5}{
+KEY}
+\label{classBUSBOY_1_1MetadataElement_ab66bf575c7d26f857a2871d42bd97d12a9d7d5960abd8febde4cd4ec2bb0ea3f5}
+}]Implemented by \hyperlink{classBUSBOY_1_1MetadataKey}{MetadataKey}. \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBUSBOY_1_1MetadataElement_a690ed8d331b145bbb8cbc2f545da9f8a}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!castElement@{castElement}}
+\index{castElement@{castElement}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{castElement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template {\bf MetadataMap} \& BUSBOY::MetadataElement::castElement$<$ {\bf MetadataMap} $>$ ({\bf MetadataElement} \& {\em element}, \/  {\bf Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_a690ed8d331b145bbb8cbc2f545da9f8a}
+\hypertarget{classBUSBOY_1_1MetadataElement_ac5a43c0171daa27d6b6d21979a1dfcd5}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!castElement@{castElement}}
+\index{castElement@{castElement}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{castElement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template const {\bf MetadataMap} \& BUSBOY::MetadataElement::castElement$<$ {\bf MetadataMap} $>$ (const {\bf MetadataElement} \& {\em element}, \/  {\bf Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_ac5a43c0171daa27d6b6d21979a1dfcd5}
+\hypertarget{classBUSBOY_1_1MetadataElement_ac99ac7b0cb21562de6f6b8384e9e1d50}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!castElement@{castElement}}
+\index{castElement@{castElement}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{castElement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template {\bf MetadataMap} $\ast$ BUSBOY::MetadataElement::castElement$<$ {\bf MetadataMap} $>$ ({\bf MetadataElement} $\ast$ {\em element}, \/  {\bf Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_ac99ac7b0cb21562de6f6b8384e9e1d50}
+\hypertarget{classBUSBOY_1_1MetadataElement_adb43074cccd4b5497e8270c52d22d557}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!castElement@{castElement}}
+\index{castElement@{castElement}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{castElement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template const {\bf MetadataMap} $\ast$ BUSBOY::MetadataElement::castElement$<$ {\bf MetadataMap} $>$ (const {\bf MetadataElement} $\ast$ {\em element}, \/  {\bf Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_adb43074cccd4b5497e8270c52d22d557}
+\hypertarget{classBUSBOY_1_1MetadataElement_a433c50e9707c1219f43c203d03b46cd5}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!enumFromString@{enumFromString}}
+\index{enumFromString@{enumFromString}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{enumFromString}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MetadataElement::Type} BUSBOY::MetadataElement::enumFromString (std::string {\em strType})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_a433c50e9707c1219f43c203d03b46cd5}
+
+
+Parses the string equivalent of the enum. For example: \char`\"{}KEY\char`\"{} -\/-\/$>$ KEY \hypertarget{classBUSBOY_1_1MetadataElement_ab47c6ba17444aad6b1355bbba53280f5}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!enumToString@{enumToString}}
+\index{enumToString@{enumToString}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{enumToString}]{\setlength{\rightskip}{0pt plus 5cm}std::string BUSBOY::MetadataElement::enumToString ({\bf MetadataElement::Type} {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_ab47c6ba17444aad6b1355bbba53280f5}
+
+
+Returns the string equivalent of the enum. For example: KEY -\/-\/$>$ \char`\"{}KEY\char`\"{} \hypertarget{classBUSBOY_1_1MetadataElement_a048a64f1d70affc5bfdd78a9958c5fb9}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!getMetadataElementType@{getMetadataElementType}}
+\index{getMetadataElementType@{getMetadataElementType}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{getMetadataElementType}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} BUSBOY::MetadataElement::getMetadataElementType () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_a048a64f1d70affc5bfdd78a9958c5fb9}
+
+
+Implemented in \hyperlink{classBUSBOY_1_1MetadataArray_af8706944f1dd70088aca6edfa0b9b4dd}{BUSBOY::MetadataArray}, \hyperlink{classBUSBOY_1_1MetadataField_abfa4376d1d8cec6e7c0cef293276a33a}{BUSBOY::MetadataField}, \hyperlink{classBUSBOY_1_1MetadataKey_a1e61e743e965046f08839d820f2d8320}{BUSBOY::MetadataKey}, \hyperlink{classBUSBOY_1_1MetadataList_a3181a951dff0539250ce1465a2b6cf3a}{BUSBOY::MetadataList}, and \hyperlink{classBUSBOY_1_1MetadataMap_af64fb7f0f22996956ec2adb09892dcb5}{BUSBOY::MetadataMap}.\hypertarget{classBUSBOY_1_1MetadataElement_a9895dfd3f251e26e8d818871405ce4c7}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool BUSBOY::MetadataElement::operator!= (const {\bf MetadataElement} \& {\em element}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_a9895dfd3f251e26e8d818871405ce4c7}
+
+
+Implemented in \hyperlink{classBUSBOY_1_1MetadataArray_a62365009f5370b749639004ff5c93096}{BUSBOY::MetadataArray}, \hyperlink{classBUSBOY_1_1MetadataField_a112861961d422cf5613e67cea2eb49e6}{BUSBOY::MetadataField}, \hyperlink{classBUSBOY_1_1MetadataKey_aa87f34cefe429a511ee280c29a9de761}{BUSBOY::MetadataKey}, \hyperlink{classBUSBOY_1_1MetadataList_a224d6c162a01e42b6262335a9ef139dd}{BUSBOY::MetadataList}, and \hyperlink{classBUSBOY_1_1MetadataMap_a161a2e429cc1b2fd40fac48222a9b90b}{BUSBOY::MetadataMap}.\hypertarget{classBUSBOY_1_1MetadataElement_ac56f20521c49259ff043c2d69bc4c08e}{
+\index{BUSBOY::MetadataElement@{BUSBOY::MetadataElement}!operator==@{operator==}}
+\index{operator==@{operator==}!BUSBOY::MetadataElement@{BUSBOY::MetadataElement}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool BUSBOY::MetadataElement::operator== (const {\bf MetadataElement} \& {\em element}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classBUSBOY_1_1MetadataElement_ac56f20521c49259ff043c2d69bc4c08e}
+
+
+Implemented in \hyperlink{classBUSBOY_1_1MetadataArray_a6105a539099289a76db6524c926ea551}{BUSBOY::MetadataArray}, \hyperlink{classBUSBOY_1_1MetadataField_a8fc0a215619adb2f2f7eca8167211cca}{BUSBOY::MetadataField}, \hyperlink{classBUSBOY_1_1MetadataKey_afc2527147e8aacc0368eaeb67ae8d1dc}{BUSBOY::MetadataKey}, \hyperlink{classBUSBOY_1_1MetadataList_a7dbea89ac583ce3f8900474f22aba2de}{BUSBOY::MetadataList}, and \hyperlink{classBUSBOY_1_1MetadataMap_ae8a5e06c1baa5231744a7b98d49a37f7}{BUSBOY::MetadataMap}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+src/cpp/api/metadata/\hyperlink{MetadataElement_8h}{MetadataElement.h}\item 
+src/cpp/impl/metadata/\hyperlink{MetadataElement_8cpp}{MetadataElement.cpp}\end{DoxyCompactItemize}
